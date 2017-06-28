@@ -1,0 +1,47 @@
+/*
+ *  Copyright (C) 2011 - 2014 Xilinx
+ *
+ * This software is licensed under the terms of the GNU General Public
+ * License version 2, as published by the Free Software Foundation, and
+ * may be copied, distributed, and modified under those terms.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+&amba {
+	logicvc_1: logicvc@40030000 {
+		compatible = "xylon,logicvc-4.00.a";
+		reg = <0x40030000 0x10000>;
+		interrupt-parent = <&intc>;
+		interrupts = <0 31 4>;
+		background-layer-bits-per-pixel = <32>;
+		background-layer-type = "rgb";
+		color-space = <1>;
+		interface = <0>;
+		readable-regs;
+		size-position;
+		pixel-stride = <2048>;
+
+		layer_0 {
+			bits-per-pixel = <32>;
+			type = "rgb";
+			transparency = "layer";
+		};
+		layer_1 {
+			bits-per-pixel = <16>;
+			type = "yuv";
+			transparency = "layer";
+		};
+	};
+
+	xylon_drm {
+		compatible = "xylon,drm-1.00.a";
+		clocks = <&si570>;
+		device = <&logicvc_1>;
+		encoder = <&adv7511>;
+		primary-plane = <0>;
+	};
+};

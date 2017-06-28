@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;zvik&apos; to &apos;zvik_camera_linux_app&apos;" description="Rename resource &apos;zvik&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/zvik" name="zvik_camera_linux_app" stamp="1376592418730" updateReferences="true"/>
+</session>

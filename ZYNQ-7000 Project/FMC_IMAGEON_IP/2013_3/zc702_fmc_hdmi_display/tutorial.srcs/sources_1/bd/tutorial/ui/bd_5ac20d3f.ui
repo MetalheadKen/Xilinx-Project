@@ -1,0 +1,36 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.3.3  2013-08-16 bk=1.2871 VDI=33 GEI=35
+#  -string -flagsOSRD
+preplace port hdmio_clk -pg 1 -y 410 -defaultsOSRD
+preplace port hdmio_io -pg 1 -y 440 -defaultsOSRD
+preplace port axi4s_clk -pg 1 -y 80 -defaultsOSRD
+preplace port hdmio_audio_spdif -pg 1 -y 630 -defaultsOSRD
+preplace port vtc_ctrl -pg 1 -y 370 -defaultsOSRD
+preplace port hdmio_axi4s_video -pg 1 -y 60 -defaultsOSRD
+preplace port axi4lite_clk -pg 1 -y 450 -defaultsOSRD
+preplace portBus axi4lite_aresetn -pg 1 -y 190 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 4 -y 310 -defaultsOSRD
+preplace inst vcc -pg 1 -lvl 1 -y 130 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 3 -y 630 -defaultsOSRD
+preplace inst fmc_imageon_hdmi_out_0 -pg 1 -lvl 5 -y 440 -defaultsOSRD
+preplace inst gnd -pg 1 -lvl 3 -y 270 -defaultsOSRD
+preplace inst v_cresample_0 -pg 1 -lvl 3 -y 120 -defaultsOSRD
+preplace inst v_rgb2ycrcb_0 -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace netloc Conn1 1 0 3 NJ 640 NJ 640 640
+preplace netloc s_axi_aclk_1 1 0 3 NJ 650 NJ 650 650
+preplace netloc gnd_const 1 3 2 900 450 1200
+preplace netloc s_axi_aresetn_1 1 0 4 NJ 190 370 190 630 220 910
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 4 1 1210
+preplace netloc v_cresample_0_video_out 1 3 1 940
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 2 3 660 500 NJ 500 1180
+preplace netloc clk_1 1 0 5 NJ 410 NJ 410 610 480 940 460 1190
+preplace netloc hdmio_axi4s_video_1 1 0 2 NJ 60 N
+preplace netloc v_rgb2ycrcb_0_video_out 1 2 1 N
+preplace netloc processing_system7_0_fclk_clk1 1 0 4 NJ 50 360 10 660 210 930
+preplace netloc fmc_imageon_hdmi_in_0_audio_spdif 1 0 5 NJ 630 NJ 630 NJ 470 NJ 490 N
+preplace netloc v_tc_0_vtiming_out 1 3 1 920
+preplace netloc vcc_const 1 1 4 360 180 620 490 930 470 1210
+preplace netloc fmc_imageon_hdmi_out_0_io_hdmio 1 5 1 N
+levelinfo -pg 1 190 290 490 780 1060 1320 1460
+",
+}

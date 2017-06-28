@@ -1,0 +1,307 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date              : Mon Feb 13 18:36:47 2017
+| Host              : user-PC running 64-bit Service Pack 1  (build 7601)
+| Command           : report_clock_utilization -file fmc_imageon_gs_wrapper_clock_utilization_routed.rpt
+| Design            : fmc_imageon_gs_wrapper
+| Device            : 7z020-clg484
+| Speed File        : -1  PRODUCTION 1.11 2014-09-11
+| Temperature Grade : C
+---------------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X0Y0
+9. Net wise resources used in clock region X1Y0
+10. Net wise resources used in clock region X0Y1
+11. Net wise resources used in clock region X1Y1
+12. Net wise resources used in clock region X0Y2
+13. Net wise resources used in clock region X1Y2
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+-----------+
+| Type  | Used | Available | Num Fixed |
++-------+------+-----------+-----------+
+| BUFG  |    6 |        32 |         0 |
+| BUFH  |    0 |        72 |         0 |
+| BUFIO |    2 |        16 |         2 |
+| MMCM  |    0 |         4 |         0 |
+| PLL   |    0 |         4 |         0 |
+| BUFR  |    4 |        16 |         0 |
+| BUFMR |    0 |         8 |         0 |
++-------+------+-----------+-----------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+------------------------------------------------------------------------------+------------------------------------------------------+---------------+-------+
+|       |                                                                              |                                                      |   Num Loads   |       |
++-------+------------------------------------------------------------------------------+------------------------------------------------------+-------+-------+-------+
+| Index | BUFG Cell                                                                    | Net Name                                             |  BELs | Sites | Fixed |
++-------+------------------------------------------------------------------------------+------------------------------------------------------+-------+-------+-------+
+|     1 | fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK2 |     1 |     1 |    no |
+|     2 | fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_3.FCLK_CLK_3_BUFG | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK3 |     1 |     1 |    no |
+|     3 | fmc_imageon_vclk_l_IBUF_BUFG_inst                                            | fmc_imageon_vclk_l_IBUF_BUFG                         |   356 |   111 |    no |
+|     4 | fmc_imageon_vclk_r_IBUF_BUFG_inst                                            | fmc_imageon_vclk_r_IBUF_BUFG                         |   789 |   244 |    no |
+|     5 | fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0 |  5754 |  1594 |    no |
+|     6 | fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1 | 21343 |  5426 |    no |
++-------+------------------------------------------------------------------------------+------------------------------------------------------+-------+-------+-------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-------+
+|       |                                                                                                                                                                                                                                        |                                                                                                                                                                  |   Num Loads  |       |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+| Index | BUFR Cell                                                                                                                                                                                                                              | Net Name                                                                                                                                                         | BELs | Sites | Fixed |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+|     1 | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_no_ls_clk_in.gen_regional_hs_clk_in.gen_multiplier_5.BUFR_regional_hs_clk_in   | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0   |  174 |    69 |    no |
+|     2 | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_no_ls_clk_in.gen_regional_hs_clk_in.gen_multiplier_5.BUFR_regional_hs_clk_in | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0 |  174 |    78 |    no |
+|     3 | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l                                                                                                                                                | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0                                                                      | 2030 |   587 |    no |
+|     4 | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l                                                                                                                                              | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0                                                                    | 2030 |   611 |    no |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-------+
+|       |                                                                                                                                                                                                                     |                                                                                                                                                                                 |   Num Loads  |       |
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+| Index | BUFIO Cell                                                                                                                                                                                                          | Net Name                                                                                                                                                                        | BELs | Sites | Fixed |
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+|     1 | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_hs_clk_in.gen_regional_hs_clk_in.BUFIO_regional_hs_clk_in   | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/nomuxgen.SYNC_DATA_reg[0]   |   10 |    20 |   yes |
+|     2 | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_hs_clk_in.gen_regional_hs_clk_in.BUFIO_regional_hs_clk_in | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/nomuxgen.SYNC_DATA_reg[0] |   10 |    20 |   yes |
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+
+
+6. Details of Local Clocks
+--------------------------
+
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-------+
+|       |                                                                                                                                                                                                    |                                                                                                                                                         |   Num Loads  |       |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+| Index | Local Clk Src                                                                                                                                                                                      | Net Name                                                                                                                                                | BELs | Sites | Fixed |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+|     1 | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_hs_clk_in.gen_diff_hs_clk_in.IBUFDS_inst   | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/I   |    2 |     2 |   yes |
+|     2 | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_hs_clk_in.gen_diff_hs_clk_in.IBUFDS_inst | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/I |    2 |     2 |   yes |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |   17 |    50 | 8274 | 20000 |  523 |  4000 |    1 |    60 |   14 |    30 |    6 |    60 |
+| X1Y0              |    5 |    12 |    2 |     4 |    0 |     2 |    1 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |   10 |    50 |    1 |    50 | 9813 | 25600 |  776 |  3400 |   11 |    60 |   15 |    30 |    8 |    40 |
+| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3512 |  9600 |  466 |  1600 |    1 |    20 |    6 |    10 |    5 |    20 |
+| X1Y1              |    4 |    12 |    2 |     4 |    0 |     2 |    1 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |   10 |    50 |    1 |    50 | 7264 | 20800 |  507 |  3400 |    7 |    60 |   15 |    30 |    5 |    40 |
+| X0Y2              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  764 |  9600 |   55 |  1600 |    1 |    20 |    1 |    10 |    4 |    20 |
+| X1Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  504 | 20800 |    4 |  3400 |    0 |    60 |    1 |    30 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites.
+
+
+8. Net wise resources used in clock region X0Y0
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                    Clock Net Name                    |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+------------------------------------------------------+
+| BUFG        | BUFHCE_X0Y11 |   no  |         0 |        0 |       0 |         3 |       0 |      18 |  426 |    16 |        0 | fmc_imageon_vclk_r_IBUF_BUFG                         |
+| BUFG        | BUFHCE_X0Y9  |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  668 |     9 |        0 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0 |
+| BUFG        | BUFHCE_X0Y8  |   no  |         0 |        0 |       0 |        27 |       0 |       0 | 7180 |   498 |        6 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+------------------------------------------------------+
+
+
+9. Net wise resources used in clock region X1Y0
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                                                                 Clock Net Name                                                                                |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BUFIO       |      ---     |  yes  |         0 |        0 |       0 |         0 |      20 |       0 |    0 |     0 |        0 | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/nomuxgen.SYNC_DATA_reg[0] |
+| BUFG        | BUFHCE_X1Y10 |   no  |         0 |        0 |       0 |         1 |       0 |       0 |    3 |     0 |        0 | fmc_imageon_vclk_l_IBUF_BUFG                                                                                                                                                  |
+| BUFR        |      ---     |   no  |         0 |        0 |       0 |         5 |      10 |       0 |  154 |     0 |        0 | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0                |
+| BUFG        | BUFHCE_X1Y0  |   no  |         0 |        0 |       0 |         9 |       0 |       0 |  315 |     1 |        0 | fmc_imageon_vclk_r_IBUF_BUFG                                                                                                                                                  |
+| BUFR        |      ---     |   no  |         0 |        0 |       0 |        12 |       0 |       2 | 1974 |    42 |        0 | fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0                                                                                   |
+| BUFG        | BUFHCE_X1Y9  |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 2421 |    77 |        0 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0                                                                                                                          |
+| BUFG        | BUFHCE_X1Y8  |   no  |         0 |        0 |       0 |        24 |       0 |       0 | 4946 |   656 |        8 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1                                                                                                                          |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+10. Net wise resources used in clock region X0Y1
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                    Clock Net Name                    |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+------------------------------------------------------+
+| BUFG        | BUFHCE_X0Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  509 |    48 |        0 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0 |
+| BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |        14 |       0 |       0 | 3003 |   418 |        5 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+------------------------------------------------------+
+
+
+11. Net wise resources used in clock region X1Y1
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                                                                  Clock Net Name                                                                                 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BUFIO       |      ---     |  yes  |         0 |        0 |       0 |         0 |      20 |       0 |    0 |     0 |        0 | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/nomuxgen.SYNC_DATA_reg[0] |
+| BUFR        |      ---     |   no  |         0 |        0 |       0 |         5 |      10 |       0 |  154 |     0 |        0 | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0                |
+| BUFG        | BUFHCE_X1Y22 |   no  |         0 |        0 |       0 |         8 |       0 |       0 |  317 |     0 |        0 | fmc_imageon_vclk_l_IBUF_BUFG                                                                                                                                                    |
+| BUFG        | BUFHCE_X1Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 1828 |    32 |        0 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0                                                                                                                            |
+| BUFR        |      ---     |   no  |         0 |        0 |       0 |        12 |       0 |       2 | 1974 |    42 |        0 | fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0                                                                                   |
+| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       0 |        19 |       0 |       0 | 2991 |   433 |        5 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1                                                                                                                            |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+12. Net wise resources used in clock region X0Y2
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                    Clock Net Name                    |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------------------------------------------+
+| BUFG        | BUFHCE_X0Y33 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 139 |    22 |        0 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0 |
+| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         3 |       0 |       0 | 625 |    33 |        4 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------------------------------------------+
+
+
+13. Net wise resources used in clock region X1Y2
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                    Clock Net Name                    |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------------------------------------------+
+| BUFG        | BUFHCE_X1Y33 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  25 |     1 |        0 | fmc_imageon_vclk_l_IBUF_BUFG                         |
+| BUFG        | BUFHCE_X1Y32 |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 479 |     3 |        0 | fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------------------------------------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y17 [get_cells fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG]
+set_property LOC BUFGCTRL_X0Y16 [get_cells fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG]
+set_property LOC BUFGCTRL_X0Y18 [get_cells fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG]
+set_property LOC BUFGCTRL_X0Y19 [get_cells fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_3.FCLK_CLK_3_BUFG]
+set_property LOC BUFGCTRL_X0Y20 [get_cells fmc_imageon_vclk_l_IBUF_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y0 [get_cells fmc_imageon_vclk_r_IBUF_BUFG_inst]
+
+# Location of IO Clock Primitives
+set_property LOC BUFIO_X1Y3 [get_cells fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_hs_clk_in.gen_regional_hs_clk_in.BUFIO_regional_hs_clk_in]
+set_property LOC BUFIO_X1Y7 [get_cells fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_hs_clk_in.gen_regional_hs_clk_in.BUFIO_regional_hs_clk_in]
+
+# Location of MMCM Clock Primitives
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+set_property LOC BUFR_X1Y0 [get_cells fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_no_ls_clk_in.gen_regional_hs_clk_in.gen_multiplier_5.BUFR_regional_hs_clk_in]
+set_property LOC BUFR_X1Y1 [get_cells fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l]
+set_property LOC BUFR_X1Y4 [get_cells fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_no_ls_clk_in.gen_regional_hs_clk_in.gen_multiplier_5.BUFR_regional_hs_clk_in]
+set_property LOC BUFR_X1Y5 [get_cells fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l]
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X1Y77 [get_ports IO_VITA_CAM_L_clk_out_n]
+set_property LOC IOB_X1Y78 [get_ports IO_VITA_CAM_L_clk_out_p]
+set_property LOC IOB_X1Y27 [get_ports IO_VITA_CAM_R_clk_out_n]
+set_property LOC IOB_X1Y28 [get_ports IO_VITA_CAM_R_clk_out_p]
+set_property LOC IOB_X1Y76 [get_ports fmc_imageon_vclk_l]
+set_property LOC IOB_X1Y26 [get_ports fmc_imageon_vclk_r]
+
+# Clock net "fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0" driven by instance "fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_no_ls_clk_in.gen_regional_hs_clk_in.gen_multiplier_5.BUFR_regional_hs_clk_in" located at site "BUFR_X1Y0"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0" driven by instance "fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l" located at site "BUFR_X1Y1"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0" driven by instance "fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/gen_no_ls_clk_in.gen_regional_hs_clk_in.gen_multiplier_5.BUFR_regional_hs_clk_in" located at site "BUFR_X1Y4"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/onsemi_vita_cam_core_inst/vita_iserdes_v5.vita_iserdes/serdesclockgen[0].ic/CLKDIV_c_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0" driven by instance "fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l" located at site "BUFR_X1Y5"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0" driven by instance "fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG" located at site "BUFGCTRL_X0Y17"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1" driven by instance "fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK1}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK2" driven by instance "fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG" located at site "BUFGCTRL_X0Y18"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK2}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK2}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK2"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK2}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK3" driven by instance "fmc_imageon_gs_i/processing_system7_0/inst/buffer_fclk_clk_3.FCLK_CLK_3_BUFG" located at site "BUFGCTRL_X0Y19"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK3}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK3}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK3"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_gs_i/processing_system7_0/inst/FCLK_CLK3}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "fmc_imageon_vclk_l_IBUF_BUFG" driven by instance "fmc_imageon_vclk_l_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y20"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_vclk_l_IBUF_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_vclk_l_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=fmc_imageon_gs_i/onsemi_vita_cam_L_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_vclk_l_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_vclk_l_IBUF_BUFG}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "fmc_imageon_vclk_r_IBUF_BUFG" driven by instance "fmc_imageon_vclk_r_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock {CLKAG_fmc_imageon_vclk_r_IBUF_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_fmc_imageon_vclk_r_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=fmc_imageon_gs_i/onsemi_vita_cam_0/U0/onsemi_vita_cam_v3_1_S00_AXI_inst/vita_clk_div4_l} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="fmc_imageon_vclk_r_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_fmc_imageon_vclk_r_IBUF_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup

@@ -1,0 +1,185 @@
+23:13:12 INFO  : Adding 'D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/software/sw_repository' as a new local repository.
+14:41:44 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:41:47 INFO  : XSDB server has started successfully.
+14:41:50 INFO  : Restoring local repository preferences: 
+		 D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/software/sw_repository
+14:41:50 INFO  : Processing command line option -hwspec D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper.hdf.
+14:43:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:43:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+14:43:33 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+14:45:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:45:12 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+
+    Cannot access DDR: the controller is held in reset
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:47:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:47:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+14:47:16 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+14:47:50 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:48:04 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:48:05 INFO  : XSDB server has started successfully.
+14:48:05 INFO  : Restoring local repository preferences: 
+		 D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/software/sw_repository
+14:48:05 INFO  : Processing command line option -hwspec D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper.hdf.
+14:48:06 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+14:48:34 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-JTAG-SMT1-210203A02F82A on TCP:127.0.0.1:3121
+
+
+14:48:34 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-JTAG-SMT1-210203A02F82A on TCP:127.0.0.1:3121
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:48:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:48:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+14:48:47 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+14:48:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:48:54 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+
+    Cannot access DDR: the controller is held in reset
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:50:10 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:50:37 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:50:39 INFO  : XSDB server has started successfully.
+14:50:40 INFO  : Restoring local repository preferences: 
+		 D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/software/sw_repository
+14:50:40 INFO  : Processing command line option -hwspec D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper.hdf.
+14:50:40 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+14:51:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+14:51:49 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+14:53:24 INFO  : ps7_init is completed.
+14:53:24 INFO  : ps7_post_config is completed.
+14:53:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:56:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+14:56:12 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+14:56:28 INFO  : ps7_init is completed.
+14:56:28 INFO  : ps7_post_config is completed.
+14:56:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:33:35 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:34:37 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:34:39 INFO  : XSDB server has started successfully.
+15:34:39 INFO  : Restoring local repository preferences: 
+		 D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/software/sw_repository
+15:35:18 INFO  : Saving repository preferences.
+15:36:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:36:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+15:36:43 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+15:37:31 INFO  : ps7_init is completed.
+15:37:31 INFO  : ps7_post_config is completed.
+15:37:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:08:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:08:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+16:08:12 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+16:09:15 INFO  : ps7_init is completed.
+16:09:15 INFO  : ps7_post_config is completed.
+16:09:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:51:58 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+00:52:00 INFO  : XSDB server has started successfully.
+00:52:03 INFO  : Restoring local repository preferences: 
+		 D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/software/sw_repository
+00:52:11 INFO  : Processing command line option -hwspec D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper.hdf.
+00:52:13 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+16:48:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:48:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+16:48:58 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+16:50:33 INFO  : ps7_init is completed.
+16:50:33 INFO  : ps7_post_config is completed.
+16:50:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:51:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+16:52:01 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+16:52:30 INFO  : ps7_init is completed.
+16:52:30 INFO  : ps7_post_config is completed.
+16:52:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:02:49 INFO  : ps7_init is completed.
+17:02:49 INFO  : ps7_post_config is completed.
+17:02:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:03:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:03:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+17:03:55 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+17:04:08 INFO  : ps7_init is completed.
+17:04:09 INFO  : ps7_post_config is completed.
+17:04:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:41:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:41:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+17:41:16 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+17:41:23 INFO  : ps7_init is completed.
+17:41:23 INFO  : ps7_post_config is completed.
+17:41:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:44:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:45:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:45:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+17:45:11 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+17:45:22 INFO  : ps7_init is completed.
+17:45:22 INFO  : ps7_post_config is completed.
+17:45:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:46:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:46:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+17:46:28 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+17:46:42 INFO  : ps7_init is completed.
+17:46:42 INFO  : ps7_post_config is completed.
+17:46:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:10:49 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:10:59 INFO  : XSDB server has started successfully.
+18:11:14 INFO  : Restoring local repository preferences: 
+		 D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/software/sw_repository
+18:11:14 INFO  : Processing command line option -hwspec D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper.hdf.
+18:11:14 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+18:12:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+18:12:13 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_hw/fmc_imageon_gs_wrapper.bit"
+18:15:17 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+18:15:26 INFO  : ps7_init is completed.
+18:15:26 INFO  : ps7_post_config is completed.
+18:15:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:16:24 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:13:48 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:13:52 INFO  : XSDB server has started successfully.
+17:13:57 INFO  : Restoring local repository preferences: 
+		 D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/software/sw_repository
+15:46:35 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:46:38 INFO  : XSDB server has started successfully.
+15:46:41 INFO  : Restoring local repository preferences: 
+		 D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/software/sw_repository
+15:46:42 INFO  : Processing command line option -hwspec D:/Xilinx_Project/FMC_IMAGEON/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper.hdf.
+15:46:42 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.

@@ -1,0 +1,602 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Feb 17 20:19:46 2017
+# Process ID: 8232
+# Current directory: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4208 D:\Xilinx_Project\FMC_DUAL_CAMERA_HDMI\project_1\project_1.xpr
+# Log file: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/vivado.log
+# Journal file: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/fmc_imageon_camera/ip/onsemi_vita_cam_l'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FMC_IMAGEON_CAMERA/IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/avnet_fmc_imageon_cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 852.004 ; gain = 205.680
+open_bd_design {D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:v_cfa:7.0 - v_cfa_0
+Adding component instance block -- xilinx.com:ip:v_cresample:4.0 - v_cresample_0
+Adding component instance block -- xilinx.com:ip:v_rgb2ycrcb:7.1 - v_rgb2ycrcb_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - fmc_imageon_iic_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_76M
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - GND
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - VCC
+Adding component instance block -- xilinx.com:ip:v_cfa:7.0 - v_cfa_1
+Adding component instance block -- xilinx.com:ip:v_cresample:4.0 - v_cresample_1
+Adding component instance block -- xilinx.com:ip:v_rgb2ycrcb:7.1 - v_rgb2ycrcb_1
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_1
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - fmc_imageon_iic_1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_1
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - v_tc_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_149M_R
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_149M_L
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding component instance block -- avnet:fmc_imageon:fmc_imageon_vita_receiver:2.2 - fmc_imageon_vita_receiver_R
+Adding component instance block -- avnet:fmc_imageon:fmc_imageon_vita_receiver:2.2 - fmc_imageon_vita_receiver_L
+Adding component instance block -- avnet:fmc_imageon:fmc_imageon_hdmi_out:2.0 - fmc_imageon_hdmi_out_0
+Adding component instance block -- avnet:fmc_imageon:fmc_imageon_hdmi_out:2.0 - fmc_imageon_hdmi_out_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <fmc_imageon_gs> from BD file <D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd>
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 975.723 ; gain = 123.719
+validate_bd_design -force
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1006.879 ; gain = 13.410
+make_wrapper -files [get_files D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+INFO: [BD 41-1662] The design 'fmc_imageon_gs.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_1/vid_data'(8) to net 'fmc_imageon_vita_receiver_L_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_0/vid_data'(8) to net 'fmc_imageon_vita_receiver_R_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.vhd
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs_wrapper.vhd
+Wrote  : <D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+INFO: [BD 41-1662] The design 'fmc_imageon_gs.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_1/vid_data'(8) to net 'fmc_imageon_vita_receiver_L_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_0/vid_data'(8) to net 'fmc_imageon_vita_receiver_R_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.vhd
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cfa_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cresample_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_rgb2ycrcb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_76M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cfa_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cresample_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_rgb2ycrcb_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_iic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_149M_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_149M_L .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_vita_receiver_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_vita_receiver_L .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_out_1 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hw_handoff/fmc_imageon_gs.hwh
+Generated Block Design Tcl file D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hw_handoff/fmc_imageon_gs_bd.tcl
+Generated Hardware Definition File D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.hwdef
+[Fri Feb 17 20:22:07 2017] Launched synth_1...
+Run output will be captured here: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.runs/synth_1/runme.log
+[Fri Feb 17 20:22:07 2017] Launched impl_1...
+Run output will be captured here: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.runs/impl_1/runme.log
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+validate_bd_design -force
+save_bd_design
+Wrote  : <D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd> 
+validate_bd_design -force
+make_wrapper -files [get_files D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+INFO: [BD 41-1662] The design 'fmc_imageon_gs.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_1/vid_data'(8) to net 'fmc_imageon_vita_receiver_L_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_0/vid_data'(8) to net 'fmc_imageon_vita_receiver_R_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.vhd
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs_wrapper.vhd
+Wrote  : <D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+INFO: [BD 41-1662] The design 'fmc_imageon_gs.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_1/vid_data'(8) to net 'fmc_imageon_vita_receiver_L_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_0/vid_data'(8) to net 'fmc_imageon_vita_receiver_R_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.vhd
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cfa_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cresample_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_rgb2ycrcb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_76M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cfa_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cresample_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_rgb2ycrcb_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_iic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_149M_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_149M_L .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_vita_receiver_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_vita_receiver_L .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_out_1 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hw_handoff/fmc_imageon_gs.hwh
+Generated Block Design Tcl file D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hw_handoff/fmc_imageon_gs_bd.tcl
+Generated Hardware Definition File D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.hwdef
+[Fri Feb 17 20:39:32 2017] Launched synth_1...
+Run output will be captured here: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.runs/synth_1/runme.log
+[Fri Feb 17 20:39:32 2017] Launched impl_1...
+Run output will be captured here: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.runs/impl_1/runme.log
+set_property screensize {187 222} [get_bd_cells fmc_imageon_hdmi_out_1]
+set_property screensize {206 248} [get_bd_cells fmc_imageon_hdmi_out_0]
+undo
+INFO: [Common 17-17] undo 'set_property screensize {206 248} [get_bd_cells fmc_imageon_hdmi_out_0]'
+regenerate_bd_layout
+validate_bd_design -force
+make_wrapper -files [get_files D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+INFO: [BD 41-1662] The design 'fmc_imageon_gs.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_1/vid_data'(8) to net 'fmc_imageon_vita_receiver_L_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_0/vid_data'(8) to net 'fmc_imageon_vita_receiver_R_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.vhd
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs_wrapper.vhd
+Wrote  : <D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd> 
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+INFO: [BD 41-1662] The design 'fmc_imageon_gs.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_1/vid_data'(8) to net 'fmc_imageon_vita_receiver_L_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_vid_in_axi4s_0/vid_data'(8) to net 'fmc_imageon_vita_receiver_R_VID_IO_OUT_DATA'(10) - Only lower order bits will be connected.
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.vhd
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cfa_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cresample_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_rgb2ycrcb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_76M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cfa_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cresample_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_rgb2ycrcb_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_iic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_149M_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_149M_L .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_vita_receiver_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_vita_receiver_L .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_hdmi_out_1 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hw_handoff/fmc_imageon_gs.hwh
+Generated Block Design Tcl file D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hw_handoff/fmc_imageon_gs_bd.tcl
+Generated Hardware Definition File D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.hwdef
+[Fri Feb 17 20:53:02 2017] Launched synth_1...
+Run output will be captured here: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.runs/synth_1/runme.log
+[Fri Feb 17 20:53:02 2017] Launched impl_1...
+Run output will be captured here: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.runs/impl_1/runme.log
+startgroup
+create_bd_cell -type ip -vlnv avnet:onsemi_vita:onsemi_vita_cam:3.2 onsemi_vita_cam_0
+endgroup
+set_property location {4 1197 539} [get_bd_cells onsemi_vita_cam_0]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M02_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins processing_system7_0_axi_periph/M02_AXI] [get_bd_intf_pins onsemi_vita_cam_0/S00_AXI]
+delete_bd_objs [get_bd_intf_nets IO_VITA_2]
+delete_bd_objs [get_bd_intf_ports IO_VITA_CAM_R]
+startgroup
+create_bd_intf_port -mode Slave -vlnv avnet.com:interface:onsemi_vita_cam_rtl:1.0 IO_CAM_IN
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_0/IO_CAM_IN] [get_bd_intf_ports IO_CAM_IN]
+endgroup
+set_property name IO_VITA_CAM_R [get_bd_intf_nets IO_CAM_IN_1]
+IO_VITA_CAM_R
+set_property name IO_CAM_IN_1 [get_bd_intf_nets IO_VITA_CAM_R]
+IO_CAM_IN_1
+set_property name IO_VITA_CAM_R [get_bd_intf_ports IO_CAM_IN]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/clk200] [get_bd_pins processing_system7_0/FCLK_CLK2]
+connect_bd_net [get_bd_ports fmc_imageon_vclk_r] [get_bd_pins onsemi_vita_cam_0/clk]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/reset] [get_bd_pins rst_processing_system7_0_149M_R/peripheral_reset]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/trigger1] [get_bd_pins GND/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/s00_axi_aresetn] [get_bd_pins rst_processing_system7_0_76M/peripheral_aresetn]
+delete_bd_objs [get_bd_intf_nets fmc_imageon_vita_receiver_R_VID_IO_OUT]
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_0/VID_IO_OUT] [get_bd_intf_pins v_vid_in_axi4s_0/vid_io_in]
+delete_bd_objs [get_bd_cells fmc_imageon_vita_receiver_R]
+startgroup
+create_bd_cell -type ip -vlnv avnet:onsemi_vita:onsemi_vita_cam_L:3.2 onsemi_vita_cam_L_0
+endgroup
+set_property location {4 1169 870} [get_bd_cells onsemi_vita_cam_L_0]
+startgroup
+create_bd_intf_port -mode Slave -vlnv avnet.com:interface:onsemi_vita_cam_rtl:1.0 IO_CAM_IN
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_L_0/IO_CAM_IN] [get_bd_intf_ports IO_CAM_IN]
+endgroup
+delete_bd_objs [get_bd_intf_nets IO_VITA_1] [get_bd_intf_ports IO_VITA_CAM_L]
+set_property name IO_VITA_CAM_L [get_bd_intf_ports IO_CAM_IN]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M03_AXI]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M03_AXI]'
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M03_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins processing_system7_0_axi_periph/M03_AXI] [get_bd_intf_pins onsemi_vita_cam_L_0/S00_AXI]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/clk200] [get_bd_pins processing_system7_0/FCLK_CLK2]
+connect_bd_net [get_bd_ports fmc_imageon_vclk_l] [get_bd_pins onsemi_vita_cam_L_0/clk]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/reset] [get_bd_pins fmc_imageon_vita_receiver_L/reset]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/trigger1] [get_bd_pins GND/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/s00_axi_aresetn] [get_bd_pins rst_processing_system7_0_76M/peripheral_aresetn]
+delete_bd_objs [get_bd_intf_nets fmc_imageon_vita_receiver_L_VID_IO_OUT]
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_L_0/VID_IO_OUT] [get_bd_intf_pins v_vid_in_axi4s_1/vid_io_in]
+delete_bd_objs [get_bd_cells fmc_imageon_vita_receiver_L]
+startgroup
+create_bd_cell -type ip -vlnv avnet:fmc_imageon:fmc_imageon_hdmi_out:2.0 fmc_imageon_hdmi_out_2
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv avnet:fmc_imageon:fmc_imageon_hdmi_out:2.0 fmc_imageon_hdmi_out_2'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+create_bd_cell -type ip -vlnv avnet:avnet_hdmi:avnet_hdmi_out:3.1 avnet_hdmi_out_0
+endgroup
+set_property location {10 3299 531} [get_bd_cells avnet_hdmi_out_0]
+startgroup
+copy_bd_objs /  [get_bd_cells {avnet_hdmi_out_0}]
+set_property location {9 3305 952} [get_bd_cells avnet_hdmi_out_1]
+endgroup
+delete_bd_objs [get_bd_intf_nets v_axi4s_vid_out_0_vid_io_out]
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out] [get_bd_intf_pins avnet_hdmi_out_0/VID_IO_IN]
+connect_bd_net [get_bd_ports fmc_imageon_vclk_r] [get_bd_pins avnet_hdmi_out_0/clk]
+connect_bd_net [get_bd_pins avnet_hdmi_out_0/reset] [get_bd_pins GND/dout]
+connect_bd_net [get_bd_pins avnet_hdmi_out_0/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins avnet_hdmi_out_0/embed_syncs] [get_bd_pins VCC/dout]
+delete_bd_objs [get_bd_intf_nets fmc_imageon_hdmi_out_0_IO_HDMIO]
+connect_bd_intf_net [get_bd_intf_ports IO_HDMIO_R] [get_bd_intf_pins avnet_hdmi_out_0/IO_HDMIO]
+delete_bd_objs [get_bd_cells fmc_imageon_hdmi_out_0]
+delete_bd_objs [get_bd_intf_nets v_axi4s_vid_out_1_vid_io_out]
+connect_bd_intf_net [get_bd_intf_pins avnet_hdmi_out_1/VID_IO_IN] [get_bd_intf_pins v_axi4s_vid_out_1/vid_io_out]
+connect_bd_net [get_bd_ports fmc_imageon_vclk_l] [get_bd_pins avnet_hdmi_out_1/clk]
+connect_bd_net [get_bd_pins avnet_hdmi_out_1/reset] [get_bd_pins GND/dout]
+connect_bd_net [get_bd_pins avnet_hdmi_out_1/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins avnet_hdmi_out_1/embed_syncs] [get_bd_pins VCC/dout]
+delete_bd_objs [get_bd_intf_nets fmc_imageon_hdmi_out_1_IO_HDMIO]
+connect_bd_intf_net [get_bd_intf_ports IO_HDMIO_L] [get_bd_intf_pins avnet_hdmi_out_1/IO_HDMIO]
+delete_bd_objs [get_bd_cells fmc_imageon_hdmi_out_1]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv avnet:onsemi_vita:onsemi_vita_spi:3.2 onsemi_vita_spi_0
+endgroup
+set_property location {10 2841 905} [get_bd_cells onsemi_vita_spi_0]
+startgroup
+create_bd_intf_port -mode Master -vlnv avnet.com:interface:onsemi_vita_spi_rtl:1.0 IO_SPI_OUT
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_spi_0/IO_SPI_OUT] [get_bd_intf_ports IO_SPI_OUT]
+endgroup
+set_property name IO_VITA_SPI [get_bd_intf_ports IO_SPI_OUT]
+set_property location {9 2900 826} [get_bd_cells onsemi_vita_spi_0]
+startgroup
+copy_bd_objs /  [get_bd_cells {onsemi_vita_spi_0}]
+set_property location {9 2904 965} [get_bd_cells onsemi_vita_spi_1]
+endgroup
+startgroup
+create_bd_intf_port -mode Master -vlnv avnet.com:interface:onsemi_vita_spi_rtl:1.0 IO_SPI_OUT
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_spi_1/IO_SPI_OUT] [get_bd_intf_ports IO_SPI_OUT]
+endgroup
+set_property name IO_VITA_SPI_L [get_bd_intf_ports IO_SPI_OUT]
+set_property name IO_VITA_SPI_R [get_bd_intf_ports IO_VITA_SPI]
+connect_bd_net [get_bd_pins onsemi_vita_spi_0/oe] [get_bd_pins v_axi4s_vid_out_0/aclken]
+connect_bd_net [get_bd_pins onsemi_vita_spi_1/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins onsemi_vita_spi_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins onsemi_vita_spi_0/s00_axi_aclk]
+connect_bd_net [get_bd_pins onsemi_vita_spi_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins onsemi_vita_spi_1/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins onsemi_vita_spi_0/s00_axi_aresetn] [get_bd_pins rst_processing_system7_0_76M/peripheral_aresetn]
+connect_bd_net [get_bd_pins onsemi_vita_spi_1/s00_axi_aresetn] [get_bd_pins rst_processing_system7_0_76M/peripheral_aresetn]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins onsemi_vita_spi_0/S00_AXI]
+</onsemi_vita_spi_0/S00_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins onsemi_vita_spi_1/S00_AXI]
+</onsemi_vita_spi_1/S00_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x43C10000 [ 64K ]>
+endgroup
+validate_bd_design
+CRITICAL WARNING: [BD 41-1356] Address block </onsemi_vita_cam_0/S00_AXI/Reg> is not mapped into </processing_system7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </onsemi_vita_cam_L_0/S00_AXI/Reg> is not mapped into </processing_system7_0/Data>. Please use Address Editor to either map or exclude it.
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1267.738 ; gain = 0.000
+assign_bd_address
+</onsemi_vita_cam_0/S00_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x43C60000 [ 64K ]>
+</onsemi_vita_cam_L_0/S00_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x43C70000 [ 64K ]>
+validate_bd_design
+make_wrapper -files [get_files D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+INFO: [BD 41-1662] The design 'fmc_imageon_gs.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.vhd
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs_wrapper.vhd
+Wrote  : <D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd> 
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+INFO: [BD 41-1662] The design 'fmc_imageon_gs.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.vhd
+VHDL Output written to : D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cfa_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cresample_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_rgb2ycrcb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_iic_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_xbar_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_xbar_1'...
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_xbar_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fmc_imageon_gs_xbar_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_76M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cfa_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_cresample_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_rgb2ycrcb_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fmc_imageon_iic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_149M_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_149M_L .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_onsemi_vita_cam_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_onsemi_vita_cam_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_onsemi_vita_cam_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block onsemi_vita_cam_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_onsemi_vita_cam_L_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_onsemi_vita_cam_L_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_onsemi_vita_cam_L_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block onsemi_vita_cam_L_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_avnet_hdmi_out_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_avnet_hdmi_out_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_avnet_hdmi_out_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block avnet_hdmi_out_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_avnet_hdmi_out_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_avnet_hdmi_out_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_avnet_hdmi_out_0_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block avnet_hdmi_out_1 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_onsemi_vita_spi_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_onsemi_vita_spi_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_onsemi_vita_spi_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block onsemi_vita_spi_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_onsemi_vita_spi_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_onsemi_vita_spi_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_onsemi_vita_spi_0_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block onsemi_vita_spi_1 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fmc_imageon_gs_auto_pc_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hw_handoff/fmc_imageon_gs.hwh
+Generated Block Design Tcl file D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hw_handoff/fmc_imageon_gs_bd.tcl
+Generated Hardware Definition File D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/hdl/fmc_imageon_gs.hwdef
+[Fri Feb 17 21:25:05 2017] Launched synth_1...
+Run output will be captured here: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.runs/synth_1/runme.log
+[Fri Feb 17 21:25:05 2017] Launched impl_1...
+Run output will be captured here: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1425.020 ; gain = 124.668
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {9 2871 513} [get_bd_cells onsemi_vita_spi_1]
+regenerate_bd_layout
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2268 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/.Xil/Vivado-8232-user-PC/dcp/fmc_imageon_gs_wrapper_early.xdc]
+Finished Parsing XDC File [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/.Xil/Vivado-8232-user-PC/dcp/fmc_imageon_gs_wrapper_early.xdc]
+Parsing XDC File [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/.Xil/Vivado-8232-user-PC/dcp/fmc_imageon_gs_wrapper.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/constrs_1/imports/fmc_imageon_gs/zc702_fmc_imageon_gs.xdc:266]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_1' already exists, overwriting the previous clock with the same name. [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/constrs_1/imports/fmc_imageon_gs/zc702_fmc_imageon_gs.xdc:267]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_2' already exists, overwriting the previous clock with the same name. [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/constrs_1/imports/fmc_imageon_gs/zc702_fmc_imageon_gs.xdc:268]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/constrs_1/imports/fmc_imageon_gs/zc702_fmc_imageon_gs.xdc:274]
+INFO: [Timing 38-2] Deriving generated clocks [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/constrs_1/imports/fmc_imageon_gs/zc702_fmc_imageon_gs.xdc:274]
+get_clocks: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2170.992 ; gain = 520.043
+Finished Parsing XDC File [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/.Xil/Vivado-8232-user-PC/dcp/fmc_imageon_gs_wrapper.xdc]
+Parsing XDC File [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/.Xil/Vivado-8232-user-PC/dcp/fmc_imageon_gs_wrapper_late.xdc]
+Finished Parsing XDC File [D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/.Xil/Vivado-8232-user-PC/dcp/fmc_imageon_gs_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2178.090 ; gain = 7.098
+Restored from archive | CPU: 7.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2178.090 ; gain = 7.098
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 82 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 74 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 4 instances
+
+open_run: Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 2324.938 ; gain = 882.313
+open_bd_design {D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+set_property location {1 222 683} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 222 683} [get_bd_cells processing_system7_0]'
+set_property location {1 213 679} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 213 679} [get_bd_cells processing_system7_0]'
+set_property location {1 219 692} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 219 692} [get_bd_cells processing_system7_0]'
+set_property location {1 219 698} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 219 698} [get_bd_cells processing_system7_0]'
+set_property location {1 223 709} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 223 709} [get_bd_cells processing_system7_0]'
+set_property location {1 214 711} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 214 711} [get_bd_cells processing_system7_0]'
+set_property location {1 224 705} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 224 705} [get_bd_cells processing_system7_0]'
+set_property location {1 216 726} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 216 726} [get_bd_cells processing_system7_0]'
+set_property location {1 236 707} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 236 707} [get_bd_cells processing_system7_0]'
+set_property location {1 220 688} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 220 688} [get_bd_cells processing_system7_0]'
+set_property location {1 212 713} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 212 713} [get_bd_cells processing_system7_0]'
+set_property location {1 199 687} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 199 687} [get_bd_cells processing_system7_0]'
+set_property location {1 239 716} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 239 716} [get_bd_cells processing_system7_0]'
+set_property location {1 213 694} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 213 694} [get_bd_cells processing_system7_0]'
+set_property location {1 206 702} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 206 702} [get_bd_cells processing_system7_0]'
+set_property location {1 217 716} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 217 716} [get_bd_cells processing_system7_0]'
+set_property location {1 217 713} [get_bd_cells processing_system7_0]
+set_property location {1 212 773} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 212 773} [get_bd_cells processing_system7_0]'
+set_property location {1 209 750} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 209 750} [get_bd_cells processing_system7_0]'
+set_property location {1 213 760} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 213 760} [get_bd_cells processing_system7_0]'
+set_property location {1 213 744} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 213 744} [get_bd_cells processing_system7_0]'
+set_property location {1 208 756} [get_bd_cells processing_system7_0]
+set_property location {1 219 819} [get_bd_cells processing_system7_0]
+set_property location {1 202 850} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 202 850} [get_bd_cells processing_system7_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 219 819} [get_bd_cells processing_system7_0]'
+set_property location {1 209 793} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 209 793} [get_bd_cells processing_system7_0]'
+set_property location {1 215 819} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 215 819} [get_bd_cells processing_system7_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 208 756} [get_bd_cells processing_system7_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 217 713} [get_bd_cells processing_system7_0]'
+set_property location {1 216 711} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 216 711} [get_bd_cells processing_system7_0]'
+set_property location {1 206 731} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 206 731} [get_bd_cells processing_system7_0]'
+set_property location {1 214 696} [get_bd_cells processing_system7_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {1 214 696} [get_bd_cells processing_system7_0]'
+set_property location {1 200 697} [get_bd_cells processing_system7_0]
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

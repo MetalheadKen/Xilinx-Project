@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="xilinx.gnu.armlinux.staticlib.release.1451631890.2013776478">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.armlinux.staticlib.release.1451631890.2013776478" moduleId="org.eclipse.cdt.core.settings" name="lib">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/perfmon_lib"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/perfmon_lib/lib"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="perfmon" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="com.xilinx.sdk.managedbuilder.XELF.armlinux" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="perfmon" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="xilinx.gnu.armlinux.staticlib.release.1451631890.2013776478" name="lib" parent="xilinx.gnu.armlinux.staticlib.release">
+					<folderInfo id="xilinx.gnu.armlinux.staticlib.release.1451631890.2013776478." name="/" resourcePath="">
+						<toolChain id="xilinx.gnu.armlinux.staticlib.release.toolchain.752773702" name="Xilinx ARM GNU/Linux Toolchain" superClass="xilinx.gnu.armlinux.staticlib.release.toolchain">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.armlinux" id="xilinx.armlinux.lib.target.gnu.base.release.1653033140" isAbstract="false" name="Release Platform" superClass="xilinx.armlinux.lib.target.gnu.base.release"/>
+							<builder buildPath="${workspace_loc:/perfmon_lib}/Release" id="xilinx.gnu.armlinux.toolchain.builder.staticlib.release.1235008689" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.armlinux.toolchain.builder.staticlib.release"/>
+							<tool id="xilinx.gnu.armlinux.c.toolchain.assembler.staticlib.release.1089245233" name="ARM Linux gcc assembler" superClass="xilinx.gnu.armlinux.c.toolchain.assembler.staticlib.release">
+								<inputType id="xilinx.gnu.assembler.input.435867124" superClass="xilinx.gnu.assembler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.armlinux.c.toolchain.compiler.staticlib.release.551183126" name="ARM Linux gcc compiler" superClass="xilinx.gnu.armlinux.c.toolchain.compiler.staticlib.release">
+								<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.857049347" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" value="gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.1196776690" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.dircategory.includes.263881225" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+								</option>
+								<inputType id="xilinx.gnu.armlinux.c.compiler.input.975788314" name="C source files" superClass="xilinx.gnu.armlinux.c.compiler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.armlinux.cxx.toolchain.compiler.staticlib.release.97447017" name="ARM Linux g++ compiler" superClass="xilinx.gnu.armlinux.cxx.toolchain.compiler.staticlib.release">
+								<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1021764384" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.1823877791" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							</tool>
+							<tool id="xilinx.gnu.armlinux.toolchain.archiver.statclib.release.1202019977" name="ARM Linux archiver" superClass="xilinx.gnu.armlinux.toolchain.archiver.statclib.release"/>
+							<tool id="xilinx.gnu.armlinux.c.toolchain.linker.771545444" name="ARM Linux gcc linker" superClass="xilinx.gnu.armlinux.c.toolchain.linker"/>
+							<tool id="xilinx.gnu.armlinux.cxx.toolchain.linker.1573077419" name="ARM Linux g++ linker" superClass="xilinx.gnu.armlinux.cxx.toolchain.linker"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="perfmon_lib.xilinx.gnu.armlinux.staticlib.1846296459" name="Xilinx ARM Linux Static Library" projectType="xilinx.gnu.armlinux.staticlib"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.armlinux.staticlib.release.1451631890;xilinx.gnu.armlinux.staticlib.release.1451631890.;xilinx.gnu.armlinux.c.toolchain.compiler.staticlib.release.1252784904;xilinx.gnu.armlinux.c.compiler.input.1972830223">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMLinuxGCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.armlinux.staticlib.release.1451631890;xilinx.gnu.armlinux.staticlib.release.1451631890.">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMLinuxGCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+</cproject>

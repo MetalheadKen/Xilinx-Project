@@ -1,0 +1,3 @@
+PROCESSOR=ps7_cortexa9_0
+REPOSITORIES=-lp C:/FMC_IMAGEON/2013_3/avnet_fmc_imageon_cores
+HWSPEC=../hw_platform_0/system.xml

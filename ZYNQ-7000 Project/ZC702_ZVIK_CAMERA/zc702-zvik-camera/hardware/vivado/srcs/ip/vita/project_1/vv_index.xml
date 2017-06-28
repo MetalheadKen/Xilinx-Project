@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Index Version="1" Minor="0">
+	<Repository value="/group/mvico/users/elzinga/designs/vita/project_1">
+	</Repository>
+	<IP>
+		<VLNV value="xilinx.com:user:fmc_imageon_vita_receiver:1.0">
+		</VLNV>
+		<DisplayName value="fmc_imageon_vita_receiver_v1_0">
+		</DisplayName>
+		<Description value="fmc_imageon_vita_receiver_v1_0">
+		</Description>
+		<SupportsRdiCustomization value="true">
+		</SupportsRdiCustomization>
+		<SupportsRdiGeneration value="true">
+		</SupportsRdiGeneration>
+		<NativeOnly value="true">
+		</NativeOnly>
+		<ComponentPath value="component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="zynq">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/Video_&amp;_Image_Processing">
+			</Taxonomy>
+		</Taxonomies>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+</Index>
+

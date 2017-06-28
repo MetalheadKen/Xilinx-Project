@@ -1,0 +1,101 @@
+{
+   Display-PortTypeClock: "true",
+   Display-PortTypeOthers: "true",
+   Display-PortTypeReset: "true",
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port IO_VITA_CAM_L -pg 1 -y 800 -defaultsOSRD
+preplace port DDR -pg 1 -y 620 -defaultsOSRD
+preplace port fmc_imageon_iic -pg 1 -y 680 -defaultsOSRD
+preplace port IO_HDMIO -pg 1 -y 1050 -defaultsOSRD
+preplace port fmc_imageon_vclk_l -pg 1 -y 840 -defaultsOSRD
+preplace port IO_VITA_SPI -pg 1 -y 830 -defaultsOSRD
+preplace port IO_VITA_CAM_R -pg 1 -y 480 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 640 -defaultsOSRD
+preplace port fmc_imageon_vclk_r -pg 1 -y 500 -defaultsOSRD
+preplace portBus fmc_imageon_iic_rst_n -pg 1 -y 720 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 18 -y 1060 -defaultsOSRD
+preplace inst rst_processing_system7_0_76M -pg 1 -lvl 1 -y 320 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 16 -y 850 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 17 -y 1020 -defaultsOSRD
+preplace inst fmc_imageon_iic_0 -pg 1 -lvl 19 -y 700 -defaultsOSRD
+preplace inst axi_vdma_1 -pg 1 -lvl 7 -y 550 -defaultsOSRD
+preplace inst v_cfa_0 -pg 1 -lvl 4 -y 640 -defaultsOSRD
+preplace inst v_cfa_1 -pg 1 -lvl 13 -y 850 -defaultsOSRD -resize 160 200
+preplace inst GND -pg 1 -lvl 1 -y 550 -defaultsOSRD
+preplace inst onsemi_vita_cam_0 -pg 1 -lvl 2 -y 540 -defaultsOSRD
+preplace inst v_osd_0 -pg 1 -lvl 17 -y 760 -defaultsOSRD
+preplace inst v_cresample_0 -pg 1 -lvl 6 -y 690 -defaultsOSRD
+preplace inst rst_processing_system7_0_149M -pg 1 -lvl 3 -y 320 -defaultsOSRD
+preplace inst v_cresample_1 -pg 1 -lvl 15 -y 900 -defaultsOSRD -resize 165 104
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 3 -y 600 -defaultsOSRD
+preplace inst v_vid_in_axi4s_2 -pg 1 -lvl 12 -y 900 -defaultsOSRD -resize 180 220
+preplace inst v_rgb2ycrcb_0 -pg 1 -lvl 5 -y 660 -defaultsOSRD
+preplace inst onsemi_vita_cam_L_0 -pg 1 -lvl 11 -y 860 -defaultsOSRD
+preplace inst v_rgb2ycrcb_1 -pg 1 -lvl 14 -y 870 -defaultsOSRD -resize 160 120
+preplace inst VCC -pg 1 -lvl 1 -y 630 -defaultsOSRD
+preplace inst onsemi_vita_spi_0 -pg 1 -lvl 19 -y 830 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 8 -y 430 -defaultsOSRD
+preplace inst avnet_hdmi_out_0 -pg 1 -lvl 19 -y 1060 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 10 -y 310 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 9 -y 480 -defaultsOSRD
+preplace netloc processing_system7_0_axi_periph_M09_AXI 1 10 7 NJ 400 NJ 400 NJ 400 NJ 400 NJ 400 NJ 400 4760
+preplace netloc IO_VITA_CAM_L_1 1 0 11 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ
+preplace netloc processing_system7_0_DDR 1 9 11 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ
+preplace netloc v_rgb2ycrcb_1_video_out 1 14 1 N
+preplace netloc rst_processing_system7_0_149M_interconnect_aresetn 1 3 5 NJ 340 NJ 340 NJ 340 NJ 340 1950
+preplace netloc xlconstant_1_dout 1 1 18 330 400 620 740 950 810 1190 780 1410 780 NJ 780 NJ 780 NJ 780 NJ 780 3180 730 3460 730 3700 730 3950 730 4170 730 NJ 730 4710 1170 5000 920 5270
+preplace netloc v_vid_in_axi4s_0_video_out 1 3 1 940
+preplace netloc axi_vdma_1_M_AXI_S2MM 1 7 1 1960
+preplace netloc processing_system7_0_axi_periph_M08_AXI 1 10 1 3190
+preplace netloc v_cresample_1_video_out 1 15 1 4390
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 1 10 370 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 3120
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 10 9 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 NJ 220 5270
+preplace netloc rst_processing_system7_0_76M_peripheral_aresetn 1 1 18 310 670 610 730 960 820 NJ 820 NJ 820 1640 700 NJ 700 NJ 700 2760 710 3130 990 3470 1030 3710 970 NJ 970 NJ 970 4400 970 4770 1180 5020 1190 5250
+preplace netloc fmc_imageon_iic_0_gpo 1 19 1 NJ
+preplace netloc onsemi_vita_cam_L_0_VID_IO_OUT 1 11 1 3440
+preplace netloc processing_system7_0_axi_periph_M07_AXI 1 10 3 NJ 360 NJ 360 3710
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 18 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 9 1 2790
+preplace netloc axi_vdma_1_M_AXI_MM2S 1 7 1 1940
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 7 10 1990 10 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 4700
+preplace netloc v_cfa_1_video_out 1 13 1 N
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 6 5 1650 670 NJ 670 NJ 670 NJ 670 3100
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 16 1 4730
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 10 20 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 2720
+preplace netloc v_osd_0_video_out 1 17 1 5020
+preplace netloc v_cresample_0_video_out 1 6 1 1620
+preplace netloc axi_mem_intercon_M00_AXI 1 8 1 2280
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 10 7 NJ 260 NJ 260 NJ 260 NJ 260 NJ 260 NJ 260 4790
+preplace netloc processing_system7_0_FCLK_RESET1_N 1 2 8 650 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 2710
+preplace netloc fmc_imageon_iic_0_IIC 1 19 1 NJ
+preplace netloc v_cfa_0_video_out 1 4 1 N
+preplace netloc processing_system7_0_axi_periph_M06_AXI 1 10 9 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 5260
+preplace netloc axi_vdma_1_M_AXIS_MM2S 1 7 10 1930 160 NJ 160 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc xlconstant_0_dout 1 1 11 350 390 640 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 720 3160 720 NJ
+preplace netloc onsemi_vita_spi_0_IO_SPI_OUT 1 19 1 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 9 11 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc v_vid_in_axi4s_2_video_out 1 12 1 3710
+preplace netloc clk_2 1 0 12 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 3150 710 NJ
+preplace netloc clk_wiz_0_clk_out1 1 0 19 NJ 500 340 380 630 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 4690 1150 4990 930 NJ
+preplace netloc avnet_hdmi_out_0_IO_HDMIO 1 19 1 NJ
+preplace netloc rst_processing_system7_0_76M_interconnect_aresetn 1 1 9 310 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ
+preplace netloc v_rgb2ycrcb_0_video_out 1 5 1 N
+preplace netloc onsemi_vita_cam_0_VID_IO_OUT 1 2 1 N
+preplace netloc Net 1 3 12 930 760 1180 740 1400 610 NJ 680 1980 680 NJ 680 NJ 680 NJ 680 NJ 680 3690 700 3930 770 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 19 30 410 320 410 NJ 410 960 410 NJ 410 NJ 410 1640 140 NJ 140 2290 220 2810 690 3170 690 NJ 690 3720 680 NJ 680 NJ 680 4400 680 4780 630 NJ 630 5240
+preplace netloc v_tc_0_vtiming_out 1 17 1 N
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 7 10 1990 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ 640 4690
+preplace netloc processing_system7_0_FCLK_CLK1 1 2 16 650 720 940 780 1170 750 1390 600 1630 430 1970 220 2270 330 2780 700 NJ 700 3450 720 3730 720 3940 790 4160 790 4410 720 4720 1160 NJ
+preplace netloc IO_CAM_IN_1 1 0 2 NJ 480 NJ
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 3 8 970 800 NJ 800 NJ 800 NJ 800 NJ 800 NJ 800 NJ 800 3110
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 10 6 NJ 240 NJ 240 NJ 240 NJ 240 NJ 240 4390
+preplace netloc processing_system7_0_FCLK_CLK2 1 1 10 360 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 2740 820 N
+levelinfo -pg 1 0 170 490 790 1070 1290 1510 1790 2130 2500 2960 3310 3580 3830 4050 4280 4550 4890 5130 5380 5510 -top 0 -bot 1220
+",
+}
+{
+   da_axi4_cnt: "1",
+   da_board_cnt: "3",
+   da_ps7_cnt: "1",
+}

@@ -1,0 +1,6 @@
+15:52:47 **** Incremental Build of configuration Debug for project vita_passthrough_app ****
+make all 
+make: Nothing to be done for `all'.
+
+15:52:47 Build Finished (took 218ms)
+

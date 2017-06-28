@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Product Version: Vivado v2013.2 (64-bit)-->
+<Project Version="6" Minor="11" Path="/group/mvico/users/elzinga/designs/zc702_hdmi_out/project_1/project_1.xpr">
+	<FileSet Dir="sources_1" File="fileset.xml"/>
+	<FileSet Dir="constrs_1" File="fileset.xml"/>
+	<FileSet Dir="sim_1" File="fileset.xml"/>
+	<RunSet Dir="runs" File="runs.xml"/>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+	<Config>
+		<Option Name="Id" Val="7a28ec43b28c4116a8985a18f512f69a"/>
+		<Option Name="Part" Val="xc7z020clg484-1"/>
+		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+		<Option Name="Board" Val="xilinx.com:zynq:zc702:c"/>
+		<Option Name="ActiveSimSet" Val="sim_1"/>
+	</Config>
+</Project>
+

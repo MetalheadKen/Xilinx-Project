@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Oct 20 16:42:03 2016
+# Process ID: 6084
+# Current directory: D:/Xilinx_Project/GPIO_LED/GPIO_LED.runs/design_led_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log design_led_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_led_processing_system7_0_0.tcl
+# Log file: D:/Xilinx_Project/GPIO_LED/GPIO_LED.runs/design_led_processing_system7_0_0_synth_1/design_led_processing_system7_0_0.vds
+# Journal file: D:/Xilinx_Project/GPIO_LED/GPIO_LED.runs/design_led_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_led_processing_system7_0_0.tcl -notrace

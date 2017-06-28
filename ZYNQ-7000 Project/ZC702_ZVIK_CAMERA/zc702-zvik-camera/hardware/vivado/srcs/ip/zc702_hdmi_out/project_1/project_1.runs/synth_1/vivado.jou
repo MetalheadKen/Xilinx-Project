@@ -1,0 +1,9 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 242259 by xbuild on Sun Mar  3 16:45:49 MST 2013
+# Start of session at: Mon Mar  4 16:32:51 2013
+# Process ID: 21206
+# Log file: /group/mvico/users/elzinga/designs/zc702_hdmi_out/project_1/project_1.runs/synth_1/zc702_hdmi_out.rds
+# Journal file: /group/mvico/users/elzinga/designs/zc702_hdmi_out/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source zc702_hdmi_out.tcl

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Product Version: Vivado v2013.3 (64-bit)-->
+<Project Version="6" Minor="13" Path="C:/FMC_IMAGEON/2013_3/avnet_fmc_imageon_cores/ip_projects/edit_fmc_imageon_vita_receiver.xpr">
+	<FileSet Dir="sources_1" File="fileset.xml"/>
+	<FileSet Dir="constrs_1" File="fileset.xml"/>
+	<FileSet Dir="sim_1" File="fileset.xml"/>
+	<RunSet Dir="runs" File="runs.xml"/>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+	<Config>
+		<Option Name="Id" Val="c3ce3284e14041ff962c5a2148f4f4a3"/>
+		<Option Name="Part" Val="xc7z020clg484-1"/>
+		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+		<Option Name="Board" Val=""/>
+		<Option Name="ActiveSimSet" Val="sim_1"/>
+	</Config>
+</Project>
+

@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 247555 by xbuild on Mon Mar 25 19:01:16 MDT 2013
+# Start of session at: Tue Mar 26 11:24:26 2013
+# Process ID: 31064
+# Log file: /group/mvico/users/elzinga/designs/vita/project_1/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/project_1/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: IPIntegrator_EA
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/arch.xml
+Parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+INFO: [Common 17-362] Using Tcl App repository from '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/XilinxTclStore'.
+INFO: [Common 17-364] Updating Tcl app persistent manifest '/home/elzinga/.Xilinx/Vivado/tclapp/manifest.tcl'
+start_gui
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 2903.801 ; gain = 98.586
+ipx::open_core -upgrade true {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_param ips.gui.advanced true
+1
+ipx::open_ipxact_file {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property name {ctrl} [ipx::get_bus_interface S_AXI [ipx::current_core]]
+set_property display_name {CTRL} [ipx::get_bus_interface ctrl [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property slave_memory_map_ref {} [ipx::get_bus_interface ctrl [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property name {s_axi_aresetn_intf} [ipx::get_bus_interface S_AXI_signal_reset [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property name {reset_intf} [ipx::get_bus_interface signal_reset [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property name {s_axi_aclk_intf} [ipx::get_bus_interface S_AXI_signal_clock [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property value {ctrl} [ipx::get_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interface s_axi_aclk_intf [ipx::current_core]]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::remove_bus_interface {signal_clock} [ipx::current_core]
+set_property value {ACTIVE_HIGH} [ipx::get_bus_parameter POLARITY [ipx::get_bus_interface reset_intf [ipx::current_core]]]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-414] HDL Parameter 'C_FAMILY': Parameter name is reserved.
+WARNING: [IP_Flow 19-1980] Memory map "S_AXI" is not referenced by any bus interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2188] The Readme file is missing.
+INFO: [IP_Flow 19-2186] The Data Sheet file is missing.
+INFO: [IP_Flow 19-2189] The User Guide file is missing.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::archive_core {/group/mvico/users/elzinga/designs/vita/project_1/xilinx.com_user_fmc_imageon_vita_receiver_1.0.zip} [ipx::current_core]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::unload_core {component xilinx.com:ip:v_cfa:7.0}
+ipx::unload_core {component xilinx.com:user:fmc_imageon_vita_receiver:1.0}
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 26 12:06:07 2013...

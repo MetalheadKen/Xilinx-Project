@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/zc702_hdmi_out/zc702_hdmi_out.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../zc702_hdmi_out.vhd"/>
+        <Attr Name="ImportTime" Val="1354622962"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="zc702_hdmi_out"/>
+      <Option Name="TopLib" Val="work"/>
+      <Option Name="TopArchitecture" Val="rtl"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/zc702_hdmi_out/zc702_hdmi_out.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+</DARoots>

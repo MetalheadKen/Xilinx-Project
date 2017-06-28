@@ -1,0 +1,7 @@
+16:57:24 **** Clean-only build of configuration Debug for project dual_vita_passthrough_app ****
+make clean 
+rm -rf  ./src/fmc_imageon_vita_passthrough.o ./src/helloworld.o ./src/platform.o ./src/sleep.o ./src/video_generator.o ./src/video_resolution.o  ./src/fmc_imageon_vita_passthrough.d ./src/helloworld.d ./src/platform.d ./src/sleep.d ./src/video_generator.d ./src/video_resolution.d  dual_vita_passthrough_app.elf.size  dual_vita_passthrough_app.elf
+' '
+16:57:25 **** Clean-only build of project dual_vita_passthrough_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0

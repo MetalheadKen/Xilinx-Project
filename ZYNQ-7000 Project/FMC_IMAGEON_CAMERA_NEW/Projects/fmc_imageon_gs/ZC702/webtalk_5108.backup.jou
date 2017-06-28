@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Jan 19 20:51:25 2017
+# Process ID: 5108
+# Current directory: d:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702
+# Command line: wbtcv.exe -mode batch -source d:/fmc_imageon_camera/projects/fmc_imageon_gs/zc702/fmc_imageon_gs.tmp/on_semiconductor_vita_camera_receiver_left_v3_2_project/ON_Semiconductor_VITA_Camera_Receiver_Left_v3_2_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: d:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/webtalk.log
+# Journal file: d:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702\webtalk.jou
+#-----------------------------------------------------------
+source d:/fmc_imageon_camera/projects/fmc_imageon_gs/zc702/fmc_imageon_gs.tmp/on_semiconductor_vita_camera_receiver_left_v3_2_project/ON_Semiconductor_VITA_Camera_Receiver_Left_v3_2_project.hw/webtalk/labtool_webtalk.tcl -notrace

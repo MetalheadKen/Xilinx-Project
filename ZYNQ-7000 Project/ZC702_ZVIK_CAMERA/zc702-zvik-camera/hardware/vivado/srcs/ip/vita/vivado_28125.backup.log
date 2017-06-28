@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 246566 by xbuild on Wed Mar 20 18:45:37 MDT 2013
+# Start of session at: Thu Mar 21 09:53:12 2013
+# Process ID: 18293
+# Log file: /group/mvico/users/elzinga/designs/vita/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: IPIntegrator_EA
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/arch.xml
+Parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+INFO: [Common 17-362] Using Tcl App repository from '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/XilinxTclStore'.
+INFO: [Common 17-364] Updating Tcl app persistent manifest '/home/elzinga/.Xilinx/Vivado/tclapp/manifest.tcl'
+start_gui
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:06 . Memory (MB): peak = 2894.383 ; gain = 82.188
+remove_files /group/mvico/users/elzinga/designs/vita/project_1/component.xml
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 21 09:58:34 2013...

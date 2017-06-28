@@ -1,0 +1,239 @@
+15:13:48 **** Build of project vita_passthrough_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp C:/FMC_IMAGEON/2013_3/avnet_fmc_imageon_cores\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.3 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+C:/FMC_IMAGEON/2013_3/avnet_fmc_imageon_cores -pe ps7_cortexa9_0 -log libgen.log
+system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling fmc_imageon_sw"
+"Compiling fmc_iic_sw"
+"Compiling video timing controller"
+"Compiling iic"
+"Compiling fmc_imageon_vita_receiver"
+fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_set_analog_gain':
+fmc_imageon_vita_receiver.c:1431:12: warning: assignment from incompatible pointer type [enabled by default]
+fmc_imageon_vita_receiver.c:1437:7: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_display_sequence' from incompatible pointer type [enabled by default]
+fmc_imageon_vita_receiver.c:731:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+fmc_imageon_vita_receiver.c:1439:4: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_write_sequence' from incompatible pointer type [enabled by default]
+fmc_imageon_vita_receiver.c:684:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_set_digital_gain':
+fmc_imageon_vita_receiver.c:1468:12: warning: assignment from incompatible pointer type [enabled by default]
+fmc_imageon_vita_receiver.c:1474:4: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_display_sequence' from incompatible pointer type [enabled by default]
+fmc_imageon_vita_receiver.c:731:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+fmc_imageon_vita_receiver.c:1476:4: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_write_sequence' from incompatible pointer type [enabled by default]
+fmc_imageon_vita_receiver.c:684:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+"Compiling cfa"
+"Compiling dpc"
+"Compiling canps"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+15:16:35 **** Build of configuration Debug for project vita_passthrough_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vita_passthrough_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vita_passthrough_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: vita_passthrough_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vita_passthrough_bsp/ps7_cortexa9_0/lib -o "vita_passthrough_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vita_passthrough_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size vita_passthrough_app.elf  |tee "vita_passthrough_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1096	  29780	  53748	   d1f4	vita_passthrough_app.elf
+'Finished building: vita_passthrough_app.elf.size'
+' '
+15:17:14 **** Auto Build of configuration Debug for project vita_passthrough_app ****
+make all 
+make: Nothing to be done for `all'.
+15:20:52 **** Auto Build of configuration Debug for project vita_passthrough_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vita_passthrough_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:37:0:
+../src/fmc_imageon_vita_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:61:0,
+                 from ../src/helloworld.c:37:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:62:0,
+                 from ../src/helloworld.c:37:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from ../src/fmc_imageon_vita_passthrough.h:62,
+                 from ../src/helloworld.c:37:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:63:0,
+                 from ../src/helloworld.c:37:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:65:0,
+                 from ../src/helloworld.c:37:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_imageon_vita_receiver.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:70:0,
+                 from ../src/helloworld.c:37:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/fmc_imageon_vita_passthrough.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vita_passthrough_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_vita_passthrough.d" -MT"src/fmc_imageon_vita_passthrough.d" -o "src/fmc_imageon_vita_passthrough.o" "../src/fmc_imageon_vita_passthrough.c"
+../src/fmc_imageon_vita_passthrough.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.c:56:0:
+../src/fmc_imageon_vita_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:61:0,
+                 from ../src/fmc_imageon_vita_passthrough.c:56:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:62:0,
+                 from ../src/fmc_imageon_vita_passthrough.c:56:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from ../src/fmc_imageon_vita_passthrough.h:62,
+                 from ../src/fmc_imageon_vita_passthrough.c:56:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:63:0,
+                 from ../src/fmc_imageon_vita_passthrough.c:56:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:65:0,
+                 from ../src/fmc_imageon_vita_passthrough.c:56:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_imageon_vita_receiver.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:70:0,
+                 from ../src/fmc_imageon_vita_passthrough.c:56:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/fmc_imageon_vita_passthrough.c: In function 'fmc_imageon_vita_passthrough_init':
+../src/fmc_imageon_vita_passthrough.c:77:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../src/fmc_imageon_vita_passthrough.c:77:7: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+../src/fmc_imageon_vita_passthrough.c:140:7: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+../src/fmc_imageon_vita_passthrough.c:62:12: warning: unused variable 'timeout' [-Wunused-variable]
+'Finished building: ../src/fmc_imageon_vita_passthrough.c'
+' '
+'Building file: ../src/sleep.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vita_passthrough_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sleep.d" -MT"src/sleep.d" -o "src/sleep.o" "../src/sleep.c"
+../src/sleep.c: In function 'usleep':
+../src/sleep.c:31:3: warning: 'return' with a value, in function returning void [enabled by default]
+../src/sleep.c:36:3: warning: 'return' with a value, in function returning void [enabled by default]
+../src/sleep.c:89:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/sleep.c:90:8: warning: 'return' with a value, in function returning void [enabled by default]
+'Finished building: ../src/sleep.c'
+' '
+'Building file: ../src/video_generator.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vita_passthrough_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_generator.d" -MT"src/video_generator.d" -o "src/video_generator.o" "../src/video_generator.c"
+../src/video_generator.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/video_generator.c:46:0:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/video_generator.c:47:0:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+'Finished building: ../src/video_generator.c'
+' '
+'Building file: ../src/video_resolution.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vita_passthrough_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_resolution.d" -MT"src/video_resolution.d" -o "src/video_resolution.o" "../src/video_resolution.c"
+../src/video_resolution.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/video_resolution.c:49:0:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+'Finished building: ../src/video_resolution.c'
+' '
+'Building target: vita_passthrough_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vita_passthrough_bsp/ps7_cortexa9_0/lib -o "vita_passthrough_app.elf"  ./src/fmc_imageon_vita_passthrough.o ./src/helloworld.o ./src/platform.o ./src/sleep.o ./src/video_generator.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vita_passthrough_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size vita_passthrough_app.elf  |tee "vita_passthrough_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63712	   3984	  30324	  98020	  17ee4	vita_passthrough_app.elf
+'Finished building: vita_passthrough_app.elf.size'
+' '
+15:27:01 **** Auto Build of configuration Debug for project vita_passthrough_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vita_passthrough_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:37:0:
+../src/fmc_imageon_vita_passthrough.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:61:0,
+                 from ../src/helloworld.c:37:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:62:0,
+                 from ../src/helloworld.c:37:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_imageon.h:78:0,
+                 from ../src/fmc_imageon_vita_passthrough.h:62,
+                 from ../src/helloworld.c:37:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:63:0,
+                 from ../src/helloworld.c:37:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:65:0,
+                 from ../src/helloworld.c:37:
+../../vita_passthrough_bsp/ps7_cortexa9_0/include/fmc_imageon_vita_receiver.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/fmc_imageon_vita_passthrough.h:70:0,
+                 from ../src/helloworld.c:37:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vita_passthrough_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vita_passthrough_bsp/ps7_cortexa9_0/lib -o "vita_passthrough_app.elf"  ./src/fmc_imageon_vita_passthrough.o ./src/helloworld.o ./src/platform.o ./src/sleep.o ./src/video_generator.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vita_passthrough_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size vita_passthrough_app.elf  |tee "vita_passthrough_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63712	   3984	  30324	  98020	  17ee4	vita_passthrough_app.elf
+'Finished building: vita_passthrough_app.elf.size'
+' '
+15:28:35 **** Incremental Build of configuration Debug for project vita_passthrough_app ****
+make all 
+make: Nothing to be done for `all'.
+15:29:28 **** Incremental Build of configuration Debug for project vita_passthrough_app ****
+make all 
+make: Nothing to be done for `all'.
+15:52:47 **** Incremental Build of configuration Debug for project vita_passthrough_app ****
+make all 
+make: Nothing to be done for `all'.

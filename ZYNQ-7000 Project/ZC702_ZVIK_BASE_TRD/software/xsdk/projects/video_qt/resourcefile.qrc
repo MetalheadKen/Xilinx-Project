@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/zynq">
+        <file>images/default.png</file>
+        <file>images/ExternalVideo_Hardware_sobel.png</file>
+        <file>images/ExternalVideo_Sobel_off.png</file>
+        <file>images/ExternalVideo_software_sobel.png</file>
+        <file>images/TPG_Hardware_sobel.png</file>
+        <file>images/TPG_Sobel_off.png</file>
+        <file>images/TPG_software_sobel.png</file>
+    </qresource>
+</RCC>

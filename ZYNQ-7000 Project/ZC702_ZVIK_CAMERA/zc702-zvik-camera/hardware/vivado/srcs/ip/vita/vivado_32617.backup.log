@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2013.2 (64-bit)
+# Build 263313 by xbuild on Mon May 20 20:01:22 MDT 2013
+# Start of session at: Tue May 21 14:08:05 2013
+# Process ID: 27007
+# Log file: /group/mvico/users/elzinga/designs/vita/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: Implementation
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-78] Attempting to get a license: Synthesis
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /proj/xbuilds/2013.2_daily_latest/installs/lin64/Vivado/2013.2/data/parts/arch.xml
+Parsing RTL primitives file [/proj/xbuilds/2013.2_daily_latest/installs/lin64/Vivado/2013.2/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/proj/xbuilds/2013.2_daily_latest/installs/lin64/Vivado/2013.2/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+INFO: [Common 17-362] Using Tcl App repository from '/proj/xbuilds/2013.2_daily_latest/installs/lin64/Vivado/2013.2/data/XilinxTclStore'.
+INFO: [Common 17-364] Updating Tcl app persistent manifest '/home/elzinga/.Xilinx/Vivado/tclapp/manifest.tcl'
+start_gui
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/proc_common_pkg.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/proc_common_v4_0/hdl/src/vhdl/proc_common_pkg.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/family_support.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/proc_common_v4_0/hdl/src/vhdl/family_support.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/pselect_f.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/proc_common_v4_0/hdl/src/vhdl/pselect_f.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/ipif_pkg.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/proc_common_v4_0/hdl/src/vhdl/ipif_pkg.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/address_decoder.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/axi_lite_ipif_v2_0/hdl/src/vhdl/address_decoder.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/slave_attachment.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/axi_lite_ipif_v2_0/hdl/src/vhdl/slave_attachment.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/axi_lite_ipif.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/axi_lite_ipif_v2_0/hdl/src/vhdl/axi_lite_ipif.vhd'.
+Scanning sources...
+Finished scanning sources
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/proc_common_pkg.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/proc_common_v4_0/hdl/src/vhdl/proc_common_pkg.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/family_support.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/proc_common_v4_0/hdl/src/vhdl/family_support.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/pselect_f.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/proc_common_v4_0/hdl/src/vhdl/pselect_f.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/ipif_pkg.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/proc_common_v4_0/hdl/src/vhdl/ipif_pkg.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/address_decoder.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/axi_lite_ipif_v2_0/hdl/src/vhdl/address_decoder.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/slave_attachment.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/axi_lite_ipif_v2_0/hdl/src/vhdl/slave_attachment.vhd'.
+Import path for source /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/imports/vhdl/axi_lite_ipif.vhd: Could not find the file '/proj/xbuilds/2013.1_0314_1/installs/lin64/Vivado/2013.1/data/ip/xilinx/axi_lite_ipif_v2_0/hdl/src/vhdl/axi_lite_ipif.vhd'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.2_daily_latest/installs/lin64/Vivado/2013.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 3907.617 ; gain = 108.809
+set_param ips.gui.advanced
+ERROR: [Common 17-163] Missing value for option 'value', please type 'set_param -help' for usage info.
+set_param ips.gui.advanced true
+1
+ipx::open_ipxact_file {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::unload_core {component xilinx.com:user:fmc_imageon_vita_receiver:1.0}
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 21 14:19:42 2013...

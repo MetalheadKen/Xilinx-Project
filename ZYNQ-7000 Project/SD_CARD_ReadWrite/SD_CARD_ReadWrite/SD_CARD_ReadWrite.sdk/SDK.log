@@ -1,0 +1,227 @@
+16:02:05 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:02:08 INFO  : XSDB server has started successfully.
+16:02:10 INFO  : Processing command line option -hwspec D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper.hdf.
+16:06:40 INFO  : Refreshed build settings on project sd_card_control
+16:07:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:07:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+16:07:52 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+16:08:16 INFO  : ps7_init is completed.
+16:08:17 INFO  : ps7_post_config is completed.
+16:08:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:10:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:12:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:24:56 INFO  : ps7_init is completed.
+16:24:56 INFO  : ps7_post_config is completed.
+16:24:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:25:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+16:26:11 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+16:26:46 INFO  : ps7_init is completed.
+16:26:46 INFO  : ps7_post_config is completed.
+16:26:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:28:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:34:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:34:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+16:34:35 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+16:35:38 INFO  : ps7_init is completed.
+16:35:38 INFO  : ps7_post_config is completed.
+16:35:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:27:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:27:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:27:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+17:27:34 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+17:29:18 INFO  : ps7_init is completed.
+17:29:18 INFO  : ps7_post_config is completed.
+17:29:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:11:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+18:11:13 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+18:11:31 INFO  : ps7_init is completed.
+18:11:31 INFO  : ps7_post_config is completed.
+18:11:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:11:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:11:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:18:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:18:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:18:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+18:19:02 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+18:19:18 INFO  : ps7_init is completed.
+18:19:18 INFO  : ps7_post_config is completed.
+18:19:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:25:50 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:25:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:26:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:26:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:26:53 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:26:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:28:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:28:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:28:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:28:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:30:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:30:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+18:30:25 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+18:30:35 INFO  : ps7_init is completed.
+18:30:35 INFO  : ps7_post_config is completed.
+18:30:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:30:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:31:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:31:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:31:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:31:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:31:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:34:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:34:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+18:34:09 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+18:36:10 INFO  : Refreshed build settings on project sd_card_control
+18:37:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:38:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+18:38:03 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+18:38:15 INFO  : ps7_init is completed.
+18:38:15 INFO  : ps7_post_config is completed.
+18:38:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:39:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:41:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:42:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:42:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+18:42:22 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+18:42:28 INFO  : ps7_init is completed.
+18:42:28 INFO  : ps7_post_config is completed.
+18:42:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:42:50 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:42:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:43:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:44:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:44:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:45:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:45:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:45:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:45:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:45:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:46:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:46:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:46:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:46:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:46:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:46:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+18:46:47 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+18:46:57 INFO  : ps7_init is completed.
+18:46:57 INFO  : ps7_post_config is completed.
+18:46:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:47:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:47:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:49:22 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:49:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:49:46 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:49:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:50:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:50:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:57:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:58:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:58:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:58:35 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:58:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:00:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:00:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:00:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:01:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:01:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:26:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:28:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:29:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:30:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:31:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:31:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:33:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:34:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:35:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:37:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:37:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:37:16 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+19:37:25 INFO  : ps7_init is completed.
+19:37:25 INFO  : ps7_post_config is completed.
+19:37:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:38:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:39:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:39:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:39:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:40:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:40:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:41:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:41:41 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:41:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:42:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:42:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:43:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:44:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:45:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:45:34 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:45:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:50:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:51:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:54:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:54:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:56:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:58:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:00:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:02:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:03:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:04:49 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:04:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:07:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:09:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:09:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:10:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:11:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:13:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:18:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:19:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:36:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:39:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:41:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:41:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:46:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:47:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:48:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:49:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:52:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:02:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:05:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:12:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:14:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:15:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:17:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:21:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:25:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:25:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:25:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:26:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:26:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+21:26:32 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_Project/SD_CARD_ReadWrite/SD_CARD_ReadWrite/SD_CARD_ReadWrite.sdk/design_sdcard_wrapper_hw_platform_0/design_sdcard_wrapper.bit"
+21:26:38 INFO  : ps7_init is completed.
+21:26:38 INFO  : ps7_post_config is completed.
+21:26:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:28:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:30:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:33:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:36:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:38:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:40:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:41:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:41:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:43:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:44:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:46:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:46:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:47:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:47:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:48:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:49:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:50:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:50:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:51:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:51:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:52:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:53:01 INFO  : Processor reset is completed for ps7_cortexa9_0

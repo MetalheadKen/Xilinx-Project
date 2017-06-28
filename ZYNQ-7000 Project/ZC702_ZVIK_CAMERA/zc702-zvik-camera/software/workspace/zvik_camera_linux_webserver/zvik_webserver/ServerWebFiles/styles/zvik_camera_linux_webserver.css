@@ -1,0 +1,481 @@
+/*
+//----------------------------------------------------------------
+//      _____
+//     /     \
+//    /____   \____
+//   / \===\   \==/
+//  /___\===\___\/  AVNET
+//       \======/
+//        \====/
+//---------------------------------------------------------------
+//
+// This design is the property of Avnet.  Publication of this
+// design is not authorized without written consent from Avnet.
+//
+// Please direct any questions to:  technical.support@avnet.com
+//
+// Disclaimer:
+//    Avnet, Inc. makes no warranty for the use of this code or design.
+//    This code is provided  "As Is". Avnet, Inc assumes no responsibility for
+//    any errors, which may appear in this code, nor does it make a commitment
+//    to update the information contained herein. Avnet, Inc specifically
+//    disclaims any implied warranties of fitness for a particular purpose.
+//                     Copyright(c) 2012 Avnet, Inc.
+//                             All rights reserved.
+//
+//----------------------------------------------------------------
+//
+// Create Date:         Apr 09, 2012
+// Design Name:         ZVIK Camera
+// Module Name:         zvik_camera_linux_webserver.css
+// Project Name:        ZVIK Camera
+//
+// Tool versions:       Vivado 2013.2
+//
+// Description:         Style Sheet for 
+//                      Web Page for ZVIK Camera control
+//
+// Dependencies:
+//
+// Revision:            Apr 09, 2012: 1.01 Initial version
+//                      Jul 06, 2012: 1.02 Candidate for release
+//                      Aug 14, 2012: 1.03 Nomenclature change from "EPP" to "AP SoC"
+//                      Aug 15, 2012: 1.04 Add sliders target illumination
+//                      Sep 17, 2012: 1.05 Nomenclature change from "cold" to "cool"
+//                                         Remove sliders for multiplexers
+//                                         Add slider for gamma equalization strength
+//                      Aug 16, 2013: 1.06 Updated for new Image Enhancement core
+//
+//----------------------------------------------------------------
+*/
+    #forms_column1 {
+       float: left;
+       width: 360;
+    }
+    #forms_column2 {
+       float: left;
+       width: 360;
+    }
+    #forms_column3 {
+       float: left;
+       width: 360;
+    }
+
+    #target_level_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #target_level_id {
+        float: left;
+    }
+    #sl0base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl0slider {
+        float: left;
+    }
+    #vaec_level_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #vaec_level_id {
+        float: left;
+    }
+    #sl1base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl1slider {
+        float: left;
+    }
+
+    #vita_exposure_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #vita_exposure_id {
+        float: left;
+    }
+    #sl2base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl2slider {
+        float: left;
+    }
+    #vita_again_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #vita_again_id {
+        float: left;
+    }
+    #sl3base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl3slider {
+        float: left;
+    }
+    #vita_dgain_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #vita_dgain_id {
+        float: left;
+    }
+    #sl4base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl4slider {
+        float: left;
+    }
+
+    #demo_interval_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #demo_interval_id {
+        float: left;
+    }
+    #sl5base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl5slider {
+        float: left;
+    }
+
+    #demo_status_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #demo_status_id {
+        float: left;
+    }
+
+
+    #dpc_age_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #dpc_age_id {
+        float: left;
+    }
+    #sl6base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl6slider {
+        float: left;
+    }
+
+    #dpc_spatial_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #dpc_spatial_id {
+        float: left;
+    }
+    #sl7base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl7slider {
+        float: left;
+    }
+
+    #dpc_temporal_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #dpc_temporal_id {
+        float: left;
+    }
+    #sl8base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl8slider {
+        float: left;
+    }
+
+    #cfa_bayer_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #cfa_bayer_id {
+        float: left;
+    }
+
+    #ccm_select_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #ccm_select_id {
+        float: left;
+    }
+
+    #ccm_contrast_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #ccm_contrast_id {
+        float: left;
+    }
+    #sl9base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl9slider {
+        float: left;
+    }
+
+    #ccm_brightness_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #ccm_brightness_id {
+        float: left;
+    }
+    #sl10base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl10slider {
+        float: left;
+    }
+
+    #ccm_saturation_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #ccm_saturation_id {
+        float: left;
+    }
+    #sl11base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl11slider {
+        float: left;
+    }
+
+    #noise_strength_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #noise_strength_id {
+        float: left;
+    }
+    #sl12base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl12slider {
+        float: left;
+    }
+
+    #enhance_strength_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #enhance_strength_id {
+        float: left;
+    }
+    #sl13base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl13slider {
+        float: left;
+    }
+
+    #halo_suppress_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #halo_suppress_id {
+        float: left;
+    }
+    #sl14base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl14slider {
+        float: left;
+    }
+
+    #geq_strength_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #geq_strength_id {
+        float: left;
+    }
+    #sl15base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl15slider {
+        float: left;
+    }
+
+    #gamma_table_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #gamma_table_id {
+        float: left;
+    }
+
+    #awb_label {
+        float: left;
+        clear: left;
+        width: 150;
+    }
+    #awb_id {
+        float: left;
+    }
+
+    #agc_label {
+        float: left;
+        clear: left;
+        width: 150;
+    }
+    #agc_id {
+        float: left;
+    }
+
+    #aec_label {
+        float: left;
+        clear: left;
+        width: 150;
+    }
+    #aec_id {
+        float: left;
+    }
+
+    #geq_label {
+        float: left;
+        clear: left;
+        width: 150;
+    }
+    #geq_id {
+        float: left;
+    }
+
+    #imstats_interval_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #imstats_interval_id {
+        float: left;
+    }
+    #sl16base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl16slider {
+        float: left;
+    }
+    #imstats_histscale_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #imstats_histscale_id {
+        float: left;
+    }
+    #sl17base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl17slider {
+        float: left;
+    }
+    #imstats_underexp_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #imstats_underexp_id {
+        float: left;
+    }
+    #sl18base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl18slider {
+        float: left;
+    }
+    #imstats_overexp_label {
+        float: left;
+        clear: left;
+        width: 100;
+    }
+    #imstats_overexp_id {
+        float: left;
+    }
+    #sl19base {
+        margin-top: 5;
+        margin-right: 5;
+        float: left;
+    }
+    #sl19slider {
+        float: left;
+    }
+
+
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    td {
+        text-align: center;
+        border: 1px solid black;
+        height: 20px;
+        width: 20px;
+    }

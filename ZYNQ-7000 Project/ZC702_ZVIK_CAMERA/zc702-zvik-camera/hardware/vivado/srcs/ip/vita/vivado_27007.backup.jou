@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 246566 by xbuild on Wed Mar 20 18:45:37 MDT 2013
+# Start of session at: Thu Mar 21 12:11:11 2013
+# Process ID: 21631
+# Log file: /group/mvico/users/elzinga/designs/vita/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.filter
+close_project
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+ipx::open_core -upgrade true {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property taxonomy {{/Video_&_Image_Processing}} [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::archive_core {/group/mvico/users/elzinga/designs/vita/project_1/xilinx.com_user_fmc_imageon_vita_receiver_1.0.zip} [ipx::current_core]
+close_project
+open_project /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.filter
+set_property ip_repo_paths  {/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/zc702_hdmi_out /group/mvico/users/elzinga/designs/vita/project_1} [current_fileset]
+update_ip_catalog
+open_bd_design {/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fmc_imageon_vita_receiver:1.0 fmc_imageon_vita_receiver_1
+endgroup
+set_property location {3 981 1027} [get_bd_cells /fmc_imageon_vita_receiver_1]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.NUM_MI {16}] [get_bd_cells /axi_interconnect_1]
+endgroup
+set_property location {1 580 683} [get_bd_cells /fmc_imageon_vita_receiver_1]
+connect_bd_intf_net [get_bd_intf_pins /fmc_imageon_vita_receiver_1/S_AXI] [get_bd_intf_pins /axi_interconnect_1/M15_AXI]
+connect_bd_net -net [get_bd_net /clk_50MHz] [get_bd_pins /axi_interconnect_1/M15_ACLK] [get_bd_pins /processing_system7_1/FCLK_CLK0]
+connect_bd_net -net [get_bd_net /processing_system7_1_fclk_reset0_n] [get_bd_pins /axi_interconnect_1/M15_ARESETN] [get_bd_pins /processing_system7_1/FCLK_RESET0_N]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {200} CONFIG.PCW_EN_CLK1_PORT {1}] [get_bd_cells /processing_system7_1]
+endgroup
+connect_bd_net [get_bd_pins /processing_system7_1/FCLK_CLK1] [get_bd_pins /fmc_imageon_vita_receiver_1/clk200]
+connect_bd_net -net [get_bd_net /vid_out_clk] [get_bd_pins /fmc_imageon_vita_receiver_1/clk4x] [get_bd_pins /clk_wiz_1/clk_out1]
+connect_bd_net [get_bd_pins /clk_wiz_1/clk_out2] [get_bd_pins /fmc_imageon_vita_receiver_1/clk]
+set_property location {17 5297 930} [get_bd_cells /iic_main]
+regenerate_bd_layout
+connect_bd_net -net [get_bd_net /xlconstant_2_const] [get_bd_pins /fmc_imageon_vita_receiver_1/reset] [get_bd_pins /xlconstant_2/const]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_2
+endgroup
+set_property location {16 4392 380} [get_bd_cells /xlslice_2]
+set_property -dict [list CONFIG.DIN_WIDTH {3}] [get_bd_cells /xlslice_2]
+connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/oe] [get_bd_pins /xlslice_2/Dout]
+connect_bd_net -net [get_bd_net /axi_iic_2_gpo] [get_bd_pins /xlslice_2/Din] [get_bd_pins /iic_main/gpo]
+connect_bd_net -net [get_bd_net /xlconstant_2_const] [get_bd_pins /fmc_imageon_vita_receiver_1/trigger1] [get_bd_pins /xlconstant_2/const]
+connect_bd_net -net [get_bd_net /clk_50MHz] [get_bd_pins /fmc_imageon_vita_receiver_1/S_AXI_ACLK] [get_bd_pins /processing_system7_1/FCLK_CLK0]
+connect_bd_net -net [get_bd_net /processing_system7_1_fclk_reset0_n] [get_bd_pins /fmc_imageon_vita_receiver_1/S_AXI_ARESETN] [get_bd_pins /processing_system7_1/FCLK_RESET0_N]
+startgroup
+create_bd_port -dir I io_vita_spi_miso
+connect_bd_net [get_bd_ports /io_vita_spi_miso] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_spi_miso]
+endgroup
+startgroup
+create_bd_port -dir I -from 1 -to 0 io_vita_monitor
+connect_bd_net [get_bd_ports /io_vita_monitor] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_monitor]
+endgroup
+startgroup
+create_bd_port -dir O io_vita_spi_sclk
+connect_bd_net [get_bd_ports /io_vita_spi_sclk] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_spi_sclk]
+endgroup
+startgroup
+create_bd_port -dir O io_vita_spi_ssel_n
+connect_bd_net [get_bd_ports /io_vita_spi_ssel_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_spi_ssel_n]
+endgroup
+startgroup
+create_bd_port -dir O io_vita_spi_mosi
+connect_bd_net [get_bd_ports /io_vita_spi_mosi] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_spi_mosi]
+endgroup
+startgroup
+create_bd_port -dir O io_vita_clk_pll
+connect_bd_net [get_bd_ports /io_vita_clk_pll] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_clk_pll]
+endgroup
+startgroup
+create_bd_port -dir O io_vita_reset_n
+connect_bd_net [get_bd_ports /io_vita_reset_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_reset_n]
+endgroup
+startgroup
+create_bd_port -dir O -from 2 -to 0 io_vita_trigger
+connect_bd_net [get_bd_ports /io_vita_trigger] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_trigger]
+endgroup
+startgroup
+create_bd_port -dir I io_vita_clk_out_p
+connect_bd_net [get_bd_ports /io_vita_clk_out_p] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_clk_out_p]
+endgroup
+startgroup
+create_bd_port -dir I io_vita_clk_out_n
+connect_bd_net [get_bd_ports /io_vita_clk_out_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_clk_out_n]
+endgroup
+startgroup
+create_bd_port -dir I io_vita_sync_p
+connect_bd_net [get_bd_ports /io_vita_sync_p] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_sync_p]
+endgroup
+startgroup
+create_bd_port -dir I io_vita_sync_n
+connect_bd_net [get_bd_ports /io_vita_sync_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_sync_n]
+endgroup
+startgroup
+create_bd_port -dir I -from 7 -to 0 io_vita_data_p
+connect_bd_net [get_bd_ports /io_vita_data_p] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_data_p]
+endgroup
+startgroup
+create_bd_port -dir I -from 7 -to 0 io_vita_data_n
+connect_bd_net [get_bd_ports /io_vita_data_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_data_n]
+endgroup
+save_bd_design
+regenerate_bd_layout
+connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_vsync_o] [get_bd_pins /v_vid_in_axi4s_1/vid_vsync]
+connect_bd_net [get_bd_pins /v_vid_in_axi4s_1/vid_data] [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_video_data_o]
+connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_hsync_o] [get_bd_pins /v_vid_in_axi4s_1/vid_hsync]
+connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_vblank_o] [get_bd_pins /v_vid_in_axi4s_1/vid_vblank]
+connect_bd_net [get_bd_pins /v_vid_in_axi4s_1/vid_hblank] [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_hblank_o]
+connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_active_video_o] [get_bd_pins /v_vid_in_axi4s_1/vid_active_video]
+regenerate_bd_layout
+save_bd_design
+connect_bd_net -net [get_bd_net /xlconstant_1_const] [get_bd_pins /v_vid_in_axi4s_1/axis_enable] [get_bd_pins /xlconstant_1/const]
+connect_bd_net -net [get_bd_net /xlconstant_1_const] [get_bd_pins /v_vid_in_axi4s_1/vid_io_in_ce] [get_bd_pins /xlconstant_1/const]
+connect_bd_net -net [get_bd_net /xlconstant_2_const] [get_bd_pins /v_vid_in_axi4s_1/rst] [get_bd_pins /xlconstant_2/const]
+connect_bd_net -net [get_bd_net /xlconstant_2_const] [get_bd_pins /v_vid_in_axi4s_1/vid_field_id] [get_bd_pins /xlconstant_2/const]
+save_bd_design
+set_property name fmc_vita_clk_pll [ get_bd_ports /io_vita_clk_pll]
+set_property name fmc_vita_reset_n [ get_bd_ports /io_vita_reset_n]
+set_property name fmc_vita_spi_sclk [ get_bd_ports /io_vita_spi_sclk]
+set_property name fmc_vita_spi_ssel_n [ get_bd_ports /io_vita_spi_ssel_n]
+set_property name fmc_vita_spi_mosi [ get_bd_ports /io_vita_spi_mosi]
+set_property name fmc_vita_trigger [ get_bd_ports /io_vita_trigger]
+set_property name fmc_vita_spi_miso [ get_bd_ports /io_vita_spi_miso]
+set_property name fmc_vita_monitor [ get_bd_ports /io_vita_monitor]
+set_property name fmc_vita_clk_out_p [ get_bd_ports /io_vita_clk_out_p]
+set_property name fmc_vita_clk_out_n [ get_bd_ports /io_vita_clk_out_n]
+set_property name fmc_vita_sync_p [ get_bd_ports /io_vita_sync_p]
+set_property name fmc_vita_sync_n [ get_bd_ports /io_vita_sync_n]
+set_property name fmc_vita_data_p [ get_bd_ports /io_vita_data_p]
+set_property name fmc_vita_data_n [ get_bd_ports /io_vita_data_n]
+save_bd_design
+launch_runs synth_1
+regenerate_bd_layout
+save_bd_design
+close_project
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+ipx::open_core -upgrade true {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}

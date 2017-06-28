@@ -1,0 +1,6 @@
+21:53:00 **** Incremental Build of configuration Debug for project sd_card_control ****
+make all 
+make: Nothing to be done for `all'.
+
+21:53:00 Build Finished (took 123ms)
+

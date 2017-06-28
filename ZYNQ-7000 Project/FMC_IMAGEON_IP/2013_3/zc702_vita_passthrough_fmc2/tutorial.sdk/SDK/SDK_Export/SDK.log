@@ -1,0 +1,41 @@
+15:07:35.925 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc2/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+15:10:05.100 INFO  - Saving repository preferences. 
+15:10:05.100 INFO  - Reading in cores from local repositories: 
+		 C:\FMC_IMAGEON\2013_3\avnet_fmc_imageon_cores 
+15:10:05.115 INFO  - Updating libgen.options on all BSP projects. 
+15:10:05.115 INFO  - Cleaning BSP projects in the workspace. 
+15:23:40.646 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc2/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+15:24:17.852 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:24:17.962 INFO  - PS initialization will be done as it is not done before. 
+15:24:17.962 INFO  - Running PS initialization.... 
+15:24:18.149 INFO  - ps7_init is completed. 
+15:24:18.258 INFO  - ps7_post_config is completed. 
+15:24:18.367 INFO  - PS Initialization is complete. 
+15:24:50.723 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+15:24:52.518 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:28:08.383 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:19:21.147 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc2/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+15:19:22.177 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc2/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+15:19:22.442 INFO  - Copied contents of C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc2/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml into \hw_platform_0\system.xml. 
+15:19:22.458 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc2\tutorial.sdk\SDK\SDK_Export\hw\tutorial_wrapper.bit into \hw_platform_0\tutorial_wrapper.bit. 
+15:19:22.458 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc2\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+15:19:22.458 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc2\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+15:19:22.458 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc2\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+15:19:22.458 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc2\tutorial.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+15:19:22.458 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc2\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+15:19:22.567 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:19:23.784 INFO  - Restoring local repository preferences: 
+		 C:\FMC_IMAGEON\2013_3\avnet_fmc_imageon_cores 
+15:19:24.595 INFO  - Updating hardware inferred compiler options for vita_passthrough_app. 
+15:19:24.595 INFO  - Clearing existing target manager status. 
+15:19:41.574 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc2/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+15:20:08.531 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:20:36.487 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+15:20:36.502 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+15:20:36.502 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 

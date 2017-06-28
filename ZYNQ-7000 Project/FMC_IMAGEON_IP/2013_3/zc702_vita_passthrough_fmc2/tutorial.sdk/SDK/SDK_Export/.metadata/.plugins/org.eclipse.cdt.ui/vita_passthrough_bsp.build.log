@@ -1,0 +1,6 @@
+15:20:27 **** Clean-only build of project vita_passthrough_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+
+15:20:28 Build Finished (took 655ms)
+

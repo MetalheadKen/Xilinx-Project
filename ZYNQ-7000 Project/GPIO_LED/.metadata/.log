@@ -1,0 +1,41 @@
+!SESSION 2016-10-20 17:41:58.743 -----------------------------------------------
+eclipse.buildId=2016.3
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\Xilinx_Project\GPIO_LED
+
+!ENTRY org.eclipse.ui 2 0 2016-10-20 17:42:00.504
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-10-20 17:42:00.504
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2016-10-20 17:42:01.236
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-10-20 17:42:01.236
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-10-20 17:42:08.906
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 17:42:10.205
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 17:42:10.205
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 17:42:10.208
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 17:42:10.209
+!MESSAGE XSCT Command: [setws D:/Xilinx_Project/GPIO_LED], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 17:42:10.570
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 17:42:10.572
+!MESSAGE XSCT command with result: [setws D:/Xilinx_Project/GPIO_LED], Result: [null, ]. Thread: Thread-15

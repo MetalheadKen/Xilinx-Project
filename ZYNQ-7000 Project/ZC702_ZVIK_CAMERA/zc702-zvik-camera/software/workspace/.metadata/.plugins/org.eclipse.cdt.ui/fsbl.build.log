@@ -1,0 +1,7 @@
+21:41:56 **** Clean-only build of configuration Debug for project fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/ff.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/mmc.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  fsbl.elf.size  ./src/fsbl_handoff.d  fsbl.elf
+' '
+
+21:41:57 Build Finished (took 389ms)
+

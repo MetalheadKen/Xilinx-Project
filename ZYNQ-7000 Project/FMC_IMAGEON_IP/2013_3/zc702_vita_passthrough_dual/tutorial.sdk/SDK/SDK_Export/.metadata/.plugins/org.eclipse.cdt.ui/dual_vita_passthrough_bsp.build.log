@@ -1,0 +1,6 @@
+16:57:25 **** Clean-only build of project dual_vita_passthrough_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+
+16:57:25 Build Finished (took 468ms)
+

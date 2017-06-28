@@ -1,0 +1,6 @@
+17:25:02 **** Clean-only build of project hdmi_passthrough_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+
+17:25:02 Build Finished (took 435ms)
+

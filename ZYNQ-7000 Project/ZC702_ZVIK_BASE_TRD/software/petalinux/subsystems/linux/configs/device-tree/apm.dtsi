@@ -1,0 +1,33 @@
+/*
+ *  Copyright (C) 2011 - 2014 Xilinx
+ *
+ * This software is licensed under the terms of the GNU General Public
+ * License version 2, as published by the Free Software Foundation, and
+ * may be copied, distributed, and modified under those terms.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+&amba {
+	apm_1: apm@400f0000 {
+		compatible = "xlnx,axi-perf-monitor";
+		reg = <0x400f0000 0x10000>;
+		interrupt-parent = <&intc>;
+		interrupts = <0 34 4>;
+		xlnx,enable-event-count = <1>;
+		xlnx,enable-event-log = <0>;
+		xlnx,enable-isr = <1>;
+		xlnx,enable-profile = <1>;
+		xlnx,enable-trace = <0>;
+		xlnx,global-count-width = <32>;
+		xlnx,have-sampled-metric-cnt = <1>;
+		xlnx,num-monitor-slots = <2>;
+		xlnx,num-of-counters = <4>;
+		xlnx,metric-count-scale = <16>;
+		xlnx,metric-count-width = <32>;
+		xlnx,metrics-sample-count-width = <32>;
+	};
+};

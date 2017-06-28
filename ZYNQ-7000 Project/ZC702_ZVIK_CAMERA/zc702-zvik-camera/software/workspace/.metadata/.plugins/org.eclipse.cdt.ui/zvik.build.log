@@ -1,0 +1,1186 @@
+14:40:18 **** Build of configuration Debug for project zvik ****
+make all 
+'Building file: ../peripherals/ccm.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/ccm.d" -MT"peripherals/ccm.d" -o "peripherals/ccm.o" "../peripherals/ccm.c"
+'Finished building: ../peripherals/ccm.c'
+' '
+'Building file: ../peripherals/cfa.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/cfa.d" -MT"peripherals/cfa.d" -o "peripherals/cfa.o" "../peripherals/cfa.c"
+'Finished building: ../peripherals/cfa.c'
+' '
+'Building file: ../peripherals/cresample.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/cresample.d" -MT"peripherals/cresample.d" -o "peripherals/cresample.o" "../peripherals/cresample.c"
+'Finished building: ../peripherals/cresample.c'
+' '
+'Building file: ../peripherals/dpc.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/dpc.d" -MT"peripherals/dpc.d" -o "peripherals/dpc.o" "../peripherals/dpc.c"
+'Finished building: ../peripherals/dpc.c'
+' '
+'Building file: ../peripherals/enhance.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/enhance.d" -MT"peripherals/enhance.d" -o "peripherals/enhance.o" "../peripherals/enhance.c"
+'Finished building: ../peripherals/enhance.c'
+' '
+'Building file: ../peripherals/fmc_iic_axi.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/fmc_iic_axi.d" -MT"peripherals/fmc_iic_axi.d" -o "peripherals/fmc_iic_axi.o" "../peripherals/fmc_iic_axi.c"
+../peripherals/fmc_iic_axi.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_iic_axi.c:61:0:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+../peripherals/fmc_iic_axi.c: In function 'fmc_iic_axi_IicRead':
+../peripherals/fmc_iic_axi.c:299:11: warning: unused variable 'TestStatus' [-Wunused-variable]
+../peripherals/fmc_iic_axi.c: In function 'fmc_iic_axi_IicERead':
+../peripherals/fmc_iic_axi.c:432:11: warning: unused variable 'TestStatus' [-Wunused-variable]
+'Finished building: ../peripherals/fmc_iic_axi.c'
+' '
+'Building file: ../peripherals/fmc_iic_sg.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/fmc_iic_sg.d" -MT"peripherals/fmc_iic_sg.d" -o "peripherals/fmc_iic_sg.o" "../peripherals/fmc_iic_sg.c"
+../peripherals/fmc_iic_sg.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_iic_sg.c:61:0:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+'Finished building: ../peripherals/fmc_iic_sg.c'
+' '
+'Building file: ../peripherals/fmc_imageon.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/fmc_imageon.d" -MT"peripherals/fmc_imageon.d" -o "peripherals/fmc_imageon.o" "../peripherals/fmc_imageon.c"
+../peripherals/fmc_imageon.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_imageon.c:75:0:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_imageon.c:76:0:
+../peripherals/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_init':
+../peripherals/fmc_imageon.c:98:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_iic_mux':
+../peripherals/fmc_imageon.c:207:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_iic_config2':
+../peripherals/fmc_imageon.c:273:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_iic_config3':
+../peripherals/fmc_imageon.c:298:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: At top level:
+../peripherals/fmc_imageon.c:316:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:316:4: warning: (near initialization for 'iic_cdce913[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:401:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:401:4: warning: (near initialization for 'iic_cdce913_y1_config_25_175_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:428:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:428:4: warning: (near initialization for 'iic_cdce913_y1_config_27_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:456:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:456:4: warning: (near initialization for 'iic_cdce913_y1_config_40_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:483:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:483:4: warning: (near initialization for 'iic_cdce913_y1_config_65_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:510:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:510:4: warning: (near initialization for 'iic_cdce913_y1_config_74_250_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:537:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:537:4: warning: (near initialization for 'iic_cdce913_y1_config_110_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:564:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:564:4: warning: (near initialization for 'iic_cdce913_y1_config_148_500_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:591:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:591:4: warning: (near initialization for 'iic_cdce913_y1_config_162_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_vclk_init':
+../peripherals/fmc_imageon.c:623:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c:622:11: warning: unused variable 'xdata' [-Wunused-variable]
+../peripherals/fmc_imageon.c:621:8: warning: unused variable 'dev' [-Wunused-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_vclk_config':
+../peripherals/fmc_imageon.c:658:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c:657:8: warning: unused variable 'dev' [-Wunused-variable]
+../peripherals/fmc_imageon.c: At top level:
+../peripherals/fmc_imageon.c:731:7: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:731:7: warning: (near initialization for 'iic_hdmi_in_reset[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:737:7: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:737:7: warning: (near initialization for 'iic_hdmi_in_mapping[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:750:7: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:750:7: warning: (near initialization for 'iic_hdmi_in_edid_pre[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:755:7: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:755:7: warning: (near initialization for 'iic_hdmi_in_edid_post[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:765:7: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:765:7: warning: (near initialization for 'iic_hdmi_in_config[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:820:7: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:820:7: warning: (near initialization for 'iic_hdmi_in_spdif_config[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmii_init2':
+../peripherals/fmc_imageon.c:837:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon.c:843:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmii_init':
+../peripherals/fmc_imageon.c:856:12: warning: unused variable 'reg' [-Wunused-variable]
+../peripherals/fmc_imageon.c:855:11: warning: unused variable 'num_bytes' [-Wunused-variable]
+../peripherals/fmc_imageon.c:854:11: warning: unused variable 'i2c_data' [-Wunused-variable]
+../peripherals/fmc_imageon.c:853:11: warning: unused variable 'i2c_address' [-Wunused-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmii_set_hpd':
+../peripherals/fmc_imageon.c:931:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmii_set_rst':
+../peripherals/fmc_imageon.c:964:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmii_get_int':
+../peripherals/fmc_imageon.c:997:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmii_get_lock':
+../peripherals/fmc_imageon.c:1020:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmii_get_timing':
+../peripherals/fmc_imageon.c:1062:12: warning: variable 'Field1TotalHeight' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c:1061:12: warning: variable 'Field1BackPorch' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c:1060:12: warning: variable 'Field1SyncWidth' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c:1059:12: warning: variable 'Field1FrontPorch' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c:1058:12: warning: variable 'Field1Height' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c:1057:12: warning: variable 'Field0TotalHeight' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c:1052:12: warning: variable 'TotalLineWidth' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c:1041:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: At top level:
+../peripherals/fmc_imageon.c:1137:7: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:1137:7: warning: (near initialization for 'iic_hdmi_out_config[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c:1224:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageon.c:1224:4: warning: (near initialization for 'iic_hdmi_out_embedded_sync_config[0]') [-Wmissing-braces]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmio_set_pd':
+../peripherals/fmc_imageon.c:1373:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmio_get_hpd':
+../peripherals/fmc_imageon.c:1406:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageon.c: In function 'fmc_imageon_hdmii_init2':
+../peripherals/fmc_imageon.c:850:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../peripherals/fmc_imageon.c'
+' '
+'Building file: ../peripherals/fmc_imageon_vita_receiver.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/fmc_imageon_vita_receiver.d" -MT"peripherals/fmc_imageon_vita_receiver.d" -o "peripherals/fmc_imageon_vita_receiver.o" "../peripherals/fmc_imageon_vita_receiver.c"
+../peripherals/fmc_imageon_vita_receiver.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_imageon_vita_receiver.c:83:0:
+../peripherals/fmc_imageon_vita_receiver.h:3:1: warning: multi-line comment [-Wcomment]
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_spi_write':
+../peripherals/fmc_imageon_vita_receiver.c:604:12: warning: unused variable 'uResponse' [-Wunused-variable]
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_spi_nop':
+../peripherals/fmc_imageon_vita_receiver.c:644:12: warning: unused variable 'uResponse' [-Wunused-variable]
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_spi_write_sequence':
+../peripherals/fmc_imageon_vita_receiver.c:712:7: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../peripherals/fmc_imageon_vita_receiver.c:687:8: warning: unused variable 'j' [-Wunused-variable]
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_spi_display_sequence':
+../peripherals/fmc_imageon_vita_receiver.c:734:8: warning: unused variable 'j' [-Wunused-variable]
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_sensor_initialize':
+../peripherals/fmc_imageon_vita_receiver.c:840:16: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:840:16: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:840:16: warning: format '%d' expects argument of type 'int', but argument 4 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:840:16: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:840:16: warning: format '%d' expects argument of type 'int', but argument 6 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:842:16: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:842:16: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:842:16: warning: format '%d' expects argument of type 'int', but argument 4 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:842:16: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:842:16: warning: format '%d' expects argument of type 'int', but argument 6 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:862:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:875:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:898:7: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../peripherals/fmc_imageon_vita_receiver.c:959:10: warning: implicit declaration of function 'millisleep' [-Wimplicit-function-declaration]
+../peripherals/fmc_imageon_vita_receiver.c:1000:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1003:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1007:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1012:10: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1026:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1031:10: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1044:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1049:10: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1058:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1099:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1102:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1106:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:792:7: warning: unused variable 'i' [-Wunused-variable]
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_get_status':
+../peripherals/fmc_imageon_vita_receiver.c:1182:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1183:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1184:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1185:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1186:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1187:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1188:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1189:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1190:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1192:7: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1198:7: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_sensor_1080P60':
+../peripherals/fmc_imageon_vita_receiver.c:1342:7: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1348:7: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1350:7: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1354:7: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1357:7: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1337:15: warning: unused variable 'trigFramesPerSec' [-Wunused-variable]
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_set_analog_gain':
+../peripherals/fmc_imageon_vita_receiver.c:1430:12: warning: assignment from incompatible pointer type [enabled by default]
+../peripherals/fmc_imageon_vita_receiver.c:1436:7: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_display_sequence' from incompatible pointer type [enabled by default]
+../peripherals/fmc_imageon_vita_receiver.c:730:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+../peripherals/fmc_imageon_vita_receiver.c:1438:4: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_write_sequence' from incompatible pointer type [enabled by default]
+../peripherals/fmc_imageon_vita_receiver.c:683:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_set_digital_gain':
+../peripherals/fmc_imageon_vita_receiver.c:1467:12: warning: assignment from incompatible pointer type [enabled by default]
+../peripherals/fmc_imageon_vita_receiver.c:1473:4: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_display_sequence' from incompatible pointer type [enabled by default]
+../peripherals/fmc_imageon_vita_receiver.c:730:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+../peripherals/fmc_imageon_vita_receiver.c:1475:4: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_write_sequence' from incompatible pointer type [enabled by default]
+../peripherals/fmc_imageon_vita_receiver.c:683:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+../peripherals/fmc_imageon_vita_receiver.c: In function 'fmc_imageon_vita_receiver_set_exposure_time':
+../peripherals/fmc_imageon_vita_receiver.c:1503:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1503:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1503:4: warning: unknown conversion type character ',' in format [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1503:4: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1506:4: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1512:4: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1513:4: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1517:4: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+../peripherals/fmc_imageon_vita_receiver.c:1520:4: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'Xuint32' [-Wformat]
+'Finished building: ../peripherals/fmc_imageon_vita_receiver.c'
+' '
+'Building file: ../peripherals/fmc_imageov.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/fmc_imageov.d" -MT"peripherals/fmc_imageov.d" -o "peripherals/fmc_imageov.o" "../peripherals/fmc_imageov.c"
+../peripherals/fmc_imageov.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_imageov.c:56:0:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_imageov.c:57:0:
+../peripherals/fmc_imageov.h:3:1: warning: multi-line comment [-Wcomment]
+../peripherals/fmc_imageov.c: In function 'fmc_imageov_iic_mux':
+../peripherals/fmc_imageov.c:143:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageov.c: In function 'fmc_imageov_iic_config':
+../peripherals/fmc_imageov.c:197:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageov.c: At top level:
+../peripherals/fmc_imageov.c:217:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:217:4: warning: (near initialization for 'iic_cdce925[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:351:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:351:4: warning: (near initialization for 'iic_cdce925_y1_config_25_175_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:378:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:378:4: warning: (near initialization for 'iic_cdce925_y1_config_27_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:406:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:406:4: warning: (near initialization for 'iic_cdce925_y1_config_40_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:433:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:433:4: warning: (near initialization for 'iic_cdce925_y1_config_65_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:460:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:460:4: warning: (near initialization for 'iic_cdce925_y1_config_74_250_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:487:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:487:4: warning: (near initialization for 'iic_cdce925_y1_config_110_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:514:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:514:4: warning: (near initialization for 'iic_cdce925_y1_config_148_500_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:541:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:541:4: warning: (near initialization for 'iic_cdce925_y1_config_162_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:568:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:568:4: warning: (near initialization for 'iic_cdce925_y2_config_25_175_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:593:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:593:4: warning: (near initialization for 'iic_cdce925_y2_config_27_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:619:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:619:4: warning: (near initialization for 'iic_cdce925_y2_config_40_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:644:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:644:4: warning: (near initialization for 'iic_cdce925_y2_config_65_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:669:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:669:4: warning: (near initialization for 'iic_cdce925_y2_config_74_250_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:694:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:694:4: warning: (near initialization for 'iic_cdce925_y2_config_110_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:719:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:719:4: warning: (near initialization for 'iic_cdce925_y2_config_148_500_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:744:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:744:4: warning: (near initialization for 'iic_cdce925_y2_config_162_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:770:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:770:4: warning: (near initialization for 'iic_cdce925_y4y5_config_24_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c:801:4: warning: missing braces around initializer [-Wmissing-braces]
+../peripherals/fmc_imageov.c:801:4: warning: (near initialization for 'iic_cdce925_y4y5_config_12_000_000[0]') [-Wmissing-braces]
+../peripherals/fmc_imageov.c: In function 'fmc_imageov_config_cdce925':
+../peripherals/fmc_imageov.c:837:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageov.c:836:11: warning: unused variable 'xdata' [-Wunused-variable]
+../peripherals/fmc_imageov.c:835:8: warning: unused variable 'dev' [-Wunused-variable]
+../peripherals/fmc_imageov.c: In function 'fmc_imageov_config_cdce925_y1_freq':
+../peripherals/fmc_imageov.c:872:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageov.c:871:8: warning: unused variable 'dev' [-Wunused-variable]
+../peripherals/fmc_imageov.c: In function 'fmc_imageov_config_cdce925_y2_freq':
+../peripherals/fmc_imageov.c:952:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageov.c:951:8: warning: unused variable 'dev' [-Wunused-variable]
+../peripherals/fmc_imageov.c: In function 'fmc_imageov_config_cdce925_y4y5_freq':
+../peripherals/fmc_imageov.c:1032:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../peripherals/fmc_imageov.c:1031:8: warning: unused variable 'dev' [-Wunused-variable]
+../peripherals/fmc_imageov.c: In function 'fmc_imageov_config_tfp410':
+../peripherals/fmc_imageov.c:1075:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+'Finished building: ../peripherals/fmc_imageov.c'
+' '
+'Building file: ../peripherals/fmc_ipmi.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/fmc_ipmi.d" -MT"peripherals/fmc_ipmi.d" -o "peripherals/fmc_ipmi.o" "../peripherals/fmc_ipmi.c"
+../peripherals/fmc_ipmi.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_ipmi.c:54:0:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_ipmi.c:55:0:
+../peripherals/fmc_ipmi.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_ipmi.c:56:0:
+../peripherals/fmc_ipmi_fru.h:3:1: warning: multi-line comment [-Wcomment]
+../peripherals/fmc_ipmi.c: In function 'fmc_ipmi_detect':
+../peripherals/fmc_ipmi.c:130:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+'Finished building: ../peripherals/fmc_ipmi.c'
+' '
+'Building file: ../peripherals/fmc_ipmi_fru.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/fmc_ipmi_fru.d" -MT"peripherals/fmc_ipmi_fru.d" -o "peripherals/fmc_ipmi_fru.o" "../peripherals/fmc_ipmi_fru.c"
+../peripherals/fmc_ipmi_fru.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_ipmi_fru.c:76:0:
+../peripherals/fmc_ipmi_fru.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_ipmi_fru.h:201:0,
+                 from ../peripherals/fmc_ipmi_fru.c:76:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+../peripherals/fmc_ipmi_fru.c: In function 'fmc_ipmi_get_board_info':
+../peripherals/fmc_ipmi_fru.c:273:20: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+../peripherals/fmc_ipmi_fru.c:276:21: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+../peripherals/fmc_ipmi_fru.c:279:23: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+../peripherals/fmc_ipmi_fru.c:282:21: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+../peripherals/fmc_ipmi_fru.c:285:20: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+../peripherals/fmc_ipmi_fru.c:152:8: warning: unused variable 'timeout' [-Wunused-variable]
+../peripherals/fmc_ipmi_fru.c:148:11: warning: unused variable 'data' [-Wunused-variable]
+../peripherals/fmc_ipmi_fru.c: In function 'get_fru_area_str':
+../peripherals/fmc_ipmi_fru.c:542:3: warning: pointer targets in passing argument 1 of 'buf2str' differ in signedness [-Wpointer-sign]
+../peripherals/fmc_ipmi_fru.c:476:14: note: expected 'char *' but argument is of type 'Xuint8 *'
+../peripherals/fmc_ipmi_fru.c: At top level:
+../peripherals/fmc_ipmi_fru.c:489:14: warning: 'get_fru_area_str' defined but not used [-Wunused-function]
+'Finished building: ../peripherals/fmc_ipmi_fru.c'
+' '
+'Building file: ../peripherals/gamma.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/gamma.d" -MT"peripherals/gamma.d" -o "peripherals/gamma.o" "../peripherals/gamma.c"
+'Finished building: ../peripherals/gamma.c'
+' '
+'Building file: ../peripherals/noise.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/noise.d" -MT"peripherals/noise.d" -o "peripherals/noise.o" "../peripherals/noise.c"
+'Finished building: ../peripherals/noise.c'
+' '
+'Building file: ../peripherals/rgb2ycrcb.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/rgb2ycrcb.d" -MT"peripherals/rgb2ycrcb.d" -o "peripherals/rgb2ycrcb.o" "../peripherals/rgb2ycrcb.c"
+'Finished building: ../peripherals/rgb2ycrcb.c'
+' '
+'Building file: ../peripherals/stats.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/stats.d" -MT"peripherals/stats.d" -o "peripherals/stats.o" "../peripherals/stats.c"
+'Finished building: ../peripherals/stats.c'
+' '
+'Building file: ../peripherals/tpg.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/tpg.d" -MT"peripherals/tpg.d" -o "peripherals/tpg.o" "../peripherals/tpg.c"
+'Finished building: ../peripherals/tpg.c'
+' '
+'Building file: ../peripherals/xbasic_types.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xbasic_types.d" -MT"peripherals/xbasic_types.d" -o "peripherals/xbasic_types.o" "../peripherals/xbasic_types.c"
+'Finished building: ../peripherals/xbasic_types.c'
+' '
+'Building file: ../peripherals/xgpiops.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xgpiops.d" -MT"peripherals/xgpiops.d" -o "peripherals/xgpiops.o" "../peripherals/xgpiops.c"
+'Finished building: ../peripherals/xgpiops.c'
+' '
+'Building file: ../peripherals/xgpiops_g.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xgpiops_g.d" -MT"peripherals/xgpiops_g.d" -o "peripherals/xgpiops_g.o" "../peripherals/xgpiops_g.c"
+'Finished building: ../peripherals/xgpiops_g.c'
+' '
+'Building file: ../peripherals/xgpiops_intr.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xgpiops_intr.d" -MT"peripherals/xgpiops_intr.d" -o "peripherals/xgpiops_intr.o" "../peripherals/xgpiops_intr.c"
+'Finished building: ../peripherals/xgpiops_intr.c'
+' '
+'Building file: ../peripherals/xgpiops_selftest.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xgpiops_selftest.d" -MT"peripherals/xgpiops_selftest.d" -o "peripherals/xgpiops_selftest.o" "../peripherals/xgpiops_selftest.c"
+'Finished building: ../peripherals/xgpiops_selftest.c'
+' '
+'Building file: ../peripherals/xgpiops_sinit.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xgpiops_sinit.d" -MT"peripherals/xgpiops_sinit.d" -o "peripherals/xgpiops_sinit.o" "../peripherals/xgpiops_sinit.c"
+'Finished building: ../peripherals/xgpiops_sinit.c'
+' '
+'Building file: ../peripherals/xiic.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic.d" -MT"peripherals/xiic.d" -o "peripherals/xiic.o" "../peripherals/xiic.c"
+'Finished building: ../peripherals/xiic.c'
+' '
+'Building file: ../peripherals/xiic_dyn_master.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_dyn_master.d" -MT"peripherals/xiic_dyn_master.d" -o "peripherals/xiic_dyn_master.o" "../peripherals/xiic_dyn_master.c"
+'Finished building: ../peripherals/xiic_dyn_master.c'
+' '
+'Building file: ../peripherals/xiic_g.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_g.d" -MT"peripherals/xiic_g.d" -o "peripherals/xiic_g.o" "../peripherals/xiic_g.c"
+'Finished building: ../peripherals/xiic_g.c'
+' '
+'Building file: ../peripherals/xiic_intr.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_intr.d" -MT"peripherals/xiic_intr.d" -o "peripherals/xiic_intr.o" "../peripherals/xiic_intr.c"
+'Finished building: ../peripherals/xiic_intr.c'
+' '
+'Building file: ../peripherals/xiic_l.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_l.d" -MT"peripherals/xiic_l.d" -o "peripherals/xiic_l.o" "../peripherals/xiic_l.c"
+'Finished building: ../peripherals/xiic_l.c'
+' '
+'Building file: ../peripherals/xiic_master.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_master.d" -MT"peripherals/xiic_master.d" -o "peripherals/xiic_master.o" "../peripherals/xiic_master.c"
+'Finished building: ../peripherals/xiic_master.c'
+' '
+'Building file: ../peripherals/xiic_multi_master.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_multi_master.d" -MT"peripherals/xiic_multi_master.d" -o "peripherals/xiic_multi_master.o" "../peripherals/xiic_multi_master.c"
+'Finished building: ../peripherals/xiic_multi_master.c'
+' '
+'Building file: ../peripherals/xiic_options.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_options.d" -MT"peripherals/xiic_options.d" -o "peripherals/xiic_options.o" "../peripherals/xiic_options.c"
+'Finished building: ../peripherals/xiic_options.c'
+' '
+'Building file: ../peripherals/xiic_selftest.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_selftest.d" -MT"peripherals/xiic_selftest.d" -o "peripherals/xiic_selftest.o" "../peripherals/xiic_selftest.c"
+'Finished building: ../peripherals/xiic_selftest.c'
+' '
+'Building file: ../peripherals/xiic_sinit.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_sinit.d" -MT"peripherals/xiic_sinit.d" -o "peripherals/xiic_sinit.o" "../peripherals/xiic_sinit.c"
+'Finished building: ../peripherals/xiic_sinit.c'
+' '
+'Building file: ../peripherals/xiic_slave.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_slave.d" -MT"peripherals/xiic_slave.d" -o "peripherals/xiic_slave.o" "../peripherals/xiic_slave.c"
+'Finished building: ../peripherals/xiic_slave.c'
+' '
+'Building file: ../peripherals/xiic_stats.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiic_stats.d" -MT"peripherals/xiic_stats.d" -o "peripherals/xiic_stats.o" "../peripherals/xiic_stats.c"
+'Finished building: ../peripherals/xiic_stats.c'
+' '
+'Building file: ../peripherals/xiicps.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiicps.d" -MT"peripherals/xiicps.d" -o "peripherals/xiicps.o" "../peripherals/xiicps.c"
+'Finished building: ../peripherals/xiicps.c'
+' '
+'Building file: ../peripherals/xiicps_g.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiicps_g.d" -MT"peripherals/xiicps_g.d" -o "peripherals/xiicps_g.o" "../peripherals/xiicps_g.c"
+'Finished building: ../peripherals/xiicps_g.c'
+' '
+'Building file: ../peripherals/xiicps_intr.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiicps_intr.d" -MT"peripherals/xiicps_intr.d" -o "peripherals/xiicps_intr.o" "../peripherals/xiicps_intr.c"
+'Finished building: ../peripherals/xiicps_intr.c'
+' '
+'Building file: ../peripherals/xiicps_master.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiicps_master.d" -MT"peripherals/xiicps_master.d" -o "peripherals/xiicps_master.o" "../peripherals/xiicps_master.c"
+'Finished building: ../peripherals/xiicps_master.c'
+' '
+'Building file: ../peripherals/xiicps_options.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiicps_options.d" -MT"peripherals/xiicps_options.d" -o "peripherals/xiicps_options.o" "../peripherals/xiicps_options.c"
+'Finished building: ../peripherals/xiicps_options.c'
+' '
+'Building file: ../peripherals/xiicps_selftest.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiicps_selftest.d" -MT"peripherals/xiicps_selftest.d" -o "peripherals/xiicps_selftest.o" "../peripherals/xiicps_selftest.c"
+'Finished building: ../peripherals/xiicps_selftest.c'
+' '
+'Building file: ../peripherals/xiicps_sinit.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiicps_sinit.d" -MT"peripherals/xiicps_sinit.d" -o "peripherals/xiicps_sinit.o" "../peripherals/xiicps_sinit.c"
+'Finished building: ../peripherals/xiicps_sinit.c'
+' '
+'Building file: ../peripherals/xiicps_slave.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xiicps_slave.d" -MT"peripherals/xiicps_slave.d" -o "peripherals/xiicps_slave.o" "../peripherals/xiicps_slave.c"
+'Finished building: ../peripherals/xiicps_slave.c'
+' '
+'Building file: ../peripherals/xil_assert.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xil_assert.d" -MT"peripherals/xil_assert.d" -o "peripherals/xil_assert.o" "../peripherals/xil_assert.c"
+'Finished building: ../peripherals/xil_assert.c'
+' '
+'Building file: ../peripherals/xil_io.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xil_io.d" -MT"peripherals/xil_io.d" -o "peripherals/xil_io.o" "../peripherals/xil_io.c"
+'Finished building: ../peripherals/xil_io.c'
+' '
+'Building file: ../peripherals/xvtc.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xvtc.d" -MT"peripherals/xvtc.d" -o "peripherals/xvtc.o" "../peripherals/xvtc.c"
+'Finished building: ../peripherals/xvtc.c'
+' '
+'Building file: ../peripherals/xvtc_g.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xvtc_g.d" -MT"peripherals/xvtc_g.d" -o "peripherals/xvtc_g.o" "../peripherals/xvtc_g.c"
+'Finished building: ../peripherals/xvtc_g.c'
+' '
+'Building file: ../peripherals/xvtc_intr.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xvtc_intr.d" -MT"peripherals/xvtc_intr.d" -o "peripherals/xvtc_intr.o" "../peripherals/xvtc_intr.c"
+'Finished building: ../peripherals/xvtc_intr.c'
+' '
+'Building file: ../peripherals/xvtc_sinit.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"peripherals/xvtc_sinit.d" -MT"peripherals/xvtc_sinit.d" -o "peripherals/xvtc_sinit.o" "../peripherals/xvtc_sinit.c"
+'Finished building: ../peripherals/xvtc_sinit.c'
+' '
+'Building file: ../avnet_console.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"avnet_console.d" -MT"avnet_console.d" -o "avnet_console.o" "../avnet_console.c"
+../avnet_console.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../avnet_console.c:69:0:
+../video_ipipe.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../avnet_console.c:70:0:
+../fmc_imageon_demo.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:91:0,
+                 from ../avnet_console.c:70:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:92:0,
+                 from ../avnet_console.c:70:
+../peripherals/fmc_ipmi.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:93:0,
+                 from ../avnet_console.c:70:
+../peripherals/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_imageon.h:77:0,
+                 from ../fmc_imageon_demo.h:93,
+                 from ../avnet_console.c:70:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:94:0,
+                 from ../avnet_console.c:70:
+../peripherals/fmc_imageon_vita_receiver.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:96:0,
+                 from ../avnet_console.c:70:
+../video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:97:0,
+                 from ../avnet_console.c:70:
+../video_detector.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:98:0,
+                 from ../avnet_console.c:70:
+../video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:99:0,
+                 from ../avnet_console.c:70:
+../video_frame_buffer.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../avnet_console.c:73:0:
+../avnet_console.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:3:1: warning: multi-line comment [-Wcomment]
+../avnet_console.c: In function 'avnet_console_process':
+../avnet_console.c:132:10: warning: unused variable 'inchar' [-Wunused-variable]
+../avnet_console.c: In function 'avnet_console_delay_command':
+../avnet_console.c:585:7: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_mem_command':
+../avnet_console.c:648:13: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:666:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:667:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:686:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:687:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:688:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:712:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:713:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:714:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:741:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:742:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_iic_command':
+../avnet_console.c:815:13: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:816:10: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:834:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:835:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:836:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:855:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:856:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:857:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:858:11: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:882:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:883:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:884:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:885:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:912:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:913:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:914:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:938:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_vita_command':
+../avnet_console.c:995:10: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_vita_spi_command':
+../avnet_console.c:1057:13: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1074:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1075:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1093:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1094:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1095:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1118:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1119:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1120:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1146:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1147:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_vita_trigger_command':
+../avnet_console.c:1247:13: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1252:13: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: At top level:
+../avnet_console.c:1317:4: warning: excess elements in array initializer [enabled by default]
+../avnet_console.c:1317:4: warning: (near initialization for 'local_vita_autoexp_off_seq') [enabled by default]
+../avnet_console.c: In function 'avnet_console_vita_aec_command':
+../avnet_console.c:1337:13: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1340:19: warning: assignment from incompatible pointer type [enabled by default]
+../avnet_console.c:1346:19: warning: assignment from incompatible pointer type [enabled by default]
+../avnet_console.c:1352:10: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_display_sequence' from incompatible pointer type [enabled by default]
+In file included from ../fmc_imageon_demo.h:94:0,
+                 from ../avnet_console.c:70:
+../peripherals/fmc_imageon_vita_receiver.h:651:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+../avnet_console.c:1354:7: warning: passing argument 2 of 'fmc_imageon_vita_receiver_spi_write_sequence' from incompatible pointer type [enabled by default]
+In file included from ../fmc_imageon_demo.h:94:0,
+                 from ../avnet_console.c:70:
+../peripherals/fmc_imageon_vita_receiver.h:637:5: note: expected 'Xuint16 (*)[3]' but argument is of type 'Xuint16 **'
+../avnet_console.c: In function 'avnet_console_vita_again_command':
+../avnet_console.c:1389:3: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_vita_dgain_command':
+../avnet_console.c:1423:3: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_vita_exposure_command':
+../avnet_console.c:1450:3: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_ipipe_dpc_command':
+../avnet_console.c:1515:10: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1517:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1519:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1525:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1531:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1537:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_ipipe_cfa_command':
+../avnet_console.c:1577:10: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_ipipe_stats_command':
+../avnet_console.c:1623:14: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1651:17: warning: unused variable 'height' [-Wunused-variable]
+../avnet_console.c:1649:13: warning: unused variable 'n' [-Wunused-variable]
+../avnet_console.c:1957:8: warning: passing argument 2 of 'fmc_imageon_demo.vipp.fpSensorGetGain' from incompatible pointer type [enabled by default]
+../avnet_console.c:1957:8: note: expected 'int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:1958:8: warning: passing argument 2 of 'fmc_imageon_demo.vipp.fpSensorGetExposure' from incompatible pointer type [enabled by default]
+../avnet_console.c:1958:8: note: expected 'int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_ipipe_agc_command':
+../avnet_console.c:2103:10: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_ipipe_geq_command':
+../avnet_console.c:2191:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_ipipe_noise_command':
+../avnet_console.c:2233:10: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:2235:10: warning: implicit declaration of function 'vipp_noise' [-Wimplicit-function-declaration]
+../avnet_console.c: In function 'avnet_console_ipipe_enhance_command':
+../avnet_console.c:2270:10: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: In function 'avnet_console_ipipe_ccm_command':
+../avnet_console.c:2344:11: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:2426:11: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:2438:5: warning: pointer targets in passing argument 2 of 'scanhex' differ in signedness [-Wpointer-sign]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'int *'
+../avnet_console.c:2445:5: warning: pointer targets in passing argument 2 of 'scanhex' differ in signedness [-Wpointer-sign]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'int *'
+../avnet_console.c: In function 'avnet_console_ipipe_gamma_command':
+../avnet_console.c:2492:10: warning: pointer targets in passing argument 2 of 'scanhex' differ in signedness [-Wpointer-sign]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'int *'
+../avnet_console.c: At top level:
+../avnet_console.c:2569:3: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:2569:3: warning: (near initialization for 'adv7511_csc_config_00[0]') [-Wmissing-braces]
+../avnet_console.c:2598:3: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:2598:3: warning: (near initialization for 'adv7511_csc_config_01[0]') [-Wmissing-braces]
+../avnet_console.c:2627:3: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:2627:3: warning: (near initialization for 'adv7511_csc_config_02[0]') [-Wmissing-braces]
+../avnet_console.c:2656:3: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:2656:3: warning: (near initialization for 'adv7511_csc_config_03[0]') [-Wmissing-braces]
+../avnet_console.c:2685:3: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:2685:3: warning: (near initialization for 'adv7511_csc_config_04[0]') [-Wmissing-braces]
+../avnet_console.c:2713:3: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:2713:3: warning: (near initialization for 'adv7511_clk_delay[0]') [-Wmissing-braces]
+../avnet_console.c: In function 'avnet_console_adv7511_command':
+../avnet_console.c:2731:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:2779:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:2827:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c:2835:4: warning: passing argument 2 of 'scanhex' from incompatible pointer type [enabled by default]
+In file included from ../avnet_console.c:74:0:
+../avnet_console_scanput.h:61:5: note: expected 'unsigned int *' but argument is of type 'Xuint32 *'
+../avnet_console.c: At top level:
+../avnet_console.c:3372:4: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:3372:4: warning: (near initialization for 'iic_cdce913_ssc_off[0]') [-Wmissing-braces]
+../avnet_console.c:3378:4: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:3378:4: warning: (near initialization for 'iic_cdce913_ssc_0_25[0]') [-Wmissing-braces]
+../avnet_console.c:3384:4: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:3384:4: warning: (near initialization for 'iic_cdce913_ssc_0_50[0]') [-Wmissing-braces]
+../avnet_console.c:3390:4: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:3390:4: warning: (near initialization for 'iic_cdce913_ssc_0_75[0]') [-Wmissing-braces]
+../avnet_console.c:3396:4: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:3396:4: warning: (near initialization for 'iic_cdce913_ssc_1_00[0]') [-Wmissing-braces]
+../avnet_console.c:3402:4: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:3402:4: warning: (near initialization for 'iic_cdce913_ssc_1_25[0]') [-Wmissing-braces]
+../avnet_console.c:3408:4: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:3408:4: warning: (near initialization for 'iic_cdce913_ssc_1_50[0]') [-Wmissing-braces]
+../avnet_console.c:3414:4: warning: missing braces around initializer [-Wmissing-braces]
+../avnet_console.c:3414:4: warning: (near initialization for 'iic_cdce913_ssc_2_00[0]') [-Wmissing-braces]
+../avnet_console.c: In function 'avnet_console_cdce913_command':
+../avnet_console.c:3422:11: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+'Finished building: ../avnet_console.c'
+' '
+'Building file: ../avnet_console_scanput.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"avnet_console_scanput.d" -MT"avnet_console_scanput.d" -o "avnet_console_scanput.o" "../avnet_console_scanput.c"
+../avnet_console_scanput.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../avnet_console_scanput.c:46:0:
+../avnet_console_scanput.h:3:1: warning: multi-line comment [-Wcomment]
+'Finished building: ../avnet_console_scanput.c'
+' '
+'Building file: ../avnet_console_serial.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"avnet_console_serial.d" -MT"avnet_console_serial.d" -o "avnet_console_serial.o" "../avnet_console_serial.c"
+../avnet_console_serial.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../avnet_console_serial.c:60:0:
+../avnet_console.h:3:1: warning: multi-line comment [-Wcomment]
+'Finished building: ../avnet_console_serial.c'
+' '
+'Building file: ../avnet_console_tokenize.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"avnet_console_tokenize.d" -MT"avnet_console_tokenize.d" -o "avnet_console_tokenize.o" "../avnet_console_tokenize.c"
+'Finished building: ../avnet_console_tokenize.c'
+' '
+'Building file: ../avnet_console_web.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"avnet_console_web.d" -MT"avnet_console_web.d" -o "avnet_console_web.o" "../avnet_console_web.c"
+../avnet_console_web.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../avnet_console_web.c:66:0:
+../avnet_console.h:3:1: warning: multi-line comment [-Wcomment]
+../avnet_console_web.c: In function 'web_hprintf':
+../avnet_console_web.c:104:8: warning: unused variable 'i' [-Wunused-variable]
+../avnet_console_web.c:100:19: warning: unused variable 'pSession' [-Wunused-variable]
+../avnet_console_web.c:98:8: warning: unused variable 'ret' [-Wunused-variable]
+../avnet_console_web.c: In function 'start_avnet_console_web_application':
+../avnet_console_web.c:140:42: warning: assignment from incompatible pointer type [enabled by default]
+../avnet_console_web.c:149:3: warning: implicit declaration of function 'mkfifo' [-Wimplicit-function-declaration]
+../avnet_console_web.c: In function 'transfer_avnet_console_web_data':
+../avnet_console_web.c:123:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../avnet_console_web.c'
+' '
+'Building file: ../fmc_imageon_demo.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"fmc_imageon_demo.d" -MT"fmc_imageon_demo.d" -o "fmc_imageon_demo.o" "../fmc_imageon_demo.c"
+../fmc_imageon_demo.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.c:51:0:
+../fmc_imageon_demo.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:91:0,
+                 from ../fmc_imageon_demo.c:51:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:92:0,
+                 from ../fmc_imageon_demo.c:51:
+../peripherals/fmc_ipmi.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:93:0,
+                 from ../fmc_imageon_demo.c:51:
+../peripherals/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_imageon.h:77:0,
+                 from ../fmc_imageon_demo.h:93,
+                 from ../fmc_imageon_demo.c:51:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:94:0,
+                 from ../fmc_imageon_demo.c:51:
+../peripherals/fmc_imageon_vita_receiver.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:96:0,
+                 from ../fmc_imageon_demo.c:51:
+../video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:97:0,
+                 from ../fmc_imageon_demo.c:51:
+../video_detector.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:98:0,
+                 from ../fmc_imageon_demo.c:51:
+../video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:99:0,
+                 from ../fmc_imageon_demo.c:51:
+../video_frame_buffer.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:100:0,
+                 from ../fmc_imageon_demo.c:51:
+../video_ipipe.h:3:1: warning: multi-line comment [-Wcomment]
+../fmc_imageon_demo.c: In function 'fmc_imageon_demo_init':
+../fmc_imageon_demo.c:260:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+../fmc_imageon_demo.c:268:11: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../fmc_imageon_demo.c:268:11: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+../fmc_imageon_demo.c:349:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:349:9: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:349:9: warning: format '%d' expects argument of type 'int', but argument 4 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:349:9: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:349:9: warning: format '%d' expects argument of type 'int', but argument 6 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:355:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:355:9: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:355:9: warning: format '%d' expects argument of type 'int', but argument 4 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:355:9: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:355:9: warning: format '%d' expects argument of type 'int', but argument 6 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:356:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:356:10: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:390:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../fmc_imageon_demo.c: In function 'fmc_imageon_demo_enable_hdmio':
+../fmc_imageon_demo.c:482:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../fmc_imageon_demo.c:457:8: warning: unused variable 'ret' [-Wunused-variable]
+../fmc_imageon_demo.c: In function 'fmc_imageon_demo_enable_vita':
+../fmc_imageon_demo.c:541:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat]
+../fmc_imageon_demo.c:542:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c:543:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../fmc_imageon_demo.c: In function 'fmc_imageon_demo_enable_ipipe':
+../fmc_imageon_demo.c:585:40: warning: assignment from incompatible pointer type [enabled by default]
+../fmc_imageon_demo.c:586:40: warning: assignment from incompatible pointer type [enabled by default]
+../fmc_imageon_demo.c:587:40: warning: assignment from incompatible pointer type [enabled by default]
+../fmc_imageon_demo.c:588:40: warning: assignment from incompatible pointer type [enabled by default]
+../fmc_imageon_demo.c:559:8: warning: unused variable 'ret' [-Wunused-variable]
+'Finished building: ../fmc_imageon_demo.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../main.c:48:0:
+../fmc_imageon_demo.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:91:0,
+                 from ../main.c:48:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:92:0,
+                 from ../main.c:48:
+../peripherals/fmc_ipmi.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:93:0,
+                 from ../main.c:48:
+../peripherals/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_imageon.h:77:0,
+                 from ../fmc_imageon_demo.h:93,
+                 from ../main.c:48:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:94:0,
+                 from ../main.c:48:
+../peripherals/fmc_imageon_vita_receiver.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:96:0,
+                 from ../main.c:48:
+../video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:97:0,
+                 from ../main.c:48:
+../video_detector.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:98:0,
+                 from ../main.c:48:
+../video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:99:0,
+                 from ../main.c:48:
+../video_frame_buffer.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:100:0,
+                 from ../main.c:48:
+../video_ipipe.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../main.c:51:0:
+../avnet_console_serial.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../main.c:52:0:
+../avnet_console_web.h:3:1: warning: multi-line comment [-Wcomment]
+../main.c: In function 'init_base_addresses':
+../main.c:123:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:134:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:146:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:159:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:172:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:185:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:197:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:208:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:250:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:284:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:296:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:308:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:330:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:341:3: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../main.c:352:2: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+'Finished building: ../main.c'
+' '
+'Building file: ../sleep.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"sleep.d" -MT"sleep.d" -o "sleep.o" "../sleep.c"
+../sleep.c: In function 'millisleep':
+../sleep.c:19:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+'Finished building: ../sleep.c'
+' '
+'Building file: ../video_detector.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"video_detector.d" -MT"video_detector.d" -o "video_detector.o" "../video_detector.c"
+../video_detector.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../video_detector.c:47:0:
+../video_detector.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../video_detector.c:48:0:
+../video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+../video_detector.c: In function 'vdet_init':
+../video_detector.c:133:6: warning: unused variable 'ResolutionId' [-Wunused-variable]
+../video_detector.c:132:10: warning: unused variable 'Height' [-Wunused-variable]
+../video_detector.c:131:10: warning: unused variable 'Width' [-Wunused-variable]
+../video_detector.c: In function 'vdet_detect':
+../video_detector.c:187:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+../video_detector.c:213:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../video_detector.c:213:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../video_detector.c:184:20: warning: unused variable 'SourceSelect' [-Wunused-variable]
+../video_detector.c:183:16: warning: unused variable 'Polarity' [-Wunused-variable]
+../video_detector.c: In function 'vdet_config':
+../video_detector.c:242:6: warning: unused variable 'Status' [-Wunused-variable]
+'Finished building: ../video_detector.c'
+' '
+'Building file: ../video_frame_buffer.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"video_frame_buffer.d" -MT"video_frame_buffer.d" -o "video_frame_buffer.o" "../video_frame_buffer.c"
+../video_frame_buffer.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../video_frame_buffer.c:54:0:
+../video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+../video_frame_buffer.c: In function 'vdma_init':
+../video_frame_buffer.c:60:4: warning: implicit declaration of function 'vdma_rx_stop' [-Wimplicit-function-declaration]
+../video_frame_buffer.c:63:4: warning: implicit declaration of function 'vdma_rx_start' [-Wimplicit-function-declaration]
+../video_frame_buffer.c: In function 'vdma_status':
+../video_frame_buffer.c:69:4: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'Xuint32' [-Wformat]
+../video_frame_buffer.c: In function 'vdma_rx_start':
+../video_frame_buffer.c:142:4: warning: implicit declaration of function 'millisleep' [-Wimplicit-function-declaration]
+../video_frame_buffer.c:105:12: warning: variable 'frame_stride' set but not used [-Wunused-but-set-variable]
+../video_frame_buffer.c:101:8: warning: unused variable 'timeout' [-Wunused-variable]
+../video_frame_buffer.c: In function 'vdma_tx_start':
+../video_frame_buffer.c:244:12: warning: variable 'frame_stride' set but not used [-Wunused-but-set-variable]
+../video_frame_buffer.c:240:8: warning: unused variable 'x' [-Wunused-variable]
+../video_frame_buffer.c:239:8: warning: unused variable 'timeout' [-Wunused-variable]
+'Finished building: ../video_frame_buffer.c'
+' '
+'Building file: ../video_generator.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"video_generator.d" -MT"video_generator.d" -o "video_generator.o" "../video_generator.c"
+../video_generator.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../video_generator.c:47:0:
+../video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../video_generator.c:48:0:
+../video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+../video_generator.c: In function 'vgen_init':
+../video_generator.c:154:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../video_generator.c:134:6: warning: unused variable 'ResolutionId' [-Wunused-variable]
+../video_generator.c:133:10: warning: unused variable 'Height' [-Wunused-variable]
+../video_generator.c:132:10: warning: unused variable 'Width' [-Wunused-variable]
+../video_generator.c: In function 'vgen_config':
+../video_generator.c:182:6: warning: unused variable 'Status' [-Wunused-variable]
+'Finished building: ../video_generator.c'
+' '
+'Building file: ../video_ipipe.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"video_ipipe.d" -MT"video_ipipe.d" -o "video_ipipe.o" "../video_ipipe.c"
+../video_ipipe.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../video_ipipe.c:54:0:
+../video_ipipe.h:3:1: warning: multi-line comment [-Wcomment]
+../video_ipipe.c: In function 'vipp_cfa_config':
+../video_ipipe.c:954:9: warning: unused variable 'retval' [-Wunused-variable]
+../video_ipipe.c: In function 'vipp_gamma_table_value':
+../video_ipipe.c:1169:10: warning: unused variable 'BaseAddress' [-Wunused-variable]
+../video_ipipe.c: In function 'vipp_download_gamma_table':
+../video_ipipe.c:1179:3: warning: passing argument 1 of 'vipp_gamma_table_value' makes pointer from integer without a cast [enabled by default]
+../video_ipipe.c:1168:9: note: expected 'struct video_ipipe_t *' but argument is of type 'Xuint32'
+../video_ipipe.c: In function 'auto_white_balance':
+../video_ipipe.c:1671:2: warning: passing argument 2 of 'vipp_ccm_setCoefficients' from incompatible pointer type [enabled by default]
+../video_ipipe.c:1250:6: note: expected 'struct CCM_Coefficient *' but argument is of type 'Xint32 *'
+../video_ipipe.c:1571:20: warning: variable 'INC_error' set but not used [-Wunused-but-set-variable]
+../video_ipipe.c:1571:9: warning: variable 'U30_error' set but not used [-Wunused-but-set-variable]
+../video_ipipe.c:1570:20: warning: variable 'CWF_error' set but not used [-Wunused-but-set-variable]
+../video_ipipe.c:1570:9: warning: variable 'DAY_error' set but not used [-Wunused-but-set-variable]
+../video_ipipe.c: In function 'manual_white_balance':
+../video_ipipe.c:1704:2: warning: passing argument 2 of 'vipp_ccm_setCoefficients' from incompatible pointer type [enabled by default]
+../video_ipipe.c:1250:6: note: expected 'struct CCM_Coefficient *' but argument is of type 'Xint32 *'
+../video_ipipe.c: In function 'auto_gain_exposure':
+../video_ipipe.c:1772:9: warning: unused variable 'sum' [-Wunused-variable]
+../video_ipipe.c:1771:9: warning: variable 'hi_25percent' set but not used [-Wunused-but-set-variable]
+../video_ipipe.c:1770:9: warning: variable 'mid_50percent' set but not used [-Wunused-but-set-variable]
+../video_ipipe.c:1769:9: warning: variable 'lo_25percent' set but not used [-Wunused-but-set-variable]
+../video_ipipe.c:1768:15: warning: unused variable 'exposure' [-Wunused-variable]
+../video_ipipe.c:1768:9: warning: unused variable 'gain' [-Wunused-variable]
+../video_ipipe.c:1768:6: warning: unused variable 'i' [-Wunused-variable]
+In file included from ../video_ipipe.c:1925:0:
+../fmc_imageon_demo.h: At top level:
+../fmc_imageon_demo.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:91:0,
+                 from ../video_ipipe.c:1925:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:92:0,
+                 from ../video_ipipe.c:1925:
+../peripherals/fmc_ipmi.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:93:0,
+                 from ../video_ipipe.c:1925:
+../peripherals/fmc_imageon.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../peripherals/fmc_imageon.h:77:0,
+                 from ../fmc_imageon_demo.h:93,
+                 from ../video_ipipe.c:1925:
+../peripherals/fmc_iic.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:94:0,
+                 from ../video_ipipe.c:1925:
+../peripherals/fmc_imageon_vita_receiver.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:96:0,
+                 from ../video_ipipe.c:1925:
+../video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:97:0,
+                 from ../video_ipipe.c:1925:
+../video_detector.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:98:0,
+                 from ../video_ipipe.c:1925:
+../video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../fmc_imageon_demo.h:99:0,
+                 from ../video_ipipe.c:1925:
+../video_frame_buffer.h:3:1: warning: multi-line comment [-Wcomment]
+../video_ipipe.c: In function 'vipp_stats_handler':
+../video_ipipe.c:2090:9: warning: passing argument 2 of 'pContext->fpSensorGetGain' from incompatible pointer type [enabled by default]
+../video_ipipe.c:2090:9: note: expected 'int *' but argument is of type 'Xuint32 *'
+../video_ipipe.c:2092:9: warning: passing argument 2 of 'pContext->fpSensorGetExposure' from incompatible pointer type [enabled by default]
+../video_ipipe.c:2092:9: note: expected 'int *' but argument is of type 'Xuint32 *'
+../video_ipipe.c:2099:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2099:9: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2099:9: warning: format '%d' expects argument of type 'int', but argument 4 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2108:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xint32' [-Wformat]
+../video_ipipe.c:2108:10: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2111:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2116:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xint32' [-Wformat]
+../video_ipipe.c:2116:10: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2119:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2126:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2126:10: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2126:10: warning: format '%d' expects argument of type 'int', but argument 4 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:2126:10: warning: format '%d' expects argument of type 'int', but argument 5 has type 'Xuint32' [-Wformat]
+../video_ipipe.c:1932:9: warning: unused variable 'c' [-Wunused-variable]
+../video_ipipe.c:1932:6: warning: unused variable 'r' [-Wunused-variable]
+'Finished building: ../video_ipipe.c'
+' '
+'Building file: ../video_ipipe_stats.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"video_ipipe_stats.d" -MT"video_ipipe_stats.d" -o "video_ipipe_stats.o" "../video_ipipe_stats.c"
+../video_ipipe_stats.c: In function 'read_stats':
+../video_ipipe_stats.c:51:10: warning: unused variable 'region' [-Wunused-variable]
+../video_ipipe_stats.c:50:10: warning: unused variable 'color' [-Wunused-variable]
+../video_ipipe_stats.c: In function 'stats_get_sum':
+../video_ipipe_stats.c:329:10: warning: unused variable 'data' [-Wunused-variable]
+'Finished building: ../video_ipipe_stats.c'
+' '
+'Building file: ../video_resolution.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Dxil_printf=printf -DLINUX_CODE -Wall -O0 -g3 -I../peripherals -I../peripherals/include -c -fmessage-length=0 -MMD -MP -MF"video_resolution.d" -MT"video_resolution.d" -o "video_resolution.o" "../video_resolution.c"
+../video_resolution.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../video_resolution.c:48:0:
+../video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+'Finished building: ../video_resolution.c'
+' '
+'Building target: zvik.elf'
+'Invoking: ARM Linux gcc linker'
+arm-xilinx-linux-gnueabi-gcc  -o "zvik.elf"  ./peripherals/ccm.o ./peripherals/cfa.o ./peripherals/cresample.o ./peripherals/dpc.o ./peripherals/enhance.o ./peripherals/fmc_iic_axi.o ./peripherals/fmc_iic_sg.o ./peripherals/fmc_imageon.o ./peripherals/fmc_imageon_vita_receiver.o ./peripherals/fmc_imageov.o ./peripherals/fmc_ipmi.o ./peripherals/fmc_ipmi_fru.o ./peripherals/gamma.o ./peripherals/noise.o ./peripherals/rgb2ycrcb.o ./peripherals/stats.o ./peripherals/tpg.o ./peripherals/xbasic_types.o ./peripherals/xgpiops.o ./peripherals/xgpiops_g.o ./peripherals/xgpiops_intr.o ./peripherals/xgpiops_selftest.o ./peripherals/xgpiops_sinit.o ./peripherals/xiic.o ./peripherals/xiic_dyn_master.o ./peripherals/xiic_g.o ./peripherals/xiic_intr.o ./peripherals/xiic_l.o ./peripherals/xiic_master.o ./peripherals/xiic_multi_master.o ./peripherals/xiic_options.o ./peripherals/xiic_selftest.o ./peripherals/xiic_sinit.o ./peripherals/xiic_slave.o ./peripherals/xiic_stats.o ./peripherals/xiicps.o ./peripherals/xiicps_g.o ./peripherals/xiicps_intr.o ./peripherals/xiicps_master.o ./peripherals/xiicps_options.o ./peripherals/xiicps_selftest.o ./peripherals/xiicps_sinit.o ./peripherals/xiicps_slave.o ./peripherals/xil_assert.o ./peripherals/xil_io.o ./peripherals/xvtc.o ./peripherals/xvtc_g.o ./peripherals/xvtc_intr.o ./peripherals/xvtc_sinit.o  ./avnet_console.o ./avnet_console_scanput.o ./avnet_console_serial.o ./avnet_console_tokenize.o ./avnet_console_web.o ./fmc_imageon_demo.o ./main.o ./sleep.o ./video_detector.o ./video_frame_buffer.o ./video_generator.o ./video_ipipe.o ./video_ipipe_stats.o ./video_resolution.o   -lpthread
+'Finished building target: zvik.elf'
+' '
+'Invoking: ARM Linux Print Size'
+arm-xilinx-linux-gnueabi-size zvik.elf  |tee "zvik.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 217435	  11716	  17584	 246735	  3c3cf	zvik.elf
+'Finished building: zvik.elf.size'
+' '
+
+14:40:53 Build Finished (took 35s.377ms)
+

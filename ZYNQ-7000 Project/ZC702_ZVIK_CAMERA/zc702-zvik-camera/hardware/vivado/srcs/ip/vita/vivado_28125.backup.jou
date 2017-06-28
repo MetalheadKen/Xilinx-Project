@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 246566 by xbuild on Wed Mar 20 18:45:37 MDT 2013
+# Start of session at: Thu Mar 21 09:53:12 2013
+# Process ID: 18293
+# Log file: /group/mvico/users/elzinga/designs/vita/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+remove_files /group/mvico/users/elzinga/designs/vita/project_1/component.xml

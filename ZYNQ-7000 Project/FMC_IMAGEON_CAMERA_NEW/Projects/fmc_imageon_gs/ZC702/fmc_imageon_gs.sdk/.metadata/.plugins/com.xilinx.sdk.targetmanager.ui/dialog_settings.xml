@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="fmc_imageon_gs_wrapper.bit" key="fmc_imageon_gs_hw-bitFile"/>
+	<item value="Local" key="fmc_imageon_gs_hw-target"/>
+	<item value="" key="fmc_imageon_gs_hw-bmmFile"/>
+	<item value="fmc_imageon_gs_hw" key="programfpga.hwplatform"/>
+	<item value="Auto Detect" key="fmc_imageon_gs_hw-device"/>
+	<item value="false" key="fmc_imageon_gs_hw-partial_bit"/>
+</section>

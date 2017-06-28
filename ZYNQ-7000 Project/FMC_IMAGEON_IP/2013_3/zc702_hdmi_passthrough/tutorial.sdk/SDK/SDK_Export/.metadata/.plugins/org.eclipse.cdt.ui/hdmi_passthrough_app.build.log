@@ -1,0 +1,7 @@
+17:25:02 **** Clean-only build of configuration Debug for project hdmi_passthrough_app ****
+make clean 
+rm -rf  ./src/fmc_imageon_hdmi_passthrough.o ./src/helloworld.o ./src/platform.o ./src/video_resolution.o  ./src/fmc_imageon_hdmi_passthrough.d ./src/helloworld.d ./src/platform.d ./src/video_resolution.d  hdmi_passthrough_app.elf.size  hdmi_passthrough_app.elf
+' '
+
+17:25:02 Build Finished (took 338ms)
+

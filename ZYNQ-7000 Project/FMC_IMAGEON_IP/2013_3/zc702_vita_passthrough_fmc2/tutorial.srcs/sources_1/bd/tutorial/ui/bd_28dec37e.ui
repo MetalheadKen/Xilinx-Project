@@ -1,0 +1,68 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.3.3  2013-08-16 bk=1.2871 VDI=33 GEI=35
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 440 -defaultsOSRD
+preplace port hdmio_io -pg 1 -y 980 -defaultsOSRD
+preplace port fmc_imageon_iic -pg 1 -y 180 -defaultsOSRD
+preplace port vita_clk -pg 1 -y 470 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 550 -defaultsOSRD
+preplace port vita_io -pg 1 -y 920 -defaultsOSRD
+preplace portBus fmc_imageon_iic_rst_n -pg 1 -y 220 -defaultsOSRD
+preplace inst fmc_imageon_hdmio_rgb -pg 1 -lvl 3 -y 980 -defaultsOSRD
+preplace inst fmc_imageon_vita_color|fmc_imageon_vita_receiver_0 -pg 1 -lvl 2 -y 1280 -defaultsOSRD
+preplace inst fmc_imageon_iic_0 -pg 1 -lvl 4 -y 200 -defaultsOSRD
+preplace inst fmc_imageon_vita_color|gnd -pg 1 -lvl 1 -y 1340 -defaultsOSRD
+preplace inst fmc_imageon_vita_color -pg 1 -lvl 2 -y 940 -regy -100 -defaultsOSRD
+preplace inst fmc_imageon_vita_color|vcc -pg 1 -lvl 1 -y 1430 -defaultsOSRD
+preplace inst fmc_imageon_vita_color|v_vid_in_axi4s_0 -pg 1 -lvl 3 -y 1340 -defaultsOSRD
+preplace inst fmc_imageon_vita_color|v_cfa_0 -pg 1 -lvl 3 -y 1040 -defaultsOSRD
+preplace inst fmc_imageon_vita_color|v_spc_0 -pg 1 -lvl 2 -y 1000 -defaultsOSRD
+preplace inst proc_sys_reset -pg 1 -lvl 1 -y 370 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 3 -y 220 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 540 -defaultsOSRD
+preplace netloc processing_system7_0_ddr 1 2 3 N 440 NJ 440 NJ
+preplace netloc proc_sys_reset_interconnect_aresetn 1 1 2 430 120 NJ
+preplace netloc fmc_imageon_vita_color|vcc_const 1 1 2 790 880 1080
+preplace netloc fmc_imageon_hdmio_rgb_hdmio_io 1 3 2 NJ 980 N
+preplace netloc processing_system7_0_axi_periph_m04_axi 1 1 3 480 750 NJ 750 1870
+preplace netloc vita_clk_1 1 0 3 NJ 470 430 800 1490
+preplace netloc proc_sys_reset_peripheral_aresetn 1 1 3 450 700 1500 20 1910
+preplace netloc fmc_imageon_vita_color|Conn1 1 0 2 NJ 930 N
+preplace netloc fmc_imageon_iic_0_gpo 1 4 1 N
+preplace netloc fmc_imageon_vita_color|Conn2 1 0 3 NJ 860 NJ 860 1090
+preplace netloc processing_system7_0_axi_periph_m03_axi 1 1 3 490 760 NJ 760 1880
+preplace netloc axi4s_clk_1 1 1 2 510 790 1510
+preplace netloc fmc_imageon_vita_color|clk_fpga_0 1 0 3 NJ 1260 820 1140 NJ
+preplace netloc fmc_imageon_vita_color|io_vita_1 1 0 2 NJ 1220 N
+preplace netloc fmc_imageon_vita_color|v_cfa_0_video_out 1 3 1 N
+preplace netloc fmc_imageon_vita_color|v_vid_in_axi4s_0_video_out 1 1 3 840 870 NJ 870 1340
+preplace netloc fmc_imageon_vita_color|clk_fpga_1 1 0 2 NJ 1290 830
+preplace netloc vita_io_1 1 0 2 NJ 920 440
+preplace netloc fmc_imageon_vita_color|clk_fpga_2 1 0 3 NJ 1280 780 1130 1100
+preplace netloc fmc_imageon_vita_color_vita_axi4s_video 1 2 1 1520
+preplace netloc processing_system7_0_axi_periph_m01_axi 1 1 3 500 770 NJ 770 1900
+preplace netloc fmc_imageon_vita_color_vita_vtiming 1 2 1 1540
+preplace netloc processing_system7_0_axi_periph_m02_axi 1 2 2 1550 850 1890
+preplace netloc fmc_imageon_vita_color|v_spc_0_video_out 1 2 1 N
+preplace netloc fmc_imageon_vita_color|fmc_imageon_vita_receiver_0_vid_io_out 1 2 1 N
+preplace netloc processing_system7_0_fclk_reset0_n 1 0 3 110 480 NJ 390 1490
+preplace netloc fmc_imageon_vita_color|v_vid_in_axi4s_0_vtiming_out 1 3 1 N
+preplace netloc processing_system7_0_fixed_io 1 2 3 1520 550 NJ 550 NJ
+preplace netloc processing_system7_0_fclk_clk0 1 0 4 100 570 460 780 1530 10 1920
+preplace netloc fmc_imageon_vita_color|video_clk_div4 1 0 3 NJ 1490 840 1150 1090
+preplace netloc processing_system7_0_axi_periph_m00_axi 1 3 1 N
+preplace netloc clk200_1 1 1 2 470 710 1480
+preplace netloc fmc_imageon_vita_color|processing_system7_0_axi_periph_m01_axi 1 0 2 NJ 1200 N
+preplace netloc fmc_imageon_iic_0_iic 1 4 1 N
+preplace netloc processing_system7_0_m_axi_gp0 1 2 1 1510
+preplace netloc fmc_imageon_vita_color|proc_sys_reset_peripheral_aresetn 1 0 3 NJ 1240 810 1430 1110
+preplace netloc fmc_imageon_vita_color|gnd_const 1 1 2 800 1420 NJ
+levelinfo -pg 1 80 270 990 1737 2030 2170
+levelinfo -hier fmc_imageon_vita_color 620 710 960 1230 1360
+",
+}
+{
+   da_axi4_cnt: "5",
+   da_board_cnt: "1",
+   da_ps7_cnt: "1",
+}

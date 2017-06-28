@@ -1,0 +1,115 @@
+#include "xparameters.h"	/* SDK generated parameters */
+#include "xsdps.h"			/* SD device driver */
+#include "xil_printf.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "xplatform_info.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int bmp_upside_down(void);
+
+static FIL	    fp_s;											/* socure file handler */
+static FIL 		fp_d;											/* destination file handler */
+
+static FATFS	fatfs;											/* File System Object Structure */
+static FRESULT	res;											/* File Function Return Code */
+
+
+static char		FileReadName[32] = "clena.bmp";					/* 欲讀取檔案名稱 */
+static char		FileWriteName[32] = "clena_down.bmp";			/* 欲寫入檔案名稱 */
+static char		*sd_file;
+
+UINT		  NumBytesRead = 0;			/* Pointer to number of bytes read */
+UINT		  NumBytesWrite = 0;		/* Pointer to number of bytes write */
+
+unsigned int  width = 512, height = 512;		/* 圖像的寬與高 */
+
+unsigned char image_s[512 * 512 * 3] = {1};		/* 來源圖像用的陣列 */
+unsigned char image_d[512 * 512 * 3] = {0};		/* 目的圖像用的陣列 */
+
+unsigned int  rgb_raw_data_offset = 54;	/* RGB資料的offset，一般來說為54 */
+
+unsigned char header[54] __attribute__ ((aligned(8)));
+
+int a, i;
+
+int main(void)
+{
+	xil_printf("Start SD Card Control.\r\n");
+
+	a = bmp_upside_down();
+	if (a != XST_SUCCESS)
+	{
+		xil_printf("SD Polled File System Example Test failed \r\n");
+		return XST_FAILURE;
+	}
+
+	return XST_SUCCESS;
+}
+
+int bmp_upside_down(void)
+{
+	TCHAR	*Path = "0:/";									/* 掛載路徑 */
+
+	/* Register volume work area, initialize device */
+	res = f_mount(&fatfs, Path, 0);
+	if(res != FR_OK)
+	{
+		xil_printf("File Mount ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	/* 開檔 */
+	sd_file = (char *)FileReadName;
+
+	res = f_open(&fp_s, sd_file, FA_OPEN_EXISTING | FA_READ);
+	if(res)
+	{
+		xil_printf("File Open fp_s ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	res = f_lseek(&fp_s, 0);
+	if(res)
+	{
+		xil_printf("File Open fp_s ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	res = f_read(&fp_s, (void*)header, sizeof(header), &NumBytesRead);
+	if(res)
+	{
+		xil_printf("File Open fp_s ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+
+	for(i = 0; i < rgb_raw_data_offset; i++)
+	{
+		xil_printf("%d ", header[i]);
+
+		if(i % 10 == 0)
+			xil_printf("\r\n");
+	}
+
+
+	res = f_close(&fp_s);
+	if(res)
+	{
+		xil_printf("File Open fp_s ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	for(i = 0; i < rgb_raw_data_offset; i++)
+	{
+		xil_printf("%d ", header[i]);
+
+		if(i % 10 == 0)
+			xil_printf("\r\n");
+	}
+
+
+	return XST_SUCCESS;
+}

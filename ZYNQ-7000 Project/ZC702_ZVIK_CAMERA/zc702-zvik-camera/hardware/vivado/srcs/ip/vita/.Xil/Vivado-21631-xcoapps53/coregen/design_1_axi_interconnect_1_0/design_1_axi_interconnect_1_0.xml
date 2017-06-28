@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_axi_interconnect_1_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model/>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choices_0</spirit:name>
+      <spirit:enumeration spirit:text="Custom">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="Minimize Area">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="Maximize Performance">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_1</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_2</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_3</spirit:name>
+      <spirit:enumeration spirit:text="32">32</spirit:enumeration>
+      <spirit:enumeration spirit:text="64">64</spirit:enumeration>
+      <spirit:enumeration spirit:text="128">128</spirit:enumeration>
+      <spirit:enumeration spirit:text="256">256</spirit:enumeration>
+      <spirit:enumeration spirit:text="512">512</spirit:enumeration>
+      <spirit:enumeration spirit:text="1024">1024</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_4</spirit:name>
+      <spirit:enumeration spirit:text="2">2</spirit:enumeration>
+      <spirit:enumeration spirit:text="4">4</spirit:enumeration>
+      <spirit:enumeration spirit:text="8">8</spirit:enumeration>
+      <spirit:enumeration spirit:text="16">16</spirit:enumeration>
+      <spirit:enumeration spirit:text="32">32</spirit:enumeration>
+      <spirit:enumeration spirit:text="64">64</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_5</spirit:name>
+      <spirit:enumeration spirit:text="2">2</spirit:enumeration>
+      <spirit:enumeration spirit:text="4">4</spirit:enumeration>
+      <spirit:enumeration spirit:text="8">8</spirit:enumeration>
+      <spirit:enumeration spirit:text="16">16</spirit:enumeration>
+      <spirit:enumeration spirit:text="32">32</spirit:enumeration>
+      <spirit:enumeration spirit:text="64">64</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_6</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_7</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_8</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_9</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_10</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_11</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_12</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_13</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_14</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_15</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_16</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_17</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_18</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_19</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_20</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_21</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_22</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_23</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_24</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_25</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_26</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_27</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_28</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_29</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_30</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_31</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_32</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_33</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_34</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_35</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_36</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_37</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_38</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_39</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_40</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_41</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_42</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_43</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_44</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_45</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_46</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_47</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_48</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_49</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_50</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_51</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_52</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_53</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_54</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_55</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_56</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_57</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_58</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_59</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_60</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_61</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_62</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_63</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_64</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_65</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_66</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_67</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_68</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_69</spirit:name>
+      <spirit:enumeration spirit:text="None">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="32 deep">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="512 deep (packet mode)">2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_70</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_71</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_72</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_73</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_74</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_75</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_76</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_77</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_78</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_79</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_80</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_81</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_82</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_83</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_84</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_85</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_86</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_87</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_88</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_89</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_90</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_91</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_92</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_93</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_94</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_95</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_96</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_97</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_98</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_99</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_100</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choices_101</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:description>The AXI Interconnect IP connects one or more AXI memory-mapped master devices to one or more AXI memory mapped slave devices</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>NUM_SI</spirit:name>
+      <spirit:displayName>Number of Slave Interfaces</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_SI" spirit:order="2" spirit:minimum="1" spirit:maximum="16">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NUM_MI</spirit:name>
+      <spirit:displayName>Number of Master Interfaces</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_MI" spirit:order="3" spirit:minimum="1" spirit:maximum="16">16</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>STRATEGY</spirit:name>
+      <spirit:displayName>Interconnect Optimization Strategy</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.STRATEGY" spirit:choiceRef="choices_0" spirit:order="4">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>ENABLE_ADVANCED_OPTIONS</spirit:name>
+      <spirit:displayName>Enable Advanced Configuration Options</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.ENABLE_ADVANCED_OPTIONS" spirit:choiceRef="choices_1" spirit:order="5">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>ENABLE_PROTOCOL_CHECKERS</spirit:name>
+      <spirit:displayName>Enable Protocol Checkers and mark interfaces for debug</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.ENABLE_PROTOCOL_CHECKERS" spirit:choiceRef="choices_2" spirit:order="6">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>XBAR_DATA_WIDTH</spirit:name>
+      <spirit:displayName>Data Width of the AXI Crossbar</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.XBAR_DATA_WIDTH" spirit:choiceRef="choices_3" spirit:order="7">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PCHK_WAITS</spirit:name>
+      <spirit:displayName>Maximum number of idle cycles for READY monitoring</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCHK_WAITS" spirit:order="8" spirit:minimum="0" spirit:maximum="1024">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PCHK_MAX_RD_BURSTS</spirit:name>
+      <spirit:displayName>Maximum outstanding READ Transactions per ID</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCHK_MAX_RD_BURSTS" spirit:choiceRef="choices_4" spirit:order="9">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PCHK_MAX_WR_BURSTS</spirit:name>
+      <spirit:displayName>Maximum outstanding WRITE Transactions per ID</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCHK_MAX_WR_BURSTS" spirit:choiceRef="choices_5" spirit:order="10">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M00_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M00_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M00_HAS_REGSLICE" spirit:choiceRef="choices_6" spirit:order="1635284">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M01_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M01_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M01_HAS_REGSLICE" spirit:choiceRef="choices_7" spirit:order="1635285">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M02_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M02_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M02_HAS_REGSLICE" spirit:choiceRef="choices_8" spirit:order="1635286">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M03_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M03_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M03_HAS_REGSLICE" spirit:choiceRef="choices_9" spirit:order="1635287">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M04_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M04_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M04_HAS_REGSLICE" spirit:choiceRef="choices_10" spirit:order="1635288">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M05_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M05_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M05_HAS_REGSLICE" spirit:choiceRef="choices_11" spirit:order="1635289">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M06_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M06_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M06_HAS_REGSLICE" spirit:choiceRef="choices_12" spirit:order="1635290">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M07_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M07_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M07_HAS_REGSLICE" spirit:choiceRef="choices_13" spirit:order="1635291">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M08_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M08_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M08_HAS_REGSLICE" spirit:choiceRef="choices_14" spirit:order="1635292">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M09_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M09_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M09_HAS_REGSLICE" spirit:choiceRef="choices_15" spirit:order="1635293">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M10_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M10_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M10_HAS_REGSLICE" spirit:choiceRef="choices_16" spirit:order="1635294">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M11_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M11_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M11_HAS_REGSLICE" spirit:choiceRef="choices_17" spirit:order="1635295">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M12_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M12_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M12_HAS_REGSLICE" spirit:choiceRef="choices_18" spirit:order="1635296">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M13_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M13_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M13_HAS_REGSLICE" spirit:choiceRef="choices_19" spirit:order="1635297">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M14_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M14_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M14_HAS_REGSLICE" spirit:choiceRef="choices_20" spirit:order="1635298">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M15_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface M15_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M15_HAS_REGSLICE" spirit:choiceRef="choices_21" spirit:order="1635299">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M00_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M00_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M00_HAS_DATA_FIFO" spirit:choiceRef="choices_22" spirit:order="1635300">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M01_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M01_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M01_HAS_DATA_FIFO" spirit:choiceRef="choices_23" spirit:order="1635301">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M02_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M02_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M02_HAS_DATA_FIFO" spirit:choiceRef="choices_24" spirit:order="1635302">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M03_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M03_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M03_HAS_DATA_FIFO" spirit:choiceRef="choices_25" spirit:order="1635303">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M04_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M04_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M04_HAS_DATA_FIFO" spirit:choiceRef="choices_26" spirit:order="1635304">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M05_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M05_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M05_HAS_DATA_FIFO" spirit:choiceRef="choices_27" spirit:order="1635305">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M06_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M06_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M06_HAS_DATA_FIFO" spirit:choiceRef="choices_28" spirit:order="1635306">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M07_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M07_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M07_HAS_DATA_FIFO" spirit:choiceRef="choices_29" spirit:order="1635307">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M08_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M08_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M08_HAS_DATA_FIFO" spirit:choiceRef="choices_30" spirit:order="1635308">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M09_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M09_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M09_HAS_DATA_FIFO" spirit:choiceRef="choices_31" spirit:order="1635309">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M10_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M10_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M10_HAS_DATA_FIFO" spirit:choiceRef="choices_32" spirit:order="1635310">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M11_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M11_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M11_HAS_DATA_FIFO" spirit:choiceRef="choices_33" spirit:order="1635311">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M12_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M12_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M12_HAS_DATA_FIFO" spirit:choiceRef="choices_34" spirit:order="1635312">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M13_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M13_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M13_HAS_DATA_FIFO" spirit:choiceRef="choices_35" spirit:order="1635313">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M14_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M14_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M14_HAS_DATA_FIFO" spirit:choiceRef="choices_36" spirit:order="1635314">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M15_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface M15_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M15_HAS_DATA_FIFO" spirit:choiceRef="choices_37" spirit:order="1635315">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S00_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S00_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S00_HAS_REGSLICE" spirit:choiceRef="choices_38" spirit:order="1635316">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S01_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S01_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S01_HAS_REGSLICE" spirit:choiceRef="choices_39" spirit:order="1635317">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S02_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S02_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S02_HAS_REGSLICE" spirit:choiceRef="choices_40" spirit:order="1635318">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S03_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S03_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S03_HAS_REGSLICE" spirit:choiceRef="choices_41" spirit:order="1635319">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S04_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S04_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S04_HAS_REGSLICE" spirit:choiceRef="choices_42" spirit:order="1635320">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S05_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S05_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S05_HAS_REGSLICE" spirit:choiceRef="choices_43" spirit:order="1635321">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S06_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S06_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S06_HAS_REGSLICE" spirit:choiceRef="choices_44" spirit:order="1635322">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S07_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S07_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S07_HAS_REGSLICE" spirit:choiceRef="choices_45" spirit:order="1635323">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S08_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S08_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S08_HAS_REGSLICE" spirit:choiceRef="choices_46" spirit:order="1635324">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S09_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S09_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S09_HAS_REGSLICE" spirit:choiceRef="choices_47" spirit:order="1635325">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S10_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S10_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S10_HAS_REGSLICE" spirit:choiceRef="choices_48" spirit:order="1635326">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S11_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S11_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S11_HAS_REGSLICE" spirit:choiceRef="choices_49" spirit:order="1635327">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S12_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S12_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S12_HAS_REGSLICE" spirit:choiceRef="choices_50" spirit:order="1635328">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S13_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S13_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S13_HAS_REGSLICE" spirit:choiceRef="choices_51" spirit:order="1635329">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S14_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S14_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S14_HAS_REGSLICE" spirit:choiceRef="choices_52" spirit:order="1635330">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S15_HAS_REGSLICE</spirit:name>
+      <spirit:displayName>Enable Register Slice on interface S15_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S15_HAS_REGSLICE" spirit:choiceRef="choices_53" spirit:order="1635331">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S00_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S00_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S00_HAS_DATA_FIFO" spirit:choiceRef="choices_54" spirit:order="1635332">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S01_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S01_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S01_HAS_DATA_FIFO" spirit:choiceRef="choices_55" spirit:order="1635333">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S02_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S02_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S02_HAS_DATA_FIFO" spirit:choiceRef="choices_56" spirit:order="1635334">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S03_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S03_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S03_HAS_DATA_FIFO" spirit:choiceRef="choices_57" spirit:order="1635335">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S04_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S04_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S04_HAS_DATA_FIFO" spirit:choiceRef="choices_58" spirit:order="1635336">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S05_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S05_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S05_HAS_DATA_FIFO" spirit:choiceRef="choices_59" spirit:order="1635337">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S06_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S06_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S06_HAS_DATA_FIFO" spirit:choiceRef="choices_60" spirit:order="1635338">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S07_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S07_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S07_HAS_DATA_FIFO" spirit:choiceRef="choices_61" spirit:order="1635339">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S08_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S08_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S08_HAS_DATA_FIFO" spirit:choiceRef="choices_62" spirit:order="1635340">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S09_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S09_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S09_HAS_DATA_FIFO" spirit:choiceRef="choices_63" spirit:order="1635341">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S10_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S10_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S10_HAS_DATA_FIFO" spirit:choiceRef="choices_64" spirit:order="1635342">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S11_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S11_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S11_HAS_DATA_FIFO" spirit:choiceRef="choices_65" spirit:order="1635343">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S12_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S12_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S12_HAS_DATA_FIFO" spirit:choiceRef="choices_66" spirit:order="1635344">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S13_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S13_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S13_HAS_DATA_FIFO" spirit:choiceRef="choices_67" spirit:order="1635345">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S14_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S14_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S14_HAS_DATA_FIFO" spirit:choiceRef="choices_68" spirit:order="1635346">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>S15_HAS_DATA_FIFO</spirit:name>
+      <spirit:displayName>Enable Data FIFO on interface S15_AXI</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.S15_HAS_DATA_FIFO" spirit:choiceRef="choices_69" spirit:order="1635347">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M00_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M00_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M00_ISSUANCE" spirit:choiceRef="choices_70" spirit:order="1635348">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M01_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M01_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M01_ISSUANCE" spirit:choiceRef="choices_71" spirit:order="1635349">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M02_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M02_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M02_ISSUANCE" spirit:choiceRef="choices_72" spirit:order="1635350">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M03_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M03_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M03_ISSUANCE" spirit:choiceRef="choices_73" spirit:order="1635351">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M04_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M04_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M04_ISSUANCE" spirit:choiceRef="choices_74" spirit:order="1635352">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M05_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M05_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M05_ISSUANCE" spirit:choiceRef="choices_75" spirit:order="1635353">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M06_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M06_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M06_ISSUANCE" spirit:choiceRef="choices_76" spirit:order="1635354">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M07_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M07_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M07_ISSUANCE" spirit:choiceRef="choices_77" spirit:order="1635355">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M08_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M08_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M08_ISSUANCE" spirit:choiceRef="choices_78" spirit:order="1635356">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M09_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M09_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M09_ISSUANCE" spirit:choiceRef="choices_79" spirit:order="1635357">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M10_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M10_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M10_ISSUANCE" spirit:choiceRef="choices_80" spirit:order="1635358">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M11_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M11_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M11_ISSUANCE" spirit:choiceRef="choices_81" spirit:order="1635359">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M12_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M12_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M12_ISSUANCE" spirit:choiceRef="choices_82" spirit:order="1635360">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M13_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M13_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M13_ISSUANCE" spirit:choiceRef="choices_83" spirit:order="1635361">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M14_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M14_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M14_ISSUANCE" spirit:choiceRef="choices_84" spirit:order="1635362">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M15_ISSUANCE</spirit:name>
+      <spirit:displayName>Incicates whether M15_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M15_ISSUANCE" spirit:choiceRef="choices_85" spirit:order="1635363">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M00_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M00_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M00_SECURE" spirit:choiceRef="choices_86" spirit:order="1635364">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M01_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M01_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M01_SECURE" spirit:choiceRef="choices_87" spirit:order="1635365">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M02_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M02_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M02_SECURE" spirit:choiceRef="choices_88" spirit:order="1635366">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M03_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M03_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M03_SECURE" spirit:choiceRef="choices_89" spirit:order="1635367">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M04_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M04_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M04_SECURE" spirit:choiceRef="choices_90" spirit:order="1635368">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M05_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M05_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M05_SECURE" spirit:choiceRef="choices_91" spirit:order="1635369">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M06_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M06_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M06_SECURE" spirit:choiceRef="choices_92" spirit:order="1635370">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M07_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M07_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M07_SECURE" spirit:choiceRef="choices_93" spirit:order="1635371">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M08_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M08_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M08_SECURE" spirit:choiceRef="choices_94" spirit:order="1635372">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M09_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M09_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M09_SECURE" spirit:choiceRef="choices_95" spirit:order="1635373">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M10_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M10_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M10_SECURE" spirit:choiceRef="choices_96" spirit:order="1635374">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M11_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M11_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M11_SECURE" spirit:choiceRef="choices_97" spirit:order="1635375">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M12_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M12_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M12_SECURE" spirit:choiceRef="choices_98" spirit:order="1635376">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M13_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M13_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M13_SECURE" spirit:choiceRef="choices_99" spirit:order="1635377">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M14_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M14_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M14_SECURE" spirit:choiceRef="choices_100" spirit:order="1635378">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>M15_SECURE</spirit:name>
+      <spirit:displayName>Incicates whether M15_AXI connects to a secure slave</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.M15_SECURE" spirit:choiceRef="choices_101" spirit:order="1635379">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_axi_interconnect_1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">qartix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/AXI_Infrastructure</xilinx:taxonomy>
+        <xilinx:taxonomy>/Embedded_Processing/AXI_Infrastructure</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>AXI Interconnect</xilinx:displayName>
+      <xilinx:vendorURL>http://www.xilinx.com</xilinx:vendorURL>
+      <xilinx:coreRevision>128000</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2013-03-21T13:09:41</xilinx:coreCreationDateTime>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2013.1</xilinx:xilinxVersion>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

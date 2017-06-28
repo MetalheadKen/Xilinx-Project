@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="afifo_64i_16o_k7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/afifo_64i_16o_k7">
+    <Config>
+      <Option Name="TopModule" Val="afifo_64i_16o_k7"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../fmc_imageon_vita_receiver_v2/vita_receiver_2.0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+</DARoots>

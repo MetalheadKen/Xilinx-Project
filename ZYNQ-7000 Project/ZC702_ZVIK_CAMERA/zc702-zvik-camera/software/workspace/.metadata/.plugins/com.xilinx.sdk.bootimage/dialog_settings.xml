@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\zc702-zvik-camera\binaries\boot_image\bootimage.bif" key="com.xilinx.sdk.bootimage.history"/>
+	<item value="C:\zc702-zvik-camera\binaries\boot_image\" key="fsbl-outputFile"/>
+</section>

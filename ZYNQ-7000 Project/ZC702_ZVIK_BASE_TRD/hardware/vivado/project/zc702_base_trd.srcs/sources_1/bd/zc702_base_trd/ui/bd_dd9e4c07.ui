@@ -1,0 +1,68 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port hdmio -pg 1 -y 100 -defaultsOSRD
+preplace port DDR -pg 1 -y 20 -defaultsOSRD
+preplace port hdmio_clk -pg 1 -y 120 -defaultsOSRD
+preplace port reset_rtl -pg 1 -y 2060 -defaultsOSRD
+preplace port fmc_imageon_iic -pg 1 -y 60 -defaultsOSRD
+preplace port iic_main -pg 1 -y 780 -defaultsOSRD
+preplace port DDR_0 -pg 1 -y 1780 -defaultsOSRD
+preplace port fmc_imageon_hdmii_clk -pg 1 -y 40 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 40 -defaultsOSRD
+preplace port fmc_imageon_hdmii -pg 1 -y 20 -defaultsOSRD
+preplace port si570 -pg 1 -y 80 -defaultsOSRD
+preplace port clock_rtl -pg 1 -y 60 -defaultsOSRD
+preplace port FIXED_IO_0 -pg 1 -y 1800 -defaultsOSRD
+preplace portBus fmc_imageon_iic_rst_b -pg 1 -y 80 -defaultsOSRD
+preplace inst processing_system7_1 -pg 1 -lvl 2 -y 1860 -defaultsOSRD
+preplace inst axi_perf_mon_1 -pg 1 -lvl 4 -y 580 -defaultsOSRD
+preplace inst axi_interconnect_hp2 -pg 1 -lvl 4 -y 1340 -defaultsOSRD
+preplace inst processing_system7_1_axi_periph -pg 1 -lvl 3 -y 520 -defaultsOSRD
+preplace inst hdmi_output -pg 1 -lvl 2 -y 1660 -defaultsOSRD
+preplace inst axi_iic_1 -pg 1 -lvl 4 -y 800 -defaultsOSRD
+preplace inst gpio -pg 1 -lvl 1 -y 2230 -defaultsOSRD
+preplace inst tpg_input -pg 1 -lvl 2 -y 1180 -defaultsOSRD
+preplace inst processing -pg 1 -lvl 2 -y 240 -defaultsOSRD
+preplace inst axi_interconnect_gp0 -pg 1 -lvl 1 -y 580 -defaultsOSRD
+preplace inst proc_sys_reset_clk50 -pg 1 -lvl 1 -y 2080 -defaultsOSRD
+preplace inst interrupts -pg 1 -lvl 3 -y 1920 -defaultsOSRD
+preplace inst si570_clk -pg 1 -lvl 4 -y 1860 -defaultsOSRD
+preplace inst proc_sys_reset_clk150 -pg 1 -lvl 1 -y 220 -defaultsOSRD
+preplace inst fmc_hdmi_input -pg 1 -lvl 2 -y 1460 -defaultsOSRD
+preplace inst const_1 -pg 1 -lvl 3 -y 1620 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 60 -defaultsOSRD
+preplace inst axi_interconnect_hp0 -pg 1 -lvl 4 -y 1030 -defaultsOSRD
+preplace netloc processing_system7_1_axi_periph_M08_AXI 1 1 3 350 1000 NJ 1000 1050
+preplace netloc processing_system7_1_axi_periph_M01_AXI 1 3 1 N
+preplace netloc proc_sys_reset_clk150_peripheral_aresetn 1 1 3 320 1350 780 970 1130
+preplace netloc processing_system7_1_M_AXI_GP0 1 2 1 750
+preplace netloc processing_system7_1_FCLK_RESET0_N 1 0 3 20 1990 NJ 1990 760
+preplace netloc processing_system7_1_axi_periph_M06_AXI 1 1 3 330 980 NJ 980 1070
+preplace netloc processing_system7_1_axi_periph_M00_AXI 1 3 1 1120
+preplace netloc processing_M_AXI_MM2S 1 2 1 N
+preplace netloc hdmi_output_M_AXI_MM2S 1 2 1 770
+preplace netloc processing_system7_1_axi_periph_M05_AXI 1 1 3 350 950 NJ 950 1080
+preplace netloc axi_iic_1_IIC 1 4 1 NJ
+preplace netloc processing_system7_1_FCLK_CLK0 1 0 4 20 130 300 1550 790 960 1110
+preplace netloc processing_system7_1_axi_periph_M04_AXI 1 1 3 320 90 NJ 90 1050
+preplace netloc processing_M_AXI_S2MM 1 2 1 N
+preplace netloc proc_sys_reset_clk150_interconnect_aresetn 1 1 2 NJ 100 760
+preplace netloc tpg_input_M_AXI_S2MM 1 2 1 740
+preplace netloc fmc_hdmi_input_M_AXI_S2MM 1 2 1 730
+preplace netloc processing_system7_1_axi_periph_M07_AXI 1 1 3 340 990 NJ 990 1060
+preplace netloc processing_system7_1_axi_periph_M03_AXI 1 1 3 350 1560 NJ 1560 1090
+preplace netloc processing_system7_1_axi_periph_M02_AXI 1 1 3 350 1360 NJ 1360 1100
+preplace netloc processing_system7_1_DDR 1 2 3 NJ 1780 NJ 1780 NJ
+preplace netloc clock_rtl_1 1 0 1 NJ
+preplace netloc processing_system7_1_FIXED_IO 1 2 3 NJ 1800 NJ 1800 NJ
+preplace netloc proc_sys_reset_clk150_peripheral_reset 1 1 1 N
+preplace netloc reset_rtl_1 1 0 1 NJ
+levelinfo -pg 1 0 160 540 920 1260 1410 -top 0 -bot 2300
+",
+}
+{
+   da_axi4_cnt: "14",
+   da_board_cnt: "3",
+   da_ps7_cnt: "1",
+}

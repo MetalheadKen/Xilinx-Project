@@ -1,0 +1,33 @@
+Certain material in this reference design is separately licensed by third
+parties.  The following files may be subject to the GNU General Public
+License version 2, the GNU Lesser General License version 2.1, or other
+licenses:
+   Libdrm 2.4.65
+   v4l-utils 1.8.1
+   qt opensource 5.4.2
+   qwt 6.1.2
+   yavta SHA 50c7be6
+   OpenCV
+   ffmpeg 1.2
+   edid SHA 38d7c5e
+   fru tools SHA e1aa280
+
+Accompanying this notice you will find a set of licenses and notices for
+the above-listed third party packages; this material was assembled by
+Xilinx using in-house and/or third-party license scanning software.
+
+Note:  Licensee is solely responsible for checking the header files and
+other accompanying source files of all software applications created from
+the use of third party software and tools (and associated libraries and
+utilities) that are supplied with this reference design because such
+header and/or source files may contain or describe various copyright
+notices and license terms and conditions governing such files, which vary
+from case to case based on Licensee's usage and are beyond the control of
+Xilinx.  This summary and the license information provided is for
+reference purposes and is not intended to be a comprehensive list of all
+copyright notices or third-party license terms and conditions applicable
+to this reference design.  Licensee is solely responsible for complying
+with the terms and conditions imposed by third parties as applicable to
+the Licensee's software applications created from the use of the third
+party software and tools (and associated libraries and utilities) that
+are supplied with the reference design.

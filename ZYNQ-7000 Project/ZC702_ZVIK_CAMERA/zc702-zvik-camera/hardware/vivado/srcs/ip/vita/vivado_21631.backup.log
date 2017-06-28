@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 246566 by xbuild on Wed Mar 20 18:45:37 MDT 2013
+# Start of session at: Thu Mar 21 10:34:32 2013
+# Process ID: 28125
+# Log file: /group/mvico/users/elzinga/designs/vita/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: IPIntegrator_EA
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/arch.xml
+Parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+INFO: [Common 17-362] Using Tcl App repository from '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/XilinxTclStore'.
+INFO: [Common 17-364] Updating Tcl app persistent manifest '/home/elzinga/.Xilinx/Vivado/tclapp/manifest.tcl'
+start_gui
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 2904.941 ; gain = 112.910
+ipx::package_project -root_dir {/group/mvico/users/elzinga/designs/vita/project_1}
+INFO: [IP_Flow 19-2418] Expression "((C_S_AXI_DATA_WIDTH / 8) - 1)": Will not convert operator '/' to XPATH 'div' to allow integer division if applicable.
+INFO: [IP_Flow 19-2228] Inferred bus interface "S_AXI" of definition type "xilinx.com:interface:aximm:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "S_AXI_signal_reset" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "signal_reset" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "S_AXI_signal_clock" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "signal_clock" of definition type "xilinx.com:signal:clock:1.0".
+ipx::package_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:25 . Memory (MB): peak = 2911.324 ; gain = 0.125
+set_property library {user} [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-414] HDL Parameter 'C_FAMILY': Parameter name is reserved.
+WARNING: [IP_Flow 19-3157] Bus Interface 'signal_reset': Bus parameter POLARITY is ACTIVE_LOW but port 'reset' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2188] The Readme file is missing.
+INFO: [IP_Flow 19-2186] The Data Sheet file is missing.
+INFO: [IP_Flow 19-2189] The User Guide file is missing.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::archive_core {/group/mvico/users/elzinga/designs/vita/project_1/xilinx.com_user_fmc_imageon_vita_receiver_1.0.zip} [ipx::current_core]
+close_project
+open_project /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.filter
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/zc702_hdmi_out'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/vita'.
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2911.461 ; gain = 0.137
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/zc702_hdmi_out'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/vita'.
+open_bd_design {/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.01 - processing_system7_1
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - fmc_imageon_iic_1
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - iic_main
+Adding component instance block -- xilinx.com:ip:v_tpg:5.0 - v_tpg_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.0 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:v_spc:7.0 - v_spc_1
+Adding component instance block -- xilinx.com:ip:v_cfa:7.0 - v_cfa_1
+Adding component instance block -- xilinx.com:ip:v_ccm:6.0 - v_ccm_1
+Adding component instance block -- xilinx.com:ip:v_cresample:4.0 - v_cresample_1
+Adding component instance block -- xilinx.com:ip:v_gamma:7.0 - v_gamma_1
+Adding component instance block -- xilinx.com:ip:v_stats:6.0 - v_stats_1
+Adding component instance block -- xilinx.com:ip:v_rgb2ycrcb:7.0 - v_rgb2ycrcb_1
+Adding component instance block -- xilinx.com:ip:v_noise:6.0 - v_noise_1
+Adding component instance block -- xilinx.com:ip:v_enhance:7.0 - v_enhance_1
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:3.0 - v_vid_in_axi4s_1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:3.0 - v_axi4s_vid_out_1
+Adding component instance block -- xilinx.com:ip:v_tc:6.0 - v_tc_1
+Adding component instance block -- xilinx.com:user:zc702_hdmi_out:1.3 - zc702_hdmi_out_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.0 - xlconstant_2
+Adding component instance block -- xilinx.com:ip:clk_wiz:5.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.0 - axi_vdma_1
+Adding component instance block -- xilinx.com:ip:v_manr:6.0 - v_manr_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.0 - xbar
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.0 - xbar
+Successfully read diagram <design_1> from BD file </group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 3001.953 ; gain = 67.051
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fmc_imageon_vita_receiver:1.0 fmc_imageon_vita_receiver_1
+endgroup
+delete_bd_objs [get_bd_cells /fmc_imageon_vita_receiver_1]
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 21 11:52:53 2013...

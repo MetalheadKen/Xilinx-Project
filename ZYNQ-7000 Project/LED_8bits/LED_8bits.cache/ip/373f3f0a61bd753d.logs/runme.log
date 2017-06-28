@@ -1,0 +1,69 @@
+
+*** Running vivado
+    with args -log led_8bits_axi_gpio_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_8bits_axi_gpio_0_0.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source led_8bits_axi_gpio_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 302.527 ; gain = 92.125
+INFO: [Synth 8-638] synthesizing module 'led_8bits_axi_gpio_0_0' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ip/led_8bits_axi_gpio_0_0/synth/led_8bits_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/475c/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/475c/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/475c/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/475c/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-256] done synthesizing module 'led_8bits_axi_gpio_0_0' (8#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ip/led_8bits_axi_gpio_0_0/synth/led_8bits_axi_gpio_0_0.vhd:84]
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 341.910 ; gain = 131.508
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 341.910 ; gain = 131.508
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 660.863 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 660.863 ; gain = 450.461
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 660.863 ; gain = 450.461
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     5|
+|3     |LUT3 |     4|
+|4     |LUT4 |     7|
+|5     |LUT5 |    11|
+|6     |LUT6 |    10|
+|7     |FDR  |    16|
+|8     |FDRE |    41|
+|9     |FDSE |     4|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 660.863 ; gain = 450.461
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 660.863 ; gain = 440.891

@@ -1,0 +1,6 @@
+09:04:38 **** Clean-only build of project hdmi_display_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+
+09:04:38 Build Finished (took 484ms)
+

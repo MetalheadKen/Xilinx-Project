@@ -1,0 +1,3151 @@
+!SESSION 2016-10-20 18:53:25.723 -----------------------------------------------
+eclipse.buildId=2016.3
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/Xilinx_Project/LED_8bits/LED_8bits.sdk
+
+!ENTRY org.eclipse.ui 2 0 2016-10-20 18:53:27.818
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-10-20 18:53:27.818
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2016-10-20 18:53:28.698
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-10-20 18:53:28.698
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:46.541
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:46.542
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:47.936
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:47.937
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:47.938
+!MESSAGE XSCT Command: [setws D:/Xilinx_Project/LED_8bits/LED_8bits.sdk], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:47.940
+!MESSAGE XSCT command with result: [setws D:/Xilinx_Project/LED_8bits/LED_8bits.sdk], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:48.022
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.679
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.690
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.693
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Thu Oct 20 18:42:49 2016",
+"vivado_version": "2016.3",
+}]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.696
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.710
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.894
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.912
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.943
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.967
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_xadc_0": {},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.969
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:53:50.989
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_xadc_0": {},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.890
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.908
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"freertos823_xilinx_v1_2": {"name": "freertos823_xilinx",
+"version": "1.2",
+"desc": "FreeRTOS is a market leading open source RTOS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/ThirdParty/bsp/freertos823_xilinx_v1_2",
+},
+"standalone_v6_0": {"name": "standalone",
+"version": "6.0",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/bsp/standalone_v6_0",
+},
+},
+"ps7_cortexa9_1": {"freertos823_xilinx_v1_2": {"name": "freertos823_xilinx",
+"version": "1.2",
+"desc": "FreeRTOS is a market leading open source RTOS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/ThirdParty/bsp/freertos823_xilinx_v1_2",
+},
+"standalone_v6_0": {"name": "standalone",
+"version": "6.0",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/bsp/standalone_v6_0",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.919
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.921
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.927
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.929
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.930
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.931
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.940
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.942
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:33.942
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:34.080
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program.",
+"supp_proc": "microblaze ps7_cortexa9",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "standalone",
+},
+"empty_application": {"userdefname": "Empty Application",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel freertos823_xilinx",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "standalone",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "standalone",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "standalone",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "standalone",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal Echo Demo",
+"description": "Libmetal Echo Application",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "standalone",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "standalone",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "",
+"supp_os": "",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "standalone",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "standalone",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "standalone",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "standalone",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "standalone",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "standalone",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "standalone",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Update the serial_flash_family & serial_flash_interface in xilisf library in BSP settings!
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "standalone",
+},
+"xilkernel_thread_demo": {"userdefname": "Xilkernel POSIX Threads Demo",
+"description": "This Xilkernel based application provides a simple example of how to create multiple POSIX threads and synchronize with them when they are complete. This example creates an initial master thread. The master thread creates 4 worker threads that go off to compute parts of a sum and return the partial sum as the result. The master thread accumulates the partial sums and prints the result. This example can serve as your starting point for your end application thread structure.",
+"supp_proc": "microblaze",
+"supp_os": "xilkernel",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/xilkernel_thread_demo",
+"os": "standalone",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "standalone",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "standalone",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "standalone",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "standalone",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "standalone",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze",
+"supp_os": "standalone xilkernel",
+"path": "",
+"os": "standalone",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:34.085
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:34.124
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:34.127
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:34.157
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:38.555
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:38.557
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:38.746
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:38.748
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:39.183
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:39.185
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:39.545
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:39.547
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:39.758
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:39.760
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:39.925
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:39.927
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:40.266
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:40.269
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:40.398
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:40.400
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:40.627
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:40.629
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:41.660
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:41.662
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:42.344
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:42.345
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:43.011
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:43.014
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:43.158
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:43.160
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:43.359
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:43.361
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.077
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.079
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.080
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.110
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.111
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.113
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.113
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.115
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.115
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.247
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program.",
+"supp_proc": "microblaze ps7_cortexa9",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "standalone",
+},
+"empty_application": {"userdefname": "Empty Application",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel freertos823_xilinx",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "standalone",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "standalone",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "standalone",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "standalone",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal Echo Demo",
+"description": "Libmetal Echo Application",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "standalone",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "standalone",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "",
+"supp_os": "",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "standalone",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "standalone",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "standalone",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "standalone",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "standalone",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "standalone",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "standalone",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Update the serial_flash_family & serial_flash_interface in xilisf library in BSP settings!
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "standalone",
+},
+"xilkernel_thread_demo": {"userdefname": "Xilkernel POSIX Threads Demo",
+"description": "This Xilkernel based application provides a simple example of how to create multiple POSIX threads and synchronize with them when they are complete. This example creates an initial master thread. The master thread creates 4 worker threads that go off to compute parts of a sum and return the partial sum as the result. The master thread accumulates the partial sums and prints the result. This example can serve as your starting point for your end application thread structure.",
+"supp_proc": "microblaze",
+"supp_os": "xilkernel",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/xilkernel_thread_demo",
+"os": "standalone",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "standalone",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "standalone",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "standalone",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "standalone",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "standalone",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "E:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze",
+"supp_os": "standalone xilkernel",
+"path": "",
+"os": "standalone",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.249
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.280
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.281
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.310
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.311
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.313
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.314
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:51.343
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:54.217
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -sw led_8bit_bsp -dir D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp -processor ps7_cortexa9_0 -os standalone -app hello_world], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:54.256
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -sw led_8bit_bsp -dir D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp -processor ps7_cortexa9_0 -os standalone -app hello_world], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:54.359
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:54.361
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:54.362
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:54.364
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:54.364
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.121
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.815
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.828
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.828
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.830
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.831
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.832
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.833
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.834
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.835
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.837
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.877
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.881
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.882
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.884
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.885
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.887
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.888
+!MESSAGE XSCT Command: [::hsi::utils::opensw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.890
+!MESSAGE XSCT command with result: [::hsi::utils::opensw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.891
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss -app hello_world -processor ps7_cortexa9_0 -os standalone -dir D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:57.996
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf -sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss -app hello_world -processor ps7_cortexa9_0 -os standalone -dir D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.472
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.476
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.478
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.482
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.505
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.508
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, axi_gpio_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_slcr_0 ps7_uart_1 ps7_xadc_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.509
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.517
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {"axi_gpio_0": {"name": "gpio",
+"ver": "4.2",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.3",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.4",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.2",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.2",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.1",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.4",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.2",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.3",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.519
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.658
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_gpio_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpio_v4_2": {"name": "gpio",
+"version": "4.2",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_2",
+},
+},
+},
+"processing_system7_0": {"version": "5.5",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"rst_ps7_0_50M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_clockc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_uart_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartps_v3_2": {"name": "uartps",
+"version": "3.2",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/uartps_v3_2",
+},
+},
+},
+"ps7_pl310_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_pmu_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_axi_interconnect_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_cortexa9_0": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_3": {"name": "cpu_cortexa9",
+"version": "2.3",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_3",
+},
+},
+},
+"ps7_cortexa9_1": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_3": {"name": "cpu_cortexa9",
+"version": "2.3",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_3",
+},
+},
+},
+"ps7_ddr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"ddrps_v1_0": {"name": "ddrps",
+"version": "1.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/ddrps_v1_0",
+},
+},
+},
+"ps7_gpio_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpiops_v3_1": {"name": "gpiops",
+"version": "3.1",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/gpiops_v3_1",
+},
+},
+},
+"ps7_ddrc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dev_cfg_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"devcfg_v3_4": {"name": "devcfg",
+"version": "3.4",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/devcfg_v3_4",
+},
+},
+},
+"ps7_xadc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"xadcps_v2_2": {"name": "xadcps",
+"version": "2.2",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/xadcps_v2_2",
+},
+},
+},
+"ps7_ocmc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_coresight_comp_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"coresightps_dcc_v1_3": {"name": "coresightps_dcc",
+"version": "1.3",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/coresightps_dcc_v1_3",
+},
+},
+},
+"ps7_gpv_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scuc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_globaltimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_intc_dist_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_l2cachec_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_s": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_2": {"name": "dmaps",
+"version": "2.2",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_2",
+},
+},
+},
+"ps7_iop_bus_config_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scugic_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scugic_v3_4": {"name": "scugic",
+"version": "3.4",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/scugic_v3_4",
+},
+},
+},
+"ps7_scutimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scutimer_v2_1": {"name": "scutimer",
+"version": "2.1",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/scutimer_v2_1",
+},
+},
+},
+"ps7_scuwdt_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scuwdt_v2_1": {"name": "scuwdt",
+"version": "2.1",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/scuwdt_v2_1",
+},
+},
+},
+"ps7_slcr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_ns": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_2": {"name": "dmaps",
+"version": "2.2",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_2",
+},
+},
+},
+"ps7_afi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_2": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_3": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_m_axi_gp0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "E:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.880
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.882
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.883
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.885
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.893
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.896
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.946
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:58.948
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:59.627
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:59.630
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:59.630
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:59.632
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:59.636
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:59.639
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:59.681
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:54:59.683
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:54:59.773
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:287)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:250)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:54:59.897
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:54:59.908
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.178
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.182
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.247
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.251
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.323
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.327
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.391
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.396
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.458
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.463
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.525
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.531
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.592
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.598
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.663
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.668
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.730
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.735
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.796
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:00.800
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.024
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.032
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.093
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.098
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.161
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.166
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.212
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.873
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.944
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.952
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:01.999
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:02.024
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:02.030
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:02.084
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:02.130
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:02.135
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:02.192
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:03.138
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:03.143
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:03.195
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:04.114
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:04.119
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:04.164
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:04.821
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:04.829
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:04.880
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:05.857
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:05.867
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:05.918
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:06.684
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:06.694
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:06.746
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:07.245
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:07.253
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:07.304
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:07.783
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:07.788
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:07.881
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:11.745
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:11.751
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:11.801
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:12.777
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:12.782
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:12.832
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:13.886
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-10-20 18:55:13.900
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-20 18:55:16.512
+!MESSAGE Indexed 'led_8bit_bsp' (93 sources, 117 headers) in 2.45 sec: 4,065 declarations; 16,998 references; 60 unresolved inclusions; 5 syntax errors; 62 unresolved names (0.29%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-20 18:55:16.738
+!MESSAGE Indexed 'led_8bit' (2 sources, 35 headers) in 0.222 sec: 1,224 declarations; 1,944 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.308
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.312
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.312
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.315
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.316
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.319
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.319
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.322
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.323
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.329
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {"axi_gpio_0": {"name": "gpio",
+"ver": "4.2",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.3",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.4",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.2",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.2",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.1",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.4",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.2",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.3",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.330
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:14.331
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:37.525
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf bit], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:37.527
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf bit], Result: [null, led_8bits_wrapper.bit]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:37.528
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:37.531
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.391
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.399
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.413
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.441
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.443
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.611
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT1 210203A02F82A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.612
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.643
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.645
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.677
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:40.678
+!MESSAGE XSCT Command: [fpga -file D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/led_8bits_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:43.025
+!MESSAGE XSCT command with result: [fpga -file D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/led_8bits_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:43.826
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:43.829
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:48.845
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:48.848
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:48.849
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:48.851
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:48.852
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:56:48.853
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bit_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:57:01.165
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2016-10-20 18:57:01.169
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json D:/Xilinx_Project/LED_8bits/LED_8bits.sdk/led_8bits_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 1 0 2016-10-21 12:40:34.421
+!MESSAGE Executed Webtalk command

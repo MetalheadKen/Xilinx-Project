@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Feb 17 19:44:11 2017
+# Process ID: 9396
+# Current directory: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1
+# Command line: wbtcv.exe -mode batch -source D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/webtalk.log
+# Journal file: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1\webtalk.jou
+#-----------------------------------------------------------
+source D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb 17 19:44:13 2017...

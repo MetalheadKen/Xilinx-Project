@@ -1,0 +1,60 @@
+##----------------------------------------------------------------
+##      _____
+##     /     \
+##    /____   \____
+##   / \===\   \==/
+##  /___\===\___\/  AVNET
+##       \======/
+##        \====/    
+##---------------------------------------------------------------
+##
+## This design is the property of Avnet.  Publication of this
+## design is not authorized without written consent from Avnet.
+## 
+## Please direct any questions to:  technical.support@avnet.com
+##
+## Disclaimer:
+##    Avnet, Inc. makes no warranty for the use of this code or design.
+##    This code is provided  "As Is". Avnet, Inc assumes no responsibility for
+##    any errors, which may appear in this code, nor does it make a commitment
+##    to update the information contained herein. Avnet, Inc specifically
+##    disclaims any implied warranties of fitness for a particular purpose.
+##                     Copyright(c) 2011 Avnet, Inc.
+##                             All rights reserved.
+##
+##----------------------------------------------------------------
+##
+## Create Date:         Sep 15, 2011
+## Design Name:         FMC-IMAGEON
+## Module Name:         fmc_imageon_vita_receiver_v2_1_0.bbd
+## Project Name:        FMC-IMAGEON
+## Target Devices:      Virtex-6
+## Avnet Boards:        FMC-IMAGEON
+##
+## Tool versions:       Vivado 2013.3
+##
+## Description:         FMC-IMAGEON VITA receiver interface.
+##                      Microprocessor Driver Definition
+##
+## Dependencies:        
+##
+## Revision:            Sep 15, 2011: 1.01 Initial version
+##                      Dec 17, 2013: 2.01 Port to Vivado 2013.3
+##
+##----------------------------------------------------------------
+
+##############################################################################
+## Filename:          C:\FMC_IMAGEON_Tests\ml605_avnet_hw04/drivers/fmc_imageon_vita_receiver_v1_00_a/data/fmc_imageon_vita_receiver_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Thu Sep 15 13:07:28 2011 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER fmc_imageon_vita_receiver
+
+  OPTION supported_peripherals = (fmc_imageon_vita_receiver);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

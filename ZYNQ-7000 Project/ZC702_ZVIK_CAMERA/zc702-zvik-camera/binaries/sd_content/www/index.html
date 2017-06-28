@@ -1,0 +1,407 @@
+<html>
+
+<!--
+//----------------------------------------------------------------
+//      _____
+//     /     \
+//    /____   \____
+//   / \===\   \==/
+//  /___\===\___\/  AVNET
+//       \======/
+//        \====/
+//---------------------------------------------------------------
+//
+// This design is the property of Avnet.  Publication of this
+// design is not authorized without written consent from Avnet.
+//
+// Please direct any questions to:  technical.support@avnet.com
+//
+// Disclaimer:
+//    Avnet, Inc. makes no warranty for the use of this code or design.
+//    This code is provided  "As Is". Avnet, Inc assumes no responsibility for
+//    any errors, which may appear in this code, nor does it make a commitment
+//    to update the information contained herein. Avnet, Inc specifically
+//    disclaims any implied warranties of fitness for a particular purpose.
+//                     Copyright(c) 2012 Avnet, Inc.
+//                             All rights reserved.
+//
+//----------------------------------------------------------------
+//
+// Create Date:         Apr 09, 2012
+// Design Name:         ZVIK Camera
+// Module Name:         index.html
+// Project Name:        ZVIK Camera
+//
+// Tool versions:       Vivado 2013.2
+//
+// Description:         Web Page for ZVIK Camera control
+//
+// Dependencies:
+//
+// Revision:            Apr 09, 2012: 1.01 Initial version
+//                      Jul 06, 2012: 1.02 Candidate for release
+//                      Aug 14, 2012: 1.03 nomenclature change from "EPP" to "AP SoC"
+//                      Aug 15, 2012: 1.04 Add sliders target illumination
+//                      Jun 12, 2013; 2.01 Update for Vivado 2013.2 design
+//                      Aug 16, 2013: 2.02 Updated for new Image Enhancement core
+//
+//----------------------------------------------------------------
+-->
+
+<link href="styles/zvik_camera_linux_webserver.css" rel="stylesheet" type="text/css" media="screen, projection"/>
+<script type="text/javascript" src="js/slider.js"> </script>
+<script type="text/javascript" src="js/coeffs.js"> </script>
+<script type="text/javascript" src="js/zvik_camera_linux_webserver.js"> </script>
+<head>
+<title>Xilinx Zynq-7000 AP SoC Video and Imaging Kit - 1080P60 Real-Time Camera Demo</title>
+</head>
+
+<body onload="JavaScript:zvik_camera_init()">
+
+<div id="header">
+	<h2>Xilinx Zynq-7000 AP SoC Video and Imaging Kit - 1080P60 Real-Time Camera Demo</h2>
+</div>
+
+<div id="forms_column1">
+  <!-- GENERAL form -->
+  <form id="GENERALForm" name="GENERALForm" action="set_general" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>General Settings</legend>
+
+        <input type="button" value="Reset all settings" id="general_reset_id" onclick="JavaScript:zvik_camera_general_reset()">
+
+    </fieldset>
+  </form>
+
+  <!-- Sensor form -->
+  <form id="SensorForm_id" name="SensorForm" action="set_sensor" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>Image Sensor Settings</legend>
+
+      <fieldset style="width:320" style="padding:10">
+        <legend>Processor Control</legend>
+        <div>
+          <label id="agc_label" for="agc_mode">   Auto Gain:</label>
+          <input type="checkbox" name="agc" id="agc_id" value="0" size="3" onclick="JavaScript:set_agc()">
+        </div>
+        <br />
+        <div>
+          <label id="aec_label" for="aec_mode">   Auto Exposure:</label>
+          <input type="checkbox" name="aec" id="aec_id" value="0" size="3" onclick="JavaScript:set_aec()">
+        </div>
+
+        <label id="target_level_label" for="paec_level">Target Intensity:</label>
+        <script type="text/javascript">
+            new slider(TARGET_LEVEL_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="target_level" id="target_level_id" value="200" size="3" onclick="JavaScript:set_target_level()">
+        <br />
+
+      </fieldset>
+      <br />
+      <br />
+
+      <div>
+        <label id="vaec_label" for="vaec_mode">Image Sensor Auto Gain/Exposure:</label>
+        <input type="checkbox" name="vaec" id="vaec_id" value="0" size="3" onclick="JavaScript:set_vaec()">
+        <br />
+
+        <label id="vaec_level_label" for="vaec_level">Target Intensity:</label>
+        <script type="text/javascript">
+            new slider(VAEC_LEVEL_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="vaec_level" id="vaec_level_id" value="184" size="3" onclick="JavaScript:set_vaec()">
+        <br />
+
+
+      </div>
+      <br />
+
+      <div>
+        <label id="vita_exposure_label" for="vita_exposure">Exposure:</label>
+        <script type="text/javascript">
+            new slider(VITA_EXPOSURE_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="vita_exposure" id="vita_exposure_id" value="90" size="3" onclick="JavaScript:set_vita_exposure()">
+        <br />
+
+        <label id="vita_again_label" for="vita_again">Analog Gain:</label>
+        <script type="text/javascript">
+            new slider(VITA_AGAIN_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="vita_again" id="vita_again_id" value="0" size="3" onclick="JavaScript:set_vita_again()">
+        <br />
+
+        <label id="vita_dgain_label" for="vita_dgain">Digital Gain:</label>
+        <script type="text/javascript">
+            new slider(VITA_DGAIN_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="vita_dgain" id="vita_dgain_id" value="1.0" size="3" onclick="JavaScript:set_vita_dgain()">
+        <br />
+      </div>
+
+    </fieldset>
+  </form>
+
+  <!-- SNAP form -->
+  <form id="SNAPForm" name="SNAPForm" action="set_snap" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>Image Capture</legend>
+
+        <input type="button" value="Click to Take Snapshot" id="snapshot_id" onclick="JavaScript:set_webshot()">
+        <br />
+
+        <img id="webshot_id" src="webshot.bmp" height="180" width="320" align="middle"/>      
+        <br />                                                                                
+
+<!--        <a href="webshot.bmp">Click to View Full Size Image</a>   -->
+
+    </fieldset>
+  </form>
+
+  <!-- DEMO form -->
+  <form id="DEMOForm" name="DEMOForm" action="set_demo" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>Automatic Demonstration Mode</legend>
+
+        <input type="button" value="Click to Start" id="demo_start_id" onclick="JavaScript:zvik_camera_demo_start()">
+        <input type="button" value="Click to Stop" id="demo_stop_id" onclick="JavaScript:zvik_camera_demo_stop()">
+        <br />
+
+        <label id="demo_interval_label" for="demo_status">Interval (msec):</label>
+        <script type="text/javascript">
+            new slider(DEMO_INTERVAL_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="demo_interval" id="demo_interval_id" value="5000" size="3">
+        <br />
+
+
+        <br />
+
+        <label id="demo_status_label" for="demo_status">Description:</label>
+        <input type="text" name="demo_status" id="demo_status_id" value="off" size="30">
+        <br />
+
+    </fieldset>
+  </form>
+
+
+</div>
+
+<div id="forms_column2">
+  <!-- DPC form -->
+  <form id="DPCForm" name="DPCForm" action="set_dpc" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>Defective Pixel Correction</legend>
+
+        <label id="dpc_age_label" for="dpc_age">Pixel Age:</label>
+        <script type="text/javascript">
+            new slider(DPC_AGE_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="dpc_age" id="dpc_age_id" value="0" size="3" onclick="JavaScript:set_dpc_age()">
+        <br />
+
+        <label id="dpc_spatial_label" for="dpc_spatial">Spatial Var:</label>
+        <script type="text/javascript">
+            new slider(DPC_SPATIAL_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="dpc_spatial" id="dpc_spatial_id" value="6000" size="3" onclick="JavaScript:set_dpc_spatial()">
+        <br />
+
+        <label id="dpc_temporal_label" for="dpc_temporal">Temporal Var:</label>
+        <script type="text/javascript">
+            new slider(DPC_TEMPORAL_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="dpc_temporal" id="dpc_temporal_id" value="2" size="3" onclick="JavaScript:set_dpc_temporal()">
+
+    </fieldset>
+  </form>
+
+  <!-- CFA form -->
+  <form id="CFAForm" name="CFAForm" action="set_cfa" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>Color Filter Array Interpolation</legend>
+
+        <!-- Drop-down list box of pre-defined coefficient effects -->
+        <label id="cfa_bayer_label" for="CoefName">Bayer Phase:</label>
+        <select id="cfa_bayer_id" onchange="JavaScript:set_cfa_bayer()">
+          <option selected="selected">Red Green - 0</option>
+          <option>Green Red - 1</option>
+          <option>Green Blue - 2</option>
+          <option>Blue Green - 3</option>
+        </select>
+
+    </fieldset>
+  </form>
+
+  <!-- ENHANCE form -->
+  <form id="ENHANCEForm" name="ENHANCEForm" action="set_enhance" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>Image Enhancement</legend>
+
+        <label id="noise_strength_label" for="noise_strength">Noise Reduce:</label>
+        <script type="text/javascript">
+            new slider(NOISE_STRENGTH_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="noise_strength" id="noise_strength_id" value="0" size="3" onclick="JavaScript:set_noise_strength()">
+
+        <label id="enhance_strength_label" for="enhance_strength">Edge Enhance:</label>
+        <script type="text/javascript">
+            new slider(ENHANCE_STRENGTH_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="enhance_strength" id="enhance_strength_id" value="0" size="3" onclick="JavaScript:set_enhance_strength()">
+
+        <label id="halo_suppress_label" for="halo_suppress">Halo Suppress:</label>
+        <script type="text/javascript">
+            new slider(HALO_SUPPRESS_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="halo_suppress" id="halo_suppress_id" value="0" size="3" onclick="JavaScript:set_halo_suppress()">
+
+    </fieldset>
+  </form>
+
+  <!-- CCM form -->
+  <form id="CCMForm" name="CCMForm" action="set_ccm" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>Color Correction Matrix</legend>
+
+      <fieldset style="width:320" style="padding:10">
+        <legend>Processor Control</legend>
+        <div>
+          <label id="awb_label" for="awb_mode">   Auto White Balance:</label>
+          <input type="checkbox" name="awb" id="awb_id" value="0" size="3" onclick="JavaScript:set_awb()">
+        </div>
+      </fieldset>
+      <br />
+      <br />
+
+      <div>
+        <!-- Drop-down list box of pre-defined coefficient effects -->
+        <label id="ccm_select_label" for="ccm_presets">White Balance:</label>
+        <select id="ccm_select_id" onchange="JavaScript:set_ccm_select()">
+          <option selected="selected">Bypass</option>
+          <option>Daylight</option>
+          <option>Cool White Fluorescent</option>
+          <option>Hot Fluorescent</option>
+          <option>Incandescent</option>
+        </select>
+        <br />
+
+        <label id="ccm_brightness_label" for="ccm_brightness">Brightness:</label>
+        <script type="text/javascript">
+            new slider(CCM_BRIGHTNESS_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="ccm_brightness" id="ccm_brightness_id" value="100" size="3" onclick="JavaScript:set_ccm_brightness()">
+        <br />
+
+        <label id="ccm_contrast_label" for="ccm_constrast">Contrast:</label>
+        <script type="text/javascript">
+            new slider(CCM_CONTRAST_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="ccm_contrast" id="ccm_contrast_id" value="0" size="3" onclick="JavaScript:set_ccm_contrast()">
+        <br />
+
+        <label id="ccm_saturation_label" for="ccm_saturation">Saturation:</label>
+        <script type="text/javascript">
+            new slider(CCM_SATURATION_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="ccm_saturation" id="ccm_saturation_id" value="100" size="3" onclick="JavaScript:set_ccm_saturation()">
+      </div>
+
+    </fieldset>
+  </form>
+
+  <!-- GAMMA form -->
+  <form id="GAMMAForm" name="GAMMAForm" action="set_gamma" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>Gamma Correction</legend>
+
+      <fieldset style="width:320" style="padding:10">
+        <legend>Processor Control</legend>
+        <div>
+          <label id="geq_label" for="geq_mode">Gamma Equalization:</label>
+          <input type="checkbox" name="geq" id="geq_id" value="0" size="3" onclick="JavaScript:set_geq()">
+          <br />
+          <label id="geq_strength_label" for="geq_strength">Strength:</label>
+          <script type="text/javascript">
+            new slider(GEQ_STRENGTH_INIT, SLIDER_TPL);
+          </script>
+          <input type="text" name="geq_strength" id="geq_strength_id" value="50" size="3" onclick="JavaScript:set_geq_strength()">
+          <br />
+        </div>
+      </fieldset>
+      <br />
+      <br />
+
+      <div>
+        <!-- Drop-down list box of pre-defined coefficient effects -->
+        <label id="gamma_table_label" for="CoefName">Gamma Table:</label>
+        <select id="gamma_table_id" onchange="JavaScript:set_gamma_table()">
+          <option selected="selected">Linear</option>
+          <option>Compression Table 1/2.2</option>
+          <option>Compression Table 1/1.6</option>
+          <option>Expansion Table 1.6</option>
+          <option>Expansion Table 2.2</option>
+        </select>
+      </div>
+
+    </fieldset>
+  </form>
+
+
+</div>
+
+<div id="forms_column3">
+  <!-- STATS form -->
+  <form id="STATSForm" name="STATSForm" action="set_stats" method="POST">
+    <fieldset style="width:350" style="padding:10">
+       	<legend>Image Statistics</legend>
+
+        <input type="button" value="Update" id="imstats_update_id" onclick="JavaScript:set_imstats()">
+        <input type="button" value="Click to Start" id="imstats_start_id" onclick="JavaScript:zvik_camera_imstats_start()">
+        <input type="button" value="Click to Stop" id="imstats_stop_id" onclick="JavaScript:zvik_camera_imstats_stop()">
+        <br />
+
+        <label id="imstats_interval_label" for="imstats_interval">Interval (msec):</label>
+        <script type="text/javascript">
+            new slider(IMSTATS_INTERVAL_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="imstats_interval" id="imstats_interval_id" value="2000" size="3">
+        <br />
+
+        <br />
+        <label id="imstats_histscale_label" for="imstats_strength">Scale:</label>
+        <script type="text/javascript">
+            new slider(IMSTATS_HISTSCALE_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="imstats_histscale" id="imstats_histscale_id" value="9" size="3" onclick="JavaScript:set_imstats_histscale()">
+
+        <label id="imstats_underexp_label" for="imstats_underexp">Under-Exp:</label>
+        <script type="text/javascript">
+            new slider(IMSTATS_UNDEREXP_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="imstats_underexp" id="imstats_underexp_id" value="0.5" size="3" onclick="JavaScript:set_imstats_underexp()">
+
+        <label id="imstats_overexp_label" for="imstats_overexp">Over-Exp:</label>
+        <script type="text/javascript">
+            new slider(IMSTATS_OVEREXP_INIT, SLIDER_TPL);
+        </script>
+        <input type="text" name="imstats_overexp" id="imstats_overexp_id" value="3.0" size="3" onclick="JavaScript:set_imstats_overexp()">
+        <br />
+
+        <br />
+        <label>Histograms (intensity / red / green / blue):</label>
+        <br />
+
+        <img id="imstats_id" src="imstats.bmp"  height="450" width="320" align="middle"/>
+
+    </fieldset>
+  </form>
+
+
+</div>
+
+</body>
+</html>
+
+

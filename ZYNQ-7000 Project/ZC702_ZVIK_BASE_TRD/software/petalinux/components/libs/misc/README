@@ -1,0 +1,34 @@
+PetaLinux User Application Template
+===================================
+
+This directory contains a PetaLinux user library created from a template.
+
+You can easily import any already built library by copying it into this
+directory, and editing the automatically generated Makefile  as described below.
+
+Modify the "build:" target Makefile to copy the library and/or the header files
+to $(STAGEDIR) which is the sysroot used during compilation so that other user
+lib/app can used this prebuilt one.
+
+Modify the "install:" target in Makefile to use $(TARGETINST) to install your
+prebuilt library to the host copy of the target file system referring to the
+comments of the "install:" target.
+
+Before building the library, you will need to enable the library from PetaLinux
+menuconfig by running:
+    "petalinux-config -c rootfs"
+You will see your library in the "Libraries --->" submenu.
+
+To install your prebuilt library to the target file system copy on the host,
+simply run the
+    "petalinux-build -c rootfs/libmisc"
+command.
+
+You will also need to rebuild PetaLinux bootable images so that the images
+is updated with the updated target filesystem copy, run this command:
+    "petalinux-build -x package"
+
+You can also run one PetaLinux command to install the library to the
+target filesystem host copy and update the bootable images as follows:
+    "petalinux-build"
+

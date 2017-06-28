@@ -1,0 +1,5 @@
+21:55:37 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:55:42 INFO  : XSDB server has started successfully.
+21:55:44 INFO  : Processing command line option -hwspec D:/Xilinx_Project/HDMI_Display/hdl/projects/adv7511/zc702/adv7511_zc702.sdk/system_top.hdf.
+17:15:55 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:15:57 INFO  : XSDB server has started successfully.

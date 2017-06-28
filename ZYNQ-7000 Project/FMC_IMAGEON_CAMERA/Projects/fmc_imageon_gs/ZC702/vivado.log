@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Jan 19 19:27:17 2017
+# Process ID: 5988
+# Current directory: D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7520 D:\Xilinx_Project\FMC_IMAGEON_CAMERA\Projects\fmc_imageon_gs\ZC702\fmc_imageon_gs.xpr
+# Log file: D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/vivado.log
+# Journal file: D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx_Project/FMC_IMAGEON_CAMERA/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 814.918 ; gain = 183.660
+open_bd_design {D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:v_cfa:7.0 - v_cfa_0
+Adding component instance block -- xilinx.com:ip:v_cresample:4.0 - v_cresample_0
+Adding component instance block -- xilinx.com:ip:v_osd:6.0 - v_osd_0
+Adding component instance block -- xilinx.com:ip:v_rgb2ycrcb:7.1 - v_rgb2ycrcb_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding component instance block -- avnet:avnet_hdmi:avnet_hdmi_in:3.1 - avnet_hdmi_in_0
+Adding component instance block -- avnet:avnet_hdmi:avnet_hdmi_out:3.1 - avnet_hdmi_out_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_1
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - fmc_imageon_iic_0
+Adding component instance block -- avnet:onsemi_vita:onsemi_vita_cam:3.2 - onsemi_vita_cam_0
+Adding component instance block -- avnet:onsemi_vita:onsemi_vita_spi:3.2 - onsemi_vita_spi_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_148_5M
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_149M
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_76M
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <fmc_imageon_gs> from BD file <D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd>
+open_bd_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1128.121 ; gain = 299.816
+ipx::open_ipxact_file {D:\FMC_IMAGEON_CAMERA\IP\onsemi_vita_cam\component.xml}
+ipx::unload_core d:/FMC_IMAGEON_CAMERA/IP/onsemi_vita_cam/component.xml
+ipx::open_ipxact_file {D:\FMC_IMAGEON_CAMERA\IP\onsemi_vita_cam\component.xml}
+ipx::unload_core d:/FMC_IMAGEON_CAMERA/IP/onsemi_vita_cam/component.xml
+open_bd_design {D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+launch_sdk -workspace D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk -hwspec D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk -hwspec D:/Xilinx_Project/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 11 13:55:51 2017...

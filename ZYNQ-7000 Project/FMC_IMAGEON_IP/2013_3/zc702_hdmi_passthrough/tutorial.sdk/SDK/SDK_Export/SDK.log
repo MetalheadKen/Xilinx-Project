@@ -1,0 +1,44 @@
+17:03:43.156 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/tutorial/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+17:04:03.813 INFO  - Saving repository preferences. 
+17:04:03.813 INFO  - Reading in cores from local repositories: 
+		 C:\FMC_IMAGEON\2013_3\avnet_fmc_imageon_cores 
+17:04:03.813 INFO  - Updating libgen.options on all BSP projects. 
+17:04:03.829 INFO  - Cleaning BSP projects in the workspace. 
+17:17:43.949 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/tutorial/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+17:18:05.801 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:21:11.755 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:21:15.256 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:21:31.631 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/tutorial/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+17:22:14.187 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:22:15.488 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+17:22:19.161 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:23:27.729 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/tutorial/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+17:23:28.768 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/FMC_IMAGEON/2013_3/tutorial/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+17:23:28.861 INFO  - Copied contents of C:/FMC_IMAGEON/2013_3/tutorial/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml into \hw_platform_0\system.xml. 
+17:23:28.868 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\tutorial\tutorial.sdk\SDK\SDK_Export\hw\tutorial_wrapper.bit into \hw_platform_0\tutorial_wrapper.bit. 
+17:23:28.871 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\tutorial\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+17:23:28.872 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\tutorial\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+17:23:28.876 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\tutorial\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+17:23:28.877 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\tutorial\tutorial.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+17:23:28.878 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\tutorial\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+17:23:28.986 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:23:30.142 INFO  - Restoring local repository preferences: 
+		 C:\FMC_IMAGEON\2013_3\avnet_fmc_imageon_cores 
+17:23:30.935 INFO  - Updating hardware inferred compiler options for hdmi_passthrough_app. 
+17:23:30.938 INFO  - Clearing existing target manager status. 
+17:24:01.741 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/tutorial/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+17:24:34.929 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:24:35.029 INFO  - PS initialization will be done as it is not done before. 
+17:24:35.029 INFO  - Running PS initialization.... 
+17:24:35.224 INFO  - ps7_init is completed. 
+17:24:35.324 INFO  - ps7_post_config is completed. 
+17:24:35.424 INFO  - PS Initialization is complete. 
+17:25:05.777 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+17:25:05.784 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

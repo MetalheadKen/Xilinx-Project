@@ -1,0 +1,259 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Feb 17 20:19:46 2017
+# Process ID: 8232
+# Current directory: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4208 D:\Xilinx_Project\FMC_DUAL_CAMERA_HDMI\project_1\project_1.xpr
+# Log file: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/vivado.log
+# Journal file: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.xpr
+open_bd_design {D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+validate_bd_design -force
+make_wrapper -files [get_files D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+validate_bd_design -force
+save_bd_design
+validate_bd_design -force
+make_wrapper -files [get_files D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property screensize {187 222} [get_bd_cells fmc_imageon_hdmi_out_1]
+set_property screensize {206 248} [get_bd_cells fmc_imageon_hdmi_out_0]
+undo
+regenerate_bd_layout
+validate_bd_design -force
+make_wrapper -files [get_files D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+startgroup
+create_bd_cell -type ip -vlnv avnet:onsemi_vita:onsemi_vita_cam:3.2 onsemi_vita_cam_0
+endgroup
+set_property location {4 1197 539} [get_bd_cells onsemi_vita_cam_0]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M02_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins processing_system7_0_axi_periph/M02_AXI] [get_bd_intf_pins onsemi_vita_cam_0/S00_AXI]
+delete_bd_objs [get_bd_intf_nets IO_VITA_2]
+delete_bd_objs [get_bd_intf_ports IO_VITA_CAM_R]
+startgroup
+create_bd_intf_port -mode Slave -vlnv avnet.com:interface:onsemi_vita_cam_rtl:1.0 IO_CAM_IN
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_0/IO_CAM_IN] [get_bd_intf_ports IO_CAM_IN]
+endgroup
+set_property name IO_VITA_CAM_R [get_bd_intf_nets IO_CAM_IN_1]
+set_property name IO_CAM_IN_1 [get_bd_intf_nets IO_VITA_CAM_R]
+set_property name IO_VITA_CAM_R [get_bd_intf_ports IO_CAM_IN]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/clk200] [get_bd_pins processing_system7_0/FCLK_CLK2]
+connect_bd_net [get_bd_ports fmc_imageon_vclk_r] [get_bd_pins onsemi_vita_cam_0/clk]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/reset] [get_bd_pins rst_processing_system7_0_149M_R/peripheral_reset]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/trigger1] [get_bd_pins GND/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins onsemi_vita_cam_0/s00_axi_aresetn] [get_bd_pins rst_processing_system7_0_76M/peripheral_aresetn]
+delete_bd_objs [get_bd_intf_nets fmc_imageon_vita_receiver_R_VID_IO_OUT]
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_0/VID_IO_OUT] [get_bd_intf_pins v_vid_in_axi4s_0/vid_io_in]
+delete_bd_objs [get_bd_cells fmc_imageon_vita_receiver_R]
+startgroup
+create_bd_cell -type ip -vlnv avnet:onsemi_vita:onsemi_vita_cam_L:3.2 onsemi_vita_cam_L_0
+endgroup
+set_property location {4 1169 870} [get_bd_cells onsemi_vita_cam_L_0]
+startgroup
+create_bd_intf_port -mode Slave -vlnv avnet.com:interface:onsemi_vita_cam_rtl:1.0 IO_CAM_IN
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_L_0/IO_CAM_IN] [get_bd_intf_ports IO_CAM_IN]
+endgroup
+delete_bd_objs [get_bd_intf_nets IO_VITA_1] [get_bd_intf_ports IO_VITA_CAM_L]
+set_property name IO_VITA_CAM_L [get_bd_intf_ports IO_CAM_IN]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M03_AXI]
+undo
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M03_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins processing_system7_0_axi_periph/M03_AXI] [get_bd_intf_pins onsemi_vita_cam_L_0/S00_AXI]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/clk200] [get_bd_pins processing_system7_0/FCLK_CLK2]
+connect_bd_net [get_bd_ports fmc_imageon_vclk_l] [get_bd_pins onsemi_vita_cam_L_0/clk]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/reset] [get_bd_pins fmc_imageon_vita_receiver_L/reset]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/trigger1] [get_bd_pins GND/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/s00_axi_aresetn] [get_bd_pins rst_processing_system7_0_76M/peripheral_aresetn]
+delete_bd_objs [get_bd_intf_nets fmc_imageon_vita_receiver_L_VID_IO_OUT]
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_L_0/VID_IO_OUT] [get_bd_intf_pins v_vid_in_axi4s_1/vid_io_in]
+delete_bd_objs [get_bd_cells fmc_imageon_vita_receiver_L]
+startgroup
+create_bd_cell -type ip -vlnv avnet:fmc_imageon:fmc_imageon_hdmi_out:2.0 fmc_imageon_hdmi_out_2
+endgroup
+undo
+startgroup
+create_bd_cell -type ip -vlnv avnet:avnet_hdmi:avnet_hdmi_out:3.1 avnet_hdmi_out_0
+endgroup
+set_property location {10 3299 531} [get_bd_cells avnet_hdmi_out_0]
+startgroup
+copy_bd_objs /  [get_bd_cells {avnet_hdmi_out_0}]
+set_property location {9 3305 952} [get_bd_cells avnet_hdmi_out_1]
+endgroup
+delete_bd_objs [get_bd_intf_nets v_axi4s_vid_out_0_vid_io_out]
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out] [get_bd_intf_pins avnet_hdmi_out_0/VID_IO_IN]
+connect_bd_net [get_bd_ports fmc_imageon_vclk_r] [get_bd_pins avnet_hdmi_out_0/clk]
+connect_bd_net [get_bd_pins avnet_hdmi_out_0/reset] [get_bd_pins GND/dout]
+connect_bd_net [get_bd_pins avnet_hdmi_out_0/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins avnet_hdmi_out_0/embed_syncs] [get_bd_pins VCC/dout]
+delete_bd_objs [get_bd_intf_nets fmc_imageon_hdmi_out_0_IO_HDMIO]
+connect_bd_intf_net [get_bd_intf_ports IO_HDMIO_R] [get_bd_intf_pins avnet_hdmi_out_0/IO_HDMIO]
+delete_bd_objs [get_bd_cells fmc_imageon_hdmi_out_0]
+delete_bd_objs [get_bd_intf_nets v_axi4s_vid_out_1_vid_io_out]
+connect_bd_intf_net [get_bd_intf_pins avnet_hdmi_out_1/VID_IO_IN] [get_bd_intf_pins v_axi4s_vid_out_1/vid_io_out]
+connect_bd_net [get_bd_ports fmc_imageon_vclk_l] [get_bd_pins avnet_hdmi_out_1/clk]
+connect_bd_net [get_bd_pins avnet_hdmi_out_1/reset] [get_bd_pins GND/dout]
+connect_bd_net [get_bd_pins avnet_hdmi_out_1/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins avnet_hdmi_out_1/embed_syncs] [get_bd_pins VCC/dout]
+delete_bd_objs [get_bd_intf_nets fmc_imageon_hdmi_out_1_IO_HDMIO]
+connect_bd_intf_net [get_bd_intf_ports IO_HDMIO_L] [get_bd_intf_pins avnet_hdmi_out_1/IO_HDMIO]
+delete_bd_objs [get_bd_cells fmc_imageon_hdmi_out_1]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv avnet:onsemi_vita:onsemi_vita_spi:3.2 onsemi_vita_spi_0
+endgroup
+set_property location {10 2841 905} [get_bd_cells onsemi_vita_spi_0]
+startgroup
+create_bd_intf_port -mode Master -vlnv avnet.com:interface:onsemi_vita_spi_rtl:1.0 IO_SPI_OUT
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_spi_0/IO_SPI_OUT] [get_bd_intf_ports IO_SPI_OUT]
+endgroup
+set_property name IO_VITA_SPI [get_bd_intf_ports IO_SPI_OUT]
+set_property location {9 2900 826} [get_bd_cells onsemi_vita_spi_0]
+startgroup
+copy_bd_objs /  [get_bd_cells {onsemi_vita_spi_0}]
+set_property location {9 2904 965} [get_bd_cells onsemi_vita_spi_1]
+endgroup
+startgroup
+create_bd_intf_port -mode Master -vlnv avnet.com:interface:onsemi_vita_spi_rtl:1.0 IO_SPI_OUT
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_spi_1/IO_SPI_OUT] [get_bd_intf_ports IO_SPI_OUT]
+endgroup
+set_property name IO_VITA_SPI_L [get_bd_intf_ports IO_SPI_OUT]
+set_property name IO_VITA_SPI_R [get_bd_intf_ports IO_VITA_SPI]
+connect_bd_net [get_bd_pins onsemi_vita_spi_0/oe] [get_bd_pins v_axi4s_vid_out_0/aclken]
+connect_bd_net [get_bd_pins onsemi_vita_spi_1/oe] [get_bd_pins VCC/dout]
+connect_bd_net [get_bd_pins onsemi_vita_spi_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins onsemi_vita_spi_0/s00_axi_aclk]
+connect_bd_net [get_bd_pins onsemi_vita_spi_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins onsemi_vita_spi_1/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins onsemi_vita_spi_0/s00_axi_aresetn] [get_bd_pins rst_processing_system7_0_76M/peripheral_aresetn]
+connect_bd_net [get_bd_pins onsemi_vita_spi_1/s00_axi_aresetn] [get_bd_pins rst_processing_system7_0_76M/peripheral_aresetn]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins onsemi_vita_spi_0/S00_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins onsemi_vita_spi_1/S00_AXI]
+endgroup
+validate_bd_design
+assign_bd_address
+validate_bd_design
+make_wrapper -files [get_files D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {9 2871 513} [get_bd_cells onsemi_vita_spi_1]
+regenerate_bd_layout
+open_run impl_1
+open_bd_design {D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf
+set_property location {1 222 683} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 213 679} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 219 692} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 219 698} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 223 709} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 214 711} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 224 705} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 216 726} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 236 707} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 220 688} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 212 713} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 199 687} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 239 716} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 213 694} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 206 702} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 217 716} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 217 713} [get_bd_cells processing_system7_0]
+set_property location {1 212 773} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 209 750} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 213 760} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 213 744} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 208 756} [get_bd_cells processing_system7_0]
+set_property location {1 219 819} [get_bd_cells processing_system7_0]
+set_property location {1 202 850} [get_bd_cells processing_system7_0]
+undo
+undo
+set_property location {1 209 793} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 215 819} [get_bd_cells processing_system7_0]
+undo
+undo
+undo
+set_property location {1 216 711} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 206 731} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 214 696} [get_bd_cells processing_system7_0]
+undo
+set_property location {1 200 697} [get_bd_cells processing_system7_0]
+launch_sdk -workspace D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk -hwspec D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/fmc_imageon_gs_wrapper.hdf

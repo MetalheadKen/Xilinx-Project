@@ -1,0 +1,42 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.3.3  2013-08-16 bk=1.2871 VDI=33 GEI=35
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 170 -defaultsOSRD
+preplace port hdmii_clk -pg 1 -y 440 -defaultsOSRD
+preplace port hdmii_io -pg 1 -y 400 -defaultsOSRD
+preplace port hdmio_io -pg 1 -y 470 -defaultsOSRD
+preplace port fmc_imageon_iic -pg 1 -y 20 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 190 -defaultsOSRD
+preplace portBus fmc_imageon_iic_rst_n -pg 1 -y 90 -defaultsOSRD
+preplace inst fmc_imageon_iic_0 -pg 1 -lvl 1 -y 70 -defaultsOSRD
+preplace inst fmc_imageon_hdmio_yuv422 -pg 1 -lvl 3 -y 470 -defaultsOSRD
+preplace inst fmc_imageon_hdmii_yuv422 -pg 1 -lvl 2 -y 420 -defaultsOSRD
+preplace inst proc_sys_reset -pg 1 -lvl 2 -y 170 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 3 -y 180 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 330 -defaultsOSRD
+preplace netloc processing_system7_0_ddr 1 1 3 590 270 NJ 330 NJ
+preplace netloc proc_sys_reset_interconnect_aresetn 1 2 1 1010
+preplace netloc proc_sys_reset_peripheral_aresetn 1 0 3 150 160 NJ 60 1040
+preplace netloc fmc_imageon_hdmii_yuv422_hdmii_axi4s_video 1 2 1 N
+preplace netloc fmc_imageon_iic_0_gpo 1 1 3 540 30 NJ 30 NJ
+preplace netloc axi4s_clk_1 1 1 2 570 490 1000
+preplace netloc hdmio_audio_spdif_1 1 2 1 1010
+preplace netloc fmc_imageon_hdmii_yuv422_hdmii_vtiming 1 2 1 N
+preplace netloc processing_system7_0_axi_periph_m01_axi 1 2 2 1050 320 1440
+preplace netloc hdmii_clk_1 1 0 3 120 190 580 500 990
+preplace netloc hdmii_io_1 1 0 2 NJ 480 610
+preplace netloc processing_system7_0_fclk_reset0_n 1 1 1 560
+preplace netloc fmc_imageon_hdmio_yuv422_hdmio_io 1 3 1 N
+preplace netloc processing_system7_0_fixed_io 1 1 3 550 280 NJ 340 NJ
+preplace netloc processing_system7_0_fclk_clk0 1 0 3 130 170 600 70 1020
+preplace netloc processing_system7_0_axi_periph_m00_axi 1 0 4 140 150 NJ 40 NJ 40 1440
+preplace netloc fmc_imageon_iic_0_iic 1 1 3 530 20 NJ 20 NJ
+preplace netloc processing_system7_0_m_axi_gp0 1 1 2 610 80 NJ
+levelinfo -pg 1 90 340 830 1305 1480
+",
+}
+{
+   da_axi4_cnt: "3",
+   da_board_cnt: "1",
+   da_ps7_cnt: "1",
+}

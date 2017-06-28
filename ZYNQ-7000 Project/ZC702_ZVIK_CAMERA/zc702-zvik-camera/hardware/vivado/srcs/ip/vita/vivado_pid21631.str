@@ -1,0 +1,435 @@
+/*
+Vivado v2013.1 (64-bit)
+Build 246566 by xbuild on Wed Mar 20 18:45:37 MDT 2013
+Current time: 3/21/13 12:11:26 PM
+OS: Linux
+Version: 2.6.18-238.el5
+Architecture: amd64
+Available processors (cores): 48
+Process ID: 21631
+Java Version: 1.7.0_07 64-bit
+
+Free memory:		98 mb
+Allocated memory:	122 mb
+Max memory:		2,042 mb
+Total free memory:	2,018 mb
+*/
+
+select (PAResourceAtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // I (JPanel, aP) [03/21 12:11:26]
+select (null, "/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.xpr"); // ai (am, aP) [03/21 12:11:28]
+// ui.b.c.bW[ui.aP]:  Open Project : addNotify
+// Tcl: open_project /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.xprsource -notrace /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.filter
+// Tcl: Scanning sources...Finished scanning sources
+// Tcl: INFO: [IP_Flow 19-234] Refreshing IP repositoriesINFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/zc702_hdmi_out'.INFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/vita'.INFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+// Tcl: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2891.844 ; gain = 93.594
+dismissDialog ("Open Project"); // bW (aP) [03/21 12:11:35]
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 12:12:43]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 12:12:44]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "/group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr"); // ai (JPopupMenu, aP) [03/21 12:12:47]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 12:12:47]
+// ui.b.c.bW[ui.aP]:  Open Project : addNotify
+select (null, "Yes"); // JButton (JPanel, x) [03/21 12:12:51]
+// Tcl: close_project
+// Tcl: open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+// Tcl: open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xprsource -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+// Tcl: Scanning sources...Finished scanning sources
+// Tcl: INFO: [IP_Flow 19-234] Refreshing IP repositoriesINFO: [IP_Flow 19-1704] No user repositories specifiedINFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+// Tcl: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:05 . Memory (MB): peak = 2915.441 ; gain = 12.031
+dismissDialog ("Open Project"); // bW (aP) [03/21 12:12:59]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 3); // l (r, aP) [03/21 12:13:31]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 3, false, false, false, false, true); // l (r, aP) - DOUBLE CLICK [03/21 12:13:31]
+// ui.b.c.bW[ui.aP]:  IP Packager : addNotify
+// Tcl: ipx::open_core -upgrade true {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+dismissDialog ("IP Packager"); // bW (aP) [03/21 12:13:34]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Identification", 0); // D (JViewport, aP) [03/21 12:13:36]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Identification", 0); // D (JViewport, aP) [03/21 12:13:40]
+select (PAResourceAtoH.HTaxonomyChooserPanel_OPEN_TAXONOMY_CHOOSER_TO_SELECT_CATEGORIES, null); // j (k, aP) [03/21 12:14:17]
+// ui.b.r.d.m[ui.aP]: Choose IP Categories: addNotify
+select (RDIResource.BaseDialog_OK, "OK"); // a (JPanel, m) [03/21 12:14:24]
+// Tcl: set_property taxonomy {{/Video_&_Image_Processing}} [ipx::current_core]
+dismissDialog ("Choose IP Categories"); // m (aP) [03/21 12:14:24]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Interfaces", 5); // D (JViewport, aP) [03/21 12:14:27]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Addressing and Memory", 6); // D (JViewport, aP) [03/21 12:14:35]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP GUI Customization Layout", 7); // D (JViewport, aP) [03/21 12:14:37]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Licensing and Security", 8); // D (JViewport, aP) [03/21 12:14:46]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 9); // D (JViewport, aP) [03/21 12:14:48]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP GUI Customization Layout", 7); // D (JViewport, aP) [03/21 12:14:50]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Addressing and Memory", 6); // D (JViewport, aP) [03/21 12:14:53]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Ports", 4); // D (JViewport, aP) [03/21 12:15:04]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Customization Parameters", 3); // D (JViewport, aP) [03/21 12:15:07]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP File Groups", 2); // D (JViewport, aP) [03/21 12:15:09]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Compatibility", 1); // D (JViewport, aP) [03/21 12:15:10]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Identification", 0); // D (JViewport, aP) [03/21 12:15:13]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 9); // D (JViewport, aP) [03/21 12:15:22]
+select (PAResourceQtoZ.ReviewContentPanel_ARCHIVE_IP, "Archive IP"); // a (JPanel, aP) [03/21 12:15:29]
+// ui.b.r.a.F[ui.aP]: Package IP: addNotify
+select (RDIResource.BaseDialog_OK, "OK"); // a (JPanel, F) [03/21 12:15:31]
+// Tcl: ipx::check_integrity [ipx::current_core]
+// Tcl: INFO: [IP_Flow 19-414] HDL Parameter 'C_FAMILY': Parameter name is reserved.
+// Tcl: INFO: [IP_Flow 19-2181] Payment Required is not set for this core.INFO: [IP_Flow 19-2188] The Readme file is missing.INFO: [IP_Flow 19-2186] The Data Sheet file is missing.INFO: [IP_Flow 19-2189] The User Guide file is missing.INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+dismissDialog ("Package IP"); // F (aP) [03/21 12:15:32]
+// ui.b.c.bW[ui.aP]:  IP Packager : addNotify
+// Tcl: ipx::archive_core {/group/mvico/users/elzinga/designs/vita/project_1/xilinx.com_user_fmc_imageon_vita_receiver_1.0.zip} [ipx::current_core]
+dismissDialog ("IP Packager"); // bW (aP) [03/21 12:15:32]
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 12:15:51]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 12:15:53]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.xpr"); // ai (JPopupMenu, aP) [03/21 12:15:56]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 12:15:56]
+// ui.b.c.bW[ui.aP]:  Open Project : addNotify
+select (null, "Yes"); // JButton (JPanel, x) [03/21 12:16:00]
+// Tcl: close_project
+// Tcl: open_project /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.xpr
+// Tcl: open_project /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.xprsource -notrace /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.filter
+// Tcl: Scanning sources...Finished scanning sources
+// Tcl: INFO: [IP_Flow 19-234] Refreshing IP repositoriesINFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/zc702_hdmi_out'.INFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/vita'.INFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+dismissDialog ("Open Project"); // bW (aP) [03/21 12:16:06]
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 3); // u (t, aP) [03/21 12:16:56]
+// ui.b.c.bW[ui.aP]:  IP Catalog : addNotify
+dismissDialog ("IP Catalog"); // bW (aP) [03/21 12:16:56]
+select (PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // ai (am, aP) [03/21 12:16:58]
+// Project Settings: addNotify
+selectList (PAResourceItoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "ui.data.coregen.bI@4d6a3a57", 1); // n (JViewport, j) [03/21 12:17:02]
+select (PAResourceAtoH.AbstractMultiChooser_REMOVE_SELECTED_FILES_AND_DIRECTORIES, null); // a (JPanel, j) [03/21 12:17:04]
+select (PAResourceItoP.ProjectSettingsIPRepositoryPanel_IP_REPOSITORIES, "Add Repository..."); // a (JPanel, j) [03/21 12:17:06]
+setFolderChooser ("/group/mvico/users/elzinga/designs/vita/project_1"); //  [03/21 12:17:14]
+// Tcl: set_property ip_repo_paths  {/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/zc702_hdmi_out /group/mvico/users/elzinga/designs/vita/project_1} [current_fileset]
+// Tcl: update_ip_catalog
+// Tcl: INFO: [IP_Flow 19-234] Refreshing IP repositoriesINFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/zc702_hdmi_out'.INFO: [IP_Flow 19-1700] Loaded user repository '/group/mvico/users/elzinga/designs/vita/project_1'.
+select (null, "OK"); // JButton (ButtonPanel, j) [03/21 12:17:44]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2); // l (r, aP) [03/21 12:19:13]
+// ui.b.c.bW[ui.aP]:  Open Block Design : addNotify
+// Tcl: open_bd_design {/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+// Tcl: Adding component instance block -- xilinx.com:ip:axi_crossbar:2.0 - xbar
+// Tcl: Adding component instance block -- xilinx.com:ip:axi_crossbar:2.0 - xbar
+// Tcl: Successfully read diagram <design_1> from BD file </group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+// Tcl: open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2979.195 ; gain = 52.672
+dismissDialog ("Open Block Design"); // bW (aP) [03/21 12:19:22]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 77, 59, 951, 679, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 12:19:23]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 77, 59, 951, 679, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 12:19:25]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 77, 59, 951, 679, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 12:19:25]
+select (PAResourceQtoZ.SystemBuilderMenu_ADD_IP, "Add IP..."); // ai (am, aP) [03/21 12:19:27]
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "fmc_imageon_vita_receiver_v1_0", 1); // x (JViewport, ResizableWindow) [03/21 12:19:35]
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "fmc_imageon_vita_receiver_v1_0", 1, false, false, false, false, true); // x (JViewport, ResizableWindow) - DOUBLE CLICK [03/21 12:19:35]
+// ui.b.c.bW[ui.aP]:  Add IP : addNotify
+// Tcl: startgroupcreate_bd_cell -type ip -vlnv xilinx.com:user:fmc_imageon_vita_receiver:1.0 fmc_imageon_vita_receiver_1
+// Tcl: endgroup
+dismissDialog ("Add IP"); // bW (aP) [03/21 12:19:38]
+// Tcl: set_property location {3 981 1027} [get_bd_cells /fmc_imageon_vita_receiver_1]
+select (PAResourceQtoZ.SystemBuilderView_REGENERATE, null); // aw (CommandBar, aP) [03/21 12:24:30]
+// Tcl: regenerate_bd_layout
+// ui.b.c.bW[ui.aP]:  Re-customize IP : addNotify
+// ui.b.e.h[ui.aP]: Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // bW (aP) [03/21 12:25:00]
+selectComboBox ("Number of Slave Interfaces", "16", 15); // az (JPanel, h) [03/21 12:25:04]
+select (RDIResource.BaseDialog_OK, "OK"); // a (JPanel, h) [03/21 12:25:06]
+// Tcl: startgroupset_property -dict [list CONFIG.NUM_MI {16}] [get_bd_cells /axi_interconnect_1]
+// ui.b.c.bW[ui.b.e.h]:  Customize IP : addNotify
+select (RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (JPanel, bW) [03/21 12:25:08]
+// Tcl: 0
+// Tcl: endgroup
+dismissDialog ("Customize IP"); // bW (h) [03/21 12:25:12]
+// Tcl: set_property location {1 580 683} [get_bd_cells /fmc_imageon_vita_receiver_1]
+// Tcl: connect_bd_intf_net [get_bd_intf_pins /fmc_imageon_vita_receiver_1/S_AXI] [get_bd_intf_pins /axi_interconnect_1/M15_AXI]
+// Tcl: connect_bd_net -net [get_bd_net /clk_50MHz] [get_bd_pins /axi_interconnect_1/M15_ACLK] [get_bd_pins /processing_system7_1/FCLK_CLK0]
+// Tcl: connect_bd_net -net [get_bd_net /processing_system7_1_fclk_reset0_n] [get_bd_pins /axi_interconnect_1/M15_ARESETN] [get_bd_pins /processing_system7_1/FCLK_RESET0_N]
+// ui.b.c.bW[ui.aP]:  Re-customize IP : addNotify
+// ui.b.e.h[ui.aP]: Re-customize IP: addNotify
+// ui.data.coregen.a.a.c.bp[ui.b.e.h]: Configuration Presets: addNotify
+dismissDialog ("Re-customize IP"); // bW (aP) [03/21 01:01:56]
+select (null, null, true, false); // bz (k, h): TRUE [03/21 01:02:11]
+selectTable (PAResourceAtoH.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "FCLK_CLK1;IO PLL;50;50.000000;0.1 : 250.0;PL Fabric Clocks", 4); // k (JViewport, h) [03/21 01:02:11]
+selectTable (PAResourceAtoH.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "FCLK_CLK1;IO PLL;50;50.000000;0.1 : 250.0;PL Fabric Clocks", 4); // k (JViewport, h) [03/21 01:02:14]
+selectTable (PAResourceAtoH.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "FCLK_CLK1;IO PLL;50;50.000000;0.1 : 250.0;PL Fabric Clocks", 4); // k (JViewport, h) [03/21 01:02:20]
+selectTable (PAResourceAtoH.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "FCLK_CLK3;IO PLL;50;50.000000;0.1 : 250.0;PL Fabric Clocks", 6); // k (JViewport, h) [03/21 01:02:27]
+select (RDIResource.BaseDialog_OK, "OK"); // a (JPanel, h) [03/21 01:02:32]
+// Tcl: startgroupset_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {200} CONFIG.PCW_EN_CLK1_PORT {1}] [get_bd_cells /processing_system7_1]
+// ui.b.c.bW[ui.b.e.h]:  Customize IP : addNotify
+// Tcl: endgroup
+dismissDialog ("Customize IP"); // bW (h) [03/21 01:02:33]
+// Tcl: connect_bd_net [get_bd_pins /processing_system7_1/FCLK_CLK1] [get_bd_pins /fmc_imageon_vita_receiver_1/clk200]
+// Tcl: connect_bd_net -net [get_bd_net /vid_out_clk] [get_bd_pins /fmc_imageon_vita_receiver_1/clk4x] [get_bd_pins /clk_wiz_1/clk_out1]
+// Tcl: connect_bd_net [get_bd_pins /clk_wiz_1/clk_out2] [get_bd_pins /fmc_imageon_vita_receiver_1/clk]
+// ui.b.c.bW[ui.aP]:  Re-customize IP : addNotify
+// ui.b.e.h[ui.aP]: Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // bW (aP) [03/21 01:06:05]
+select (RDIResource.BaseDialog_CANCEL, "Cancel"); // a (JPanel, h) [03/21 01:06:06]
+// Tcl: set_property location {17 5297 930} [get_bd_cells /iic_main]
+select (PAResourceQtoZ.SystemBuilderView_REGENERATE, null); // aw (CommandBar, aP) [03/21 01:06:44]
+// Tcl: regenerate_bd_layout
+// Tcl: connect_bd_net -net [get_bd_net /xlconstant_2_const] [get_bd_pins /fmc_imageon_vita_receiver_1/reset] [get_bd_pins /xlconstant_2/const]
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 01:09:31]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 01:09:34]
+select (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ag (JPopupMenu, aP) [03/21 01:09:34]
+select (PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "Save Block Design"); // ai (JPopupMenu, aP) [03/21 01:09:35]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 01:09:35]
+// Tcl: save_bd_design
+// Tcl: Wrote  : </group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+// ui.b.c.bW[ui.aP]:  Re-customize IP : addNotify
+// ui.b.e.h[ui.aP]: Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // bW (aP) [03/21 01:10:08]
+select (RDIResource.BaseDialog_CANCEL, "Cancel"); // a (JPanel, h) [03/21 01:10:29]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 88, 128, 957, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:10:53]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 88, 128, 957, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:10:53]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 88, 128, 957, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:10:53]
+select (PAResourceQtoZ.SystemBuilderMenu_ADD_IP, "Add IP..."); // ai (am, aP) [03/21 01:10:55]
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 4); // x (JViewport, ResizableWindow) [03/21 01:11:01]
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 4, false, false, false, false, true); // x (JViewport, ResizableWindow) - DOUBLE CLICK [03/21 01:11:01]
+// ui.b.c.bW[ui.aP]:  Add IP : addNotify
+// Tcl: startgroupcreate_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_2
+// Tcl: endgroup
+dismissDialog ("Add IP"); // bW (aP) [03/21 01:11:04]
+// Tcl: set_property location {16 4392 380} [get_bd_cells /xlslice_2]
+// ui.b.c.bW[ui.aP]:  Re-customize IP : addNotify
+// ui.b.e.h[ui.aP]: Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // bW (aP) [03/21 01:11:18]
+select (RDIResource.BaseDialog_OK, "OK"); // a (JPanel, h) [03/21 01:11:32]
+// ui.b.c.bW[ui.b.e.h]:  Customize IP : addNotify
+// Tcl: set_property -dict [list CONFIG.DIN_WIDTH {3}] [get_bd_cells /xlslice_2]
+dismissDialog ("Customize IP"); // bW (h) [03/21 01:11:32]
+// Tcl: connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/oe] [get_bd_pins /xlslice_2/Dout]
+// Tcl: connect_bd_net -net [get_bd_net /axi_iic_2_gpo] [get_bd_pins /xlslice_2/Din] [get_bd_pins /iic_main/gpo]
+// Tcl: connect_bd_net -net [get_bd_net /xlconstant_2_const] [get_bd_pins /fmc_imageon_vita_receiver_1/trigger1] [get_bd_pins /xlconstant_2/const]
+// Tcl: connect_bd_net -net [get_bd_net /clk_50MHz] [get_bd_pins /fmc_imageon_vita_receiver_1/S_AXI_ACLK] [get_bd_pins /processing_system7_1/FCLK_CLK0]
+// Tcl: connect_bd_net -net [get_bd_net /processing_system7_1_fclk_reset0_n] [get_bd_pins /fmc_imageon_vita_receiver_1/S_AXI_ARESETN] [get_bd_pins /processing_system7_1/FCLK_RESET0_N]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 371, 280, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:52:56]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 371, 280, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:52:56]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 371, 280, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:52:56]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, aP) [03/21 01:52:58]
+// Tcl: startgroupcreate_bd_port -dir I io_vita_spi_misoconnect_bd_net [get_bd_ports /io_vita_spi_miso] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_spi_miso]endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 414, 306, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:53:15]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 414, 306, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:53:15]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 414, 306, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:53:15]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, aP) [03/21 01:53:17]
+// Tcl: startgroupcreate_bd_port -dir I -from 1 -to 0 io_vita_monitorconnect_bd_net [get_bd_ports /io_vita_monitor] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_monitor]
+// Tcl: endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 128, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:54:18]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 128, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:54:19]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 128, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:54:19]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, Popup) [03/21 01:54:21]
+// Tcl: startgroupcreate_bd_port -dir O io_vita_spi_sclkconnect_bd_net [get_bd_ports /io_vita_spi_sclk] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_spi_sclk]endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 856, 157, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:54:40]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 856, 157, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:54:40]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 856, 157, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:54:40]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, Popup) [03/21 01:54:41]
+// Tcl: startgroupcreate_bd_port -dir O io_vita_spi_ssel_nconnect_bd_net [get_bd_ports /io_vita_spi_ssel_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_spi_ssel_n]
+// Tcl: endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 184, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:54:56]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 184, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:54:56]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 184, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:54:56]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, Popup) [03/21 01:54:58]
+// Tcl: startgroupcreate_bd_port -dir O io_vita_spi_mosiconnect_bd_net [get_bd_ports /io_vita_spi_mosi] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_spi_mosi]endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 74, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:55:11]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 74, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:55:11]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 74, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:55:11]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, Popup) [03/21 01:55:13]
+// Tcl: startgroupcreate_bd_port -dir O io_vita_clk_pllconnect_bd_net [get_bd_ports /io_vita_clk_pll] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_clk_pll]
+// Tcl: endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 855, 102, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:55:25]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 855, 102, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:55:25]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 855, 102, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:55:25]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, Popup) [03/21 01:55:27]
+// Tcl: startgroupcreate_bd_port -dir O io_vita_reset_nconnect_bd_net [get_bd_ports /io_vita_reset_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_reset_n]endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 212, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:55:39]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 212, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:55:39]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 857, 212, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:55:39]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, Popup) [03/21 01:55:41]
+// Tcl: startgroupcreate_bd_port -dir O -from 2 -to 0 io_vita_triggerconnect_bd_net [get_bd_ports /io_vita_trigger] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_trigger]endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 455, 336, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:17]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 455, 336, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:18]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 455, 336, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:18]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, aP) [03/21 01:56:19]
+// Tcl: startgroupcreate_bd_port -dir I io_vita_clk_out_pconnect_bd_net [get_bd_ports /io_vita_clk_out_p] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_clk_out_p]
+// Tcl: endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 452, 362, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:26]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 452, 362, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:26]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 452, 362, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:26]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, aP) [03/21 01:56:28]
+// Tcl: startgroupcreate_bd_port -dir I io_vita_clk_out_nconnect_bd_net [get_bd_ports /io_vita_clk_out_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_clk_out_n]endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 468, 388, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:43]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 468, 388, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:43]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 468, 388, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:43]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, aP) [03/21 01:56:45]
+// Tcl: startgroupcreate_bd_port -dir I io_vita_sync_pconnect_bd_net [get_bd_ports /io_vita_sync_p] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_sync_p]endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 467, 430, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:58]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 467, 430, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:58]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 467, 430, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:56:58]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, aP) [03/21 01:57:01]
+// Tcl: startgroupcreate_bd_port -dir I io_vita_sync_nconnect_bd_net [get_bd_ports /io_vita_sync_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_sync_n]endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 524, 455, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:57:12]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 524, 455, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:57:12]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 524, 455, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:57:12]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, aP) [03/21 01:57:14]
+// Tcl: startgroupcreate_bd_port -dir I -from 7 -to 0 io_vita_data_pconnect_bd_net [get_bd_ports /io_vita_data_p] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_data_p]endgroup
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 533, 484, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:57:30]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 533, 484, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:57:30]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 533, 484, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 01:57:30]
+select (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ai (am, aP) [03/21 01:57:33]
+// Tcl: startgroupcreate_bd_port -dir I -from 7 -to 0 io_vita_data_nconnect_bd_net [get_bd_ports /io_vita_data_n] [get_bd_pins /fmc_imageon_vita_receiver_1/io_vita_data_n]endgroup
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 01:58:52]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 01:58:53]
+select (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ag (JPopupMenu, aP) [03/21 01:58:53]
+select (PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "Save Block Design"); // ai (JPopupMenu, aP) [03/21 01:58:54]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 01:58:54]
+// Tcl: save_bd_design
+// Tcl: Wrote  : </group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+select (PAResourceQtoZ.SystemBuilderView_REGENERATE, null); // aw (CommandBar, aP) [03/21 01:59:21]
+// Tcl: regenerate_bd_layout
+// Tcl: connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_vsync_o] [get_bd_pins /v_vid_in_axi4s_1/vid_vsync]
+// Tcl: connect_bd_net [get_bd_pins /v_vid_in_axi4s_1/vid_data] [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_video_data_o]
+// Tcl: connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_hsync_o] [get_bd_pins /v_vid_in_axi4s_1/vid_hsync]
+// Tcl: connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_vblank_o] [get_bd_pins /v_vid_in_axi4s_1/vid_vblank]
+// Tcl: connect_bd_net [get_bd_pins /v_vid_in_axi4s_1/vid_hblank] [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_hblank_o]
+// Tcl: connect_bd_net [get_bd_pins /fmc_imageon_vita_receiver_1/xsvi_active_video_o] [get_bd_pins /v_vid_in_axi4s_1/vid_active_video]
+select (PAResourceQtoZ.SystemBuilderView_REGENERATE, null); // aw (CommandBar, aP) [03/21 02:04:36]
+// Tcl: regenerate_bd_layout
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 02:04:51]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 02:04:53]
+select (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ag (JPopupMenu, aP) [03/21 02:04:53]
+select (PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "Save Block Design"); // ai (JPopupMenu, aP) [03/21 02:04:54]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 02:04:54]
+// Tcl: save_bd_design
+// Tcl: Wrote  : </group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+selectTree (PAResourceQtoZ.SystemTreeView_SYSTEM_TREE, "[design_1, v_tc_1]", 106); // a (JViewport, aP) [03/21 02:08:18]
+selectTree (PAResourceQtoZ.SystemTreeView_SYSTEM_TREE, "[design_1, v_tc_1]", 106); // a (JViewport, aP) [03/21 02:08:19]
+selectTree (PAResourceQtoZ.SystemTreeView_SYSTEM_TREE, "[design_1, v_tc_1]", 106, false, false, false, false, true); // a (JViewport, aP) - DOUBLE CLICK [03/21 02:08:19]
+selectTree (PAResourceQtoZ.SystemTreeView_SYSTEM_TREE, "[design_1, v_tc_1]", 106); // a (JViewport, aP) [03/21 02:08:21]
+selectTree (PAResourceQtoZ.SystemTreeView_SYSTEM_TREE, "[design_1, v_tc_1]", 106, false, false, false, true, false); // a (JViewport, aP) - POPUP TRIGGER [03/21 02:08:23]
+select (PAResourceQtoZ.SystemBuilderMenu_OPEN_DIAGRAM, "Open Diagram"); // ai (am, aP) [03/21 02:08:26]
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 02:15:40]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 02:15:42]
+// Tcl: connect_bd_net -net [get_bd_net /xlconstant_1_const] [get_bd_pins /v_vid_in_axi4s_1/axis_enable] [get_bd_pins /xlconstant_1/const]
+// Tcl: connect_bd_net -net [get_bd_net /xlconstant_1_const] [get_bd_pins /v_vid_in_axi4s_1/vid_io_in_ce] [get_bd_pins /xlconstant_1/const]
+// ui.b.c.bW[ui.aP]:  Re-customize IP : addNotify
+// ui.b.e.h[ui.aP]: Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // bW (aP) [03/21 02:18:58]
+select (RDIResource.BaseDialog_CANCEL, "Cancel"); // a (JPanel, h) [03/21 02:19:02]
+// Tcl: connect_bd_net -net [get_bd_net /xlconstant_2_const] [get_bd_pins /v_vid_in_axi4s_1/rst] [get_bd_pins /xlconstant_2/const]
+// Tcl: connect_bd_net -net [get_bd_net /xlconstant_2_const] [get_bd_pins /v_vid_in_axi4s_1/vid_field_id] [get_bd_pins /xlconstant_2/const]
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 02:20:29]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 02:20:31]
+select (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ag (JPopupMenu, aP) [03/21 02:20:31]
+select (PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "Save Block Design"); // ai (JPopupMenu, aP) [03/21 02:20:31]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 02:20:31]
+// Tcl: save_bd_design
+// Tcl: Wrote  : </group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 613, 348, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 02:26:31]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 613, 348, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 02:26:31]
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 613, 348, 1049, 697, false, false, false, true, false); // br (TdiGroup, aP) - POPUP TRIGGER [03/21 02:26:31]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_clk_pll", true); // ac (JPanel, aP) [03/21 02:26:58]
+// Tcl: set_property name fmc_vita_clk_pll [ get_bd_ports /io_vita_clk_pll]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_reset_n", true); // ac (JPanel, aP) [03/21 02:27:17]
+// Tcl: set_property name fmc_vita_reset_n [ get_bd_ports /io_vita_reset_n]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_spi_sclk", true); // ac (JPanel, aP) [03/21 02:28:06]
+// Tcl: set_property name fmc_vita_spi_sclk [ get_bd_ports /io_vita_spi_sclk]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_spi_ssel_n", true); // ac (JPanel, aP) [03/21 02:28:15]
+// Tcl: set_property name fmc_vita_spi_ssel_n [ get_bd_ports /io_vita_spi_ssel_n]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_spi_mosi", true); // ac (JPanel, aP) [03/21 02:28:32]
+// Tcl: set_property name fmc_vita_spi_mosi [ get_bd_ports /io_vita_spi_mosi]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_trigger", true); // ac (JPanel, aP) [03/21 02:28:40]
+// Tcl: set_property name fmc_vita_trigger [ get_bd_ports /io_vita_trigger]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_spi_miso", true); // ac (JPanel, aP) [03/21 02:28:55]
+// Tcl: set_property name fmc_vita_spi_miso [ get_bd_ports /io_vita_spi_miso]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_monitor", true); // ac (JPanel, aP) [03/21 02:29:03]
+// Tcl: set_property name fmc_vita_monitor [ get_bd_ports /io_vita_monitor]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_clk_out_p", true); // ac (JPanel, aP) [03/21 02:29:11]
+// Tcl: set_property name fmc_vita_clk_out_p [ get_bd_ports /io_vita_clk_out_p]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_clk_out_n", true); // ac (JPanel, aP) [03/21 02:29:17]
+// Tcl: set_property name fmc_vita_clk_out_n [ get_bd_ports /io_vita_clk_out_n]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_sync_p", true); // ac (JPanel, aP) [03/21 02:29:27]
+// Tcl: set_property name fmc_vita_sync_p [ get_bd_ports /io_vita_sync_p]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_sync_n", true); // ac (JPanel, aP) [03/21 02:29:34]
+// Tcl: set_property name fmc_vita_sync_n [ get_bd_ports /io_vita_sync_n]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_data_p", true); // ac (JPanel, aP) [03/21 02:29:43]
+// Tcl: set_property name fmc_vita_data_p [ get_bd_ports /io_vita_data_p]
+setText (PAResourceQtoZ.RSBExternalPortPropPanels_NAME, "fmc_vita_data_n", true); // ac (JPanel, aP) [03/21 02:29:50]
+// Tcl: set_property name fmc_vita_data_n [ get_bd_ports /io_vita_data_n]
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 02:29:56]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 02:29:58]
+select (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ag (JPopupMenu, aP) [03/21 02:29:58]
+select (PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "Save Block Design"); // ai (JPopupMenu, aP) [03/21 02:29:59]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 02:29:59]
+// Tcl: save_bd_design
+// Tcl: Wrote  : </group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 03:26:07]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 03:26:09]
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14); // u (t, aP) [03/21 03:26:14]
+// ui.b.c.bW[ui.aP]:  Starting Synthesis : addNotify
+// Tcl: launch_runs synth_1
+// Tcl: ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd !!!
+// Tcl: ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd !!!
+// Tcl: [Thu Mar 21 15:26:43 2013] Launched synth_1...Run output will be captured here: /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.runs/synth_1/runme.log
+// Tcl: launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3024.047 ; gain = 0.000
+// Tcl: ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors.
+// ui.b.i.ax[ui.aP]: Launch Run Critical Messages: addNotify
+select (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // a (JPanel, ax) [03/21 03:27:02]
+dismissDialog ("Launch Run Critical Messages"); // ax (aP) [03/21 03:27:02]
+// ui.b.w.N[ui.aP]: Synthesis Failed: addNotify
+select (RDIResource.BaseDialog_OK, "OK"); // a (JPanel, N) [03/21 03:27:45]
+select (PAResourceItoP.MsgView_INFORMATION_MESSAGES, null, false, true); // c (JPanel, aP): FALSE [03/21 03:27:45]
+select (PAResourceItoP.MsgView_WARNING_MESSAGES, null, false, true); // c (JPanel, aP): FALSE [03/21 03:27:45]
+dismissDialog ("Synthesis Failed"); // N (aP) [03/21 03:27:45]
+select (PAResourceQtoZ.SystemBuilderView_REGENERATE, null); // aw (CommandBar, aP) [03/21 03:29:49]
+// Tcl: regenerate_bd_layout
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 03:30:31]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 03:30:33]
+select (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ag (JPopupMenu, aP) [03/21 03:30:33]
+select (PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "Save Block Design"); // ai (JPopupMenu, aP) [03/21 03:30:34]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 03:30:34]
+// Tcl: save_bd_design
+// Tcl: Wrote  : </group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 04:06:42]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 04:06:43]
+select (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ag (JPopupMenu, aP) [03/21 04:06:43]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ag (JPopupMenu, aP) [03/21 04:06:43]
+select (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ag (JPopupMenu, aP) [03/21 04:06:44]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ag (JPopupMenu, aP) [03/21 04:06:44]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/21 04:06:47]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "/group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr"); // ai (JPopupMenu, aP) [03/21 04:06:51]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 04:06:51]
+// ui.b.c.bW[ui.aP]:  Open Project : addNotify
+select (null, "Yes"); // JButton (JPanel, x) [03/21 04:06:56]
+// Tcl: close_project
+// Tcl: open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+// Tcl: open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xprsource -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+// Tcl: Scanning sources...Finished scanning sources
+// Tcl: INFO: [IP_Flow 19-234] Refreshing IP repositoriesINFO: [IP_Flow 19-1704] No user repositories specifiedINFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+// Tcl: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3055.336 ; gain = 12.000
+dismissDialog ("Open Project"); // bW (aP) [03/21 04:07:04]
+select (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ae (CommandMenuBar, aP) [03/21 04:07:35]
+dismissMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ae (CommandMenuBar, aP) [03/21 04:07:40]
+select (PAResourceItoP.MainMenuMgr_WINDOW, "Window"); // ae (CommandMenuBar, aP) [03/21 04:07:40]
+dismissMenu (PAResourceItoP.MainMenuMgr_WINDOW, "Window"); // ae (CommandMenuBar, aP) [03/21 04:07:43]
+select (RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ae (CommandMenuBar, aP) [03/21 04:07:43]
+dismissMenu (RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ae (CommandMenuBar, aP) [03/21 04:07:44]
+select (PAResourceItoP.MainMenuMgr_WINDOW, "Window"); // ae (CommandMenuBar, aP) [03/21 04:07:44]
+dismissMenu (PAResourceItoP.MainMenuMgr_WINDOW, "Window"); // ae (CommandMenuBar, aP) [03/21 04:07:45]
+select (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ae (CommandMenuBar, aP) [03/21 04:07:45]
+dismissMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ae (CommandMenuBar, aP) [03/21 04:07:45]
+select (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ae (CommandMenuBar, aP) [03/21 04:07:45]
+dismissMenu (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ae (CommandMenuBar, aP) [03/21 04:07:47]
+select (PAResourceItoP.MainMenuMgr_EDIT, "Edit"); // ae (CommandMenuBar, aP) [03/21 04:07:47]
+dismissMenu (PAResourceItoP.MainMenuMgr_EDIT, "Edit"); // ae (CommandMenuBar, aP) [03/21 04:07:48]
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 04:07:48]
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/21 04:07:50]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 3); // l (r, aP) [03/21 04:07:56]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 3, false, false, false, false, true); // l (r, aP) - DOUBLE CLICK [03/21 04:07:56]
+// ui.b.c.bW[ui.aP]:  IP Packager : addNotify
+// Tcl: ipx::open_core -upgrade true {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+dismissDialog ("IP Packager"); // bW (aP) [03/21 04:07:58]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Identification", 0); // D (JViewport, aP) [03/21 04:08:03]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Identification", 0); // D (JViewport, aP) [03/21 04:08:06]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Addressing and Memory", 6); // D (JViewport, aP) [03/21 04:12:39]
+selectList (PAResourceItoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "IP Interfaces", 5); // D (JViewport, aP) [03/21 04:12:42]
+selectTable (PAResourceAtoH.FacetHierarchicalTablePanel_FACET_HIERARCHICAL_TABLE, "S_AXI_signal_clock;xilinx.com:signal:clock_rtl:1.0;slave;", 3); // F (JViewport, aP) [03/21 04:13:00]
+selectTable (PAResourceAtoH.FacetHierarchicalTablePanel_FACET_HIERARCHICAL_TABLE, "S_AXI;xilinx.com:interface:aximm_rtl:1.0;slave;", 0); // F (JViewport, aP) [03/21 04:13:04]
+selectTable (PAResourceAtoH.FacetHierarchicalTablePanel_FACET_HIERARCHICAL_TABLE, "signal_clock;xilinx.com:signal:clock_rtl:1.0;slave;", 4); // F (JViewport, aP) [03/21 04:13:19]
+selectTable (PAResourceAtoH.FacetHierarchicalTablePanel_FACET_HIERARCHICAL_TABLE, "S_AXI_signal_clock;xilinx.com:signal:clock_rtl:1.0;slave;", 3); // F (JViewport, aP) [03/21 04:13:23]
+selectTable (PAResourceAtoH.FacetHierarchicalTablePanel_FACET_HIERARCHICAL_TABLE, "S_AXI_signal_reset;xilinx.com:signal:reset_rtl:1.0;slave;", 1); // F (JViewport, aP) [03/21 04:13:29]
+selectTable (PAResourceAtoH.FacetHierarchicalTablePanel_FACET_HIERARCHICAL_TABLE, "S_AXI;xilinx.com:interface:aximm_rtl:1.0;slave;", 0); // F (JViewport, aP) [03/21 04:13:33]
+select (PAResourceItoP.PackagerStepContentPanel_SEE_LIST_OF_WARNING_MESSAGES, "1 warning"); // I (JPanel, aP) [03/21 04:13:37]
+select (PAResourceItoP.MsgView_ERROR_MESSAGES, null, false, true); // c (JPanel, aP): FALSE [03/21 04:13:39]
+select (PAResourceItoP.MsgView_INFORMATION_MESSAGES, null, false, true); // c (JPanel, aP): FALSE [03/21 04:13:39]
+select (PAResourceItoP.MainMenuMgr_FILE, "File"); // ae (CommandMenuBar, aP) [03/22 07:39:00]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ag (JPopupMenu, aP) [03/22 07:39:00]
+select (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ag (JPopupMenu, aP) [03/22 07:39:00]
+select (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ag (JPopupMenu, aP) [03/22 07:39:00]

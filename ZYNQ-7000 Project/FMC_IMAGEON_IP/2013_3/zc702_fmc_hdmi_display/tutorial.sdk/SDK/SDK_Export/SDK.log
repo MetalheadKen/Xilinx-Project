@@ -1,0 +1,15 @@
+08:30:20.872 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/tutorial/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+08:31:52.337 INFO  - Saving repository preferences. 
+08:31:52.339 INFO  - Reading in cores from local repositories: 
+		 C:\FMC_IMAGEON\2013_3\avnet_fmc_imageon_cores 
+08:31:52.347 INFO  - Updating libgen.options on all BSP projects. 
+08:31:52.349 INFO  - Cleaning BSP projects in the workspace. 
+09:01:36.218 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/tutorial/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+09:02:02.840 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:04:10.630 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:04:12.929 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:04:42.281 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+09:04:42.285 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

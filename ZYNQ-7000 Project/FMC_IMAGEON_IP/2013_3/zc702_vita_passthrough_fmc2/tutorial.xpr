@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--Product Version: Vivado v2013.3 (64-bit)-->
+<Project Version="6" Minor="13" Path="C:/FMC_IMAGEON/2013_3/tutorial/tutorial.xpr">
+	<FileSet Dir="sources_1" File="fileset.xml"/>
+	<FileSet Dir="constrs_1" File="fileset.xml"/>
+	<FileSet Dir="sim_1" File="fileset.xml"/>
+	<HWSession Dir="hw" File="hwsession_1.xml"/>
+	<RunSet Dir="runs" File="runs.xml"/>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+	<Config>
+		<Option Name="Id" Val="8c594035787b4255b0148110ab7985d2"/>
+		<Option Name="Part" Val="xc7z020clg484-1"/>
+		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+		<Option Name="TargetLanguage" Val="VHDL"/>
+		<Option Name="Board" Val="xilinx.com:zynq:zc702:1.0"/>
+		<Option Name="ActiveSimSet" Val="sim_1"/>
+	</Config>
+</Project>
+

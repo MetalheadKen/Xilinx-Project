@@ -1,0 +1,7 @@
+21:42:16 **** Clean-only build of configuration Debug for project zvik_camera_linux_webserver ****
+make clean 
+rm -rf  ./zvik_webserver/ServerCGIFiles/cgiUtils.o ./zvik_webserver/ServerCGIFiles/debug.o ./zvik_webserver/ServerCGIFiles/main.o ./zvik_webserver/ServerCGIFiles/multiply.o ./zvik_webserver/ServerCGIFiles/pipeProtocol.o  ./zvik_webserver/ServerCGIFiles/cgiUtils.d ./zvik_webserver/ServerCGIFiles/debug.d ./zvik_webserver/ServerCGIFiles/main.d ./zvik_webserver/ServerCGIFiles/multiply.d ./zvik_webserver/ServerCGIFiles/pipeProtocol.d  zvik_camera_linux_webserver.elf.size  zvik_camera_linux_webserver.elf
+' '
+
+21:42:16 Build Finished (took 384ms)
+

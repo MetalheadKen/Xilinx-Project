@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Jan 19 02:50:30 2017
+# Process ID: 7188
+# Current directory: D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.runs/synth_1
+# Command line: vivado.exe -log fmc_imageon_gs_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source fmc_imageon_gs_wrapper.tcl
+# Log file: D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.runs/synth_1/fmc_imageon_gs_wrapper.vds
+# Journal file: D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fmc_imageon_gs_wrapper.tcl -notrace

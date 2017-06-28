@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2013.2 (64-bit)
+# Build 263313 by xbuild on Mon May 20 20:01:22 MDT 2013
+# Start of session at: Tue May 21 14:08:05 2013
+# Process ID: 27007
+# Log file: /group/mvico/users/elzinga/designs/vita/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+set_param ips.gui.advanced
+set_param ips.gui.advanced true
+ipx::open_ipxact_file {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::unload_core {component xilinx.com:user:fmc_imageon_vita_receiver:1.0}

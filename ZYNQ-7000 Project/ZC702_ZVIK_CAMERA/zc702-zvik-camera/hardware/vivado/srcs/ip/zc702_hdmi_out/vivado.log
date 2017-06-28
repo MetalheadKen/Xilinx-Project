@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 242259 by xbuild on Sun Mar  3 16:45:49 MST 2013
+# Start of session at: Mon Mar  4 16:29:59 2013
+# Process ID: 20475
+# Log file: /group/mvico/users/elzinga/designs/zc702_hdmi_out/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/zc702_hdmi_out/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/arch.xml
+Parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+INFO: [Common 17-362] Using Tcl App repository from '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/XilinxTclStore'.
+INFO: [Common 17-364] Updating Tcl app persistent manifest '/home/elzinga/.Xilinx/Vivado/tclapp/manifest.tcl'
+start_gui
+create_project project_1 /group/mvico/users/elzinga/designs/zc702_hdmi_out/project_1 -part xc7z020clg484-1
+set_property board xilinx.com:zynq:zc702:c [current_project]
+add_files -norecurse /group/mvico/users/elzinga/designs/zc702_hdmi_out/zc702_hdmi_out.vhd
+import_files -force -norecurse
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1
+[Mon Mar  4 16:32:48 2013] Launched synth_1...
+Run output will be captured here: /group/mvico/users/elzinga/designs/zc702_hdmi_out/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1
+[Mon Mar  4 16:34:09 2013] Launched impl_1...
+Run output will be captured here: /group/mvico/users/elzinga/designs/zc702_hdmi_out/project_1/project_1.runs/impl_1/runme.log
+ipx::package_project -root_dir {/group/mvico/users/elzinga/designs/zc702_hdmi_out/project_1}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+INFO: [IP_Flow 19-1793] Cannot infer any bus interface that matches bus definition xilinx.com:interface:aximm:1.0.
+set_property library {user} [ipx::current_core]
+set_property version {1.3} [ipx::current_core]
+set_property display_name {zc702_hdmi_out_v1_3} [ipx::current_core]
+set_property description {zc702_hdmi_out_v1_3} [ipx::current_core]
+set_property taxonomy {{/Video_&_Image_Processing}} [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-861] XGUI layout file basename "xgui/zc702_hdmi_out_v1_0.tcl" does not have the <name>_v<version> format.
+INFO: [IP_Flow 19-414] HDL Parameter 'C_FAMILY': Parameter name is reserved.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2188] The Readme file is missing.
+INFO: [IP_Flow 19-2186] The Data Sheet file is missing.
+INFO: [IP_Flow 19-2189] The User Guide file is missing.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::archive_core {/group/mvico/users/elzinga/designs/zc702_hdmi_out/project_1/xilinx.com_user_zc702_hdmi_out_1.3.zip} [ipx::current_core]
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  4 16:40:01 2013...

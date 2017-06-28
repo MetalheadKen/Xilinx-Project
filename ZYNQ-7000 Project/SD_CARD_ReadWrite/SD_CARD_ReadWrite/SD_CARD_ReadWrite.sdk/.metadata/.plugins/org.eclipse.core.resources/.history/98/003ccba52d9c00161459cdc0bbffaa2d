@@ -1,0 +1,140 @@
+#include "xparameters.h"	/* SDK generated parameters */
+#include "xsdps.h"			/* SD device driver */
+#include "xil_printf.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "xplatform_info.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int bmp_upside_down(void);
+
+static FIL	    fp_s;											/* socure file handler */
+static FIL 		fp_d;											/* destination file handler */
+
+static FATFS	fatfs;											/* File System Object Structure */
+static FRESULT	res;											/* File Function Return Code */
+
+static TCHAR	*Path = "0:/";									/* 掛載路徑 */
+
+static char		FileReadName[32] = "clena.bmp";					/* 欲讀取檔案名稱 */
+static char		FileWriteName[32] = "clena_down.bmp";			/* 欲寫入檔案名稱 */
+static char		*sd_file;
+
+u32 Platform;
+
+int main(void)
+{
+	xil_printf("Start SD Card Control.\r\n");
+
+	bmp_upside_down();
+
+	return XST_SUCCESS;
+}
+
+int bmp_upside_down(void)
+{
+	UINT		  NumBytesRead;			/* Pointer to number of bytes read */
+	UINT		  NumBytesWrite;		/* Pointer to number of bytes write */
+
+	unsigned int  width = 512, height = 512;		/* 圖像的寬與高 */
+
+	unsigned char image_s[512 * 512 * 3] = {0};		/* 來源圖像用的陣列 */
+	unsigned char image_d[512 * 512 * 3] = {0};		/* 目的圖像用的陣列 */
+
+	unsigned int  rgb_raw_data_offset = 54;	/* RGB資料的offset，一般來說為54 */
+
+	unsigned char header[54] = {		/* BMP檔案標頭			   - 54Bytes */
+		0x42,        					/* 檔案識別碼，"B"		   - 1Bytes */
+		0x4d,        					/* 檔案識別碼，"M"		   - 2Bytes */
+		0,    0, 0, 0,  				/* 檔案大小				   - 4Bytes */
+		0,    0,        				/* 保留欄位，設為0		   - 2Bytes */
+		0,    0,        				/* 保留欄位，設為0		   - 2Bytes */
+		54,   0, 0, 0, 					/* RGB開始之前的資料偏移量 - 4Bytes */
+
+		40,   0, 0, 0, 					/* struct BITMAPINFOHEADER的size					- 4Bytes */
+		0,    0, 0, 0,  				/* 影像寬度(pixel)									- 4Bytes */
+		0,    0, 0, 0, 					/* 影像高度(pixel)									- 4Bytes */
+		1,    0,        				/* 調色盤的數量，設為1								- 2Bytes */
+		24,   0,       					/* 每個pixel所需位元數(1/4/8/16/32)					- 2Bytes */
+		0,    0, 0, 0,  				/* 壓縮方式，0為不壓縮								- 4Bytes */
+		0,    0, 0, 0,  				/* 影像大小，若未壓縮設為0							- 4Bytes */
+		0,    0, 0, 0,  				/* 水平解析度：Pixel/Meter							- 4Bytes */
+		0,    0, 0, 0,					/* 垂直解析度：Pixel/Meter							- 4Bytes */
+		0,    0, 0, 0,  				/* 使用調色盤的顏色數，0為表示使用調色盤所有顏色	- 4Bytes */
+		0,    0, 0, 0  					/* 重要顏色數，當等於0或used_colors時，表全部都重要 - 4Bytes */
+	};
+
+	/* Register volume work area, initialize device */
+	res = f_mount(&fatfs, Path, 0);
+	if(res != FR_OK)
+	{
+		xil_printf("File Mount ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	/* 開檔 */
+	sd_file = (char *)FileReadName;
+
+	res = f_open(&fp_s, sd_file, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	if(res)
+	{
+		xil_printf("File Open fp_s ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	f_lseek(&fp_s, 0);
+	f_read(&fp_s, (void *)(header), rgb_raw_data_offset, &NumBytesRead) ;
+
+	/* 移動 offset 的量，以開始讀進圖像 RGB 的值 */
+	f_lseek(&fp_s, rgb_raw_data_offset);
+
+	/* 讀取圖像的 RGB 值 */
+	f_read(&fp_s, (void *)(image_s), width * height * 3, &NumBytesRead) ;
+
+	/* 寫入到目標的圖像 */
+	sd_file = (char *)FileWriteName;
+
+	res = f_open(&fp_d, sd_file, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	if(res)
+	{
+		xil_printf("File Open fp_d ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	/* 寫入檔案標頭 */
+	f_lseek(&fp_d, 0);
+	res = f_write(&fp_d, (void*)(header), sizeof(unsigned char) * rgb_raw_data_offset, &NumBytesWrite);
+	if(res)
+	{
+		xil_printf("File Write 1 ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	/* 寫入圖像 */
+	f_lseek(&fp_d, rgb_raw_data_offset);
+	res = f_write(&fp_d, (void*)(image_d), width * height * 3, &NumBytesWrite);
+	if(res)
+	{
+		xil_printf("File Write 2 ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	/* 關檔 */
+	res = f_close(&fp_s);
+	if(res)
+	{
+		xil_printf("File Close fp_s ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	res = f_close(&fp_d);
+	if(res)
+	{
+		xil_printf("File Close fp_d ERROR.\r\n");
+		return XST_FAILURE;
+	}
+
+	return XST_SUCCESS;
+}

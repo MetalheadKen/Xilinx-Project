@@ -1,0 +1,56 @@
+#ifndef _DEMO_H_
+#define _DEMO_H_
+
+#include "xparameters.h"
+#include "sleep.h"
+
+#include "fmc_iic.h"
+#include "fmc_imageon.h"
+
+#include "onsemi_vita_sw.h"
+#include "xcfa.h"
+
+#include "video_resolution.h"
+
+typedef struct {
+	XCfa cfa;
+    fmc_iic_t fmc_imageon_iic;
+    fmc_imageon_t fmc_imageon;
+    onsemi_vita_t vita_receiver;
+    onsemi_vita_status_t vita_status_t1;
+    onsemi_vita_status_t vita_status_t2;
+
+	XCfa *pcfa;
+    fmc_iic_t *pfmc_imageon_iic;
+    fmc_imageon_t *pfmc_imageon;
+	onsemi_vita_t *pvita_receiver;
+
+    Xuint32 hdmii_locked;
+    Xuint32 hdmii_width;
+    Xuint32 hdmii_height;
+    fmc_imageon_video_timing_t hdmii_timing;
+
+    Xuint32 hdmio_width;
+    Xuint32 hdmio_height;
+    fmc_imageon_video_timing_t hdmio_timing;
+
+	u8 cam_alpha;
+	u8 hdmi_alpha;
+
+    int bVerbose;
+
+    //Xuint32 uBaseAddr_VTC_Axi4sTiming;
+    Xuint32 uDeviceId_VTC_HdmioGenerator;
+    XVtc vtc_vita_detector;
+    XVtc vtc_hdmio_generator;
+
+} demo_t;
+
+extern Xuint8 fmc_imageon_hdmii_edid_content[256];
+
+int demo_init_R( demo_t *pdemo );
+int demo_init_L( demo_t *pdemo );
+int demo_start_cam_R_in( demo_t *pdemo );
+int demo_start_cam_L_in( demo_t *pdemo );
+
+#endif // _DEMO_H_

@@ -1,0 +1,7 @@
+15:17:35 **** Clean-only build of configuration Debug for project vita_passthrough_app ****
+make clean 
+rm -rf  ./src/fmc_imageon_vita_passthrough.o ./src/helloworld.o ./src/platform.o ./src/sleep.o ./src/video_generator.o ./src/video_resolution.o  ./src/fmc_imageon_vita_passthrough.d ./src/helloworld.d ./src/platform.d ./src/sleep.d ./src/video_generator.d ./src/video_resolution.d  vita_passthrough_app.elf.size  vita_passthrough_app.elf
+' '
+
+15:17:36 Build Finished (took 406ms)
+

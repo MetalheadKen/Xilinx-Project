@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="xilinx.gnu.armlinux.toolchain.919531079">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.armlinux.toolchain.919531079" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.xilinx.sdk.managedbuilder.XELF.armlinux" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="video_qt" buildProperties="" description="" id="xilinx.gnu.armlinux.toolchain.919531079" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="xilinx.gnu.armlinux.toolchain.919531079.1144016259" name="/" resourcePath="">
+						<toolChain id="xilinx.gnu.armlinux.toolchain.726151046" name="xilinx.gnu.armlinux.toolchain" superClass="xilinx.gnu.armlinux.toolchain">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.armlinux" id="xilinx.armlinux.target.gnu.base.1366528475" isAbstract="false" name="Debug Platform" superClass="xilinx.armlinux.target.gnu.base"/>
+							<builder id="xilinx.gnu.armlinux.toolchain.builder.256529133" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="GNU make" superClass="xilinx.gnu.armlinux.toolchain.builder"/>
+							<tool id="xilinx.gnu.armlinux.c.toolchain.assembler.1828472847" name="ARM Linux gcc assembler" superClass="xilinx.gnu.armlinux.c.toolchain.assembler">
+								<inputType id="xilinx.gnu.assembler.input.1083806890" superClass="xilinx.gnu.assembler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.armlinux.c.toolchain.compiler.576656184" name="ARM Linux gcc compiler" superClass="xilinx.gnu.armlinux.c.toolchain.compiler"/>
+							<tool id="xilinx.gnu.armlinux.cxx.toolchain.compiler.421444422" name="ARM Linux g++ compiler" superClass="xilinx.gnu.armlinux.cxx.toolchain.compiler">
+								<inputType id="xilinx.gnu.armlinux.cxx.compiler.input.681878197" name="C++ source files" superClass="xilinx.gnu.armlinux.cxx.compiler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.armlinux.toolchain.archiver.121047469" name="ARM Linux archiver" superClass="xilinx.gnu.armlinux.toolchain.archiver"/>
+							<tool id="xilinx.gnu.armlinux.c.toolchain.linker.954450922" name="ARM Linux gcc linker" superClass="xilinx.gnu.armlinux.c.toolchain.linker"/>
+							<tool id="xilinx.gnu.armlinux.cxx.toolchain.linker.461212441" name="ARM Linux g++ linker" superClass="xilinx.gnu.armlinux.cxx.toolchain.linker">
+								<inputType id="xilinx.gnu.linker.input.102525374" superClass="xilinx.gnu.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<inputType id="xilinx.gnu.linker.input.lscript.2123700221" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="video_qt.null.1041833197" name="video_qt"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/video_qt"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+		<buildTargets>
+			<target name="Qmake" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>qmake</buildCommand>
+				<buildArguments>video_qt.pro -r -spec arm-xilinx-linux-gnueabi-g++</buildArguments>
+				<buildTarget/>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>false</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+		</buildTargets>
+	</storageModule>
+</cproject>

@@ -1,0 +1,142 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+Process ID: 6176
+
+Current time: 	2/17/17 8:18:31 PM CST
+Time zone: 	China Standard Time (Asia/Taipei)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=PMingLiU,name=·s²Ó©úÅé,style=plain,size=12
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	E:/Xilinx/Vivado/2015.4/tps/win64/jre
+
+User name: 	user
+User home directory: C:/Users/user
+User working directory: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+Vivado preferences path: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	130 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 405 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: D:\Xilinx_Project\FMC_DUAL_CAMERA_HDMI\project_1\project_1.xpr. Version: Vivado v2015.4 
+// [GUI Memory]: 32 MB (+31108kb) [00:00:14]
+// [Engine Memory]: 372 MB (+239024kb) [00:00:14]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// Tcl Message: open_project D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 420 MB. GUI used memory: 29 MB. Current time: 2/17/17 8:18:33 PM CST
+// [Engine Memory]: 420 MB (+30821kb) [00:00:19]
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 471 MB (+30481kb) [00:00:24]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+16683kb) [00:00:28]
+// [Engine Memory]: 515 MB (+21673kb) [00:00:28]
+// [GUI Memory]: 66 MB (+14176kb) [00:00:29]
+// [Engine Memory]: 572 MB (+33248kb) [00:00:29]
+// [GUI Memory]: 70 MB (+668kb) [00:00:30]
+// [GUI Memory]: 77 MB (+4335kb) [00:00:31]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FMC_IMAGEON_CAMERA/IP'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/avnet_fmc_imageon_cores'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_1; location: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 812.309 ; gain = 193.363 
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // w:Y (v:I, cq:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 601 MB (+371kb) [00:00:35]
+// [GUI Memory]: 92 MB (+11559kb) [00:00:44]
+// [Engine Memory]: 639 MB (+8145kb) [00:00:45]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bF:g (cq:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd} 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 56 MB. Current time: 2/17/17 8:19:03 PM CST
+// TclEventType: RSB_PROPERTY_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bF:g)
+// 'bg' command handler elapsed time: 5 seconds
+// [Engine Memory]: 683 MB (+12779kb) [00:00:52]
+// Tcl Message: Adding component instance block -- xilinx.com:ip:v_cfa:7.0 - v_cfa_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:v_cresample:4.0 - v_cresample_0 Adding component instance block -- xilinx.com:ip:v_rgb2ycrcb:7.1 - v_rgb2ycrcb_0 Adding component instance block -- xilinx.com:ip:v_tc:6.1 - v_tc_0 Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - fmc_imageon_iic_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+// Tcl Message: Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_76M 
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0 Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // h:JCheckBox (JPanel:JComponent, cq:JFrame): FALSE
+// [Engine Memory]: 740 MB (+23136kb) [00:00:55]
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_149M_L 
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Tcl Message: Adding component instance block -- avnet:fmc_imageon:fmc_imageon_vita_receiver:2.2 - fmc_imageon_vita_receiver_R Adding component instance block -- avnet:fmc_imageon:fmc_imageon_vita_receiver:2.2 - fmc_imageon_vita_receiver_L Adding component instance block -- avnet:fmc_imageon:fmc_imageon_hdmi_out:2.0 - fmc_imageon_hdmi_out_0 Adding component instance block -- avnet:fmc_imageon:fmc_imageon_hdmi_out:2.0 - fmc_imageon_hdmi_out_1 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 778 MB (+1268kb) [00:00:57]
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <fmc_imageon_gs> from BD file <D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 238, 27); // dy:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 369, 17); // dy:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 98 MB (+1143kb) [00:01:02]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1004.895 ; gain = 150.047 
+// [GUI Memory]: 107 MB (+4111kb) [00:01:02]
+dismissDialog("Open Block Design"); // bF:g (cq:JFrame)
+// [GUI Memory]: 113 MB (+688kb) [00:01:03]
+// [Engine Memory]: 823 MB (+6789kb) [00:01:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 823 MB. GUI used memory: 70 MB. Current time: 2/17/17 8:19:18 PM CST
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, cq:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, cq:JFrame): FALSE
+// Elapsed time: 15 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1054, 301, 1306, 656, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// ex:x (cq:JFrame): Create Hierarchy: addNotify

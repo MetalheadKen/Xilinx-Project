@@ -1,0 +1,84 @@
+/*
+ *  Copyright (C) 2011 - 2014 Xilinx
+ *
+ * This software is licensed under the terms of the GNU General Public
+ * License version 2, as published by the Free Software Foundation, and
+ * may be copied, distributed, and modified under those terms.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+#include <dt-bindings/media/xilinx-vip.h>
+
+&amba {
+	vtc_1: vtc@40070000 {
+		compatible = "xlnx,v-tc-6.1";
+		reg = <0x40070000 0x10000>;
+		clocks = <&si570>;
+		xlnx,generator;
+	};
+
+	tpg_1: tpg@40080000 {
+		compatible = "xlnx,v-tpg-7.0";
+		reg = <0x40080000 0x10000>;
+		clocks = <&clkc 15>;
+		xlnx,vtc = <&vtc_1>;
+
+		reset-gpios = <&gpio0 56 1>;
+
+		ports {
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			port@0 {
+				reg = <0>;
+
+				xlnx,video-format = <XVIP_VF_YUV_422>;
+				xlnx,video-width = <8>;
+
+				tpg_out: endpoint {
+					remote-endpoint = <&vcap_tpg_in>;
+				};
+			};
+		};
+	};
+
+	vdma_3: axivdma@40020000 {
+		compatible = "xlnx,axi-vdma-1.00.a";
+		reg = <0x40020000 0x10000>;
+		xlnx,flush-fsync = <1>;
+		xlnx,num-fstores = <1>;
+
+		#dma-cells = <1>;
+		dma-channel@40090000 {
+			compatible = "xlnx,axi-vdma-s2mm-channel";
+			interrupt-parent = <&intc>;
+			interrupts = <0 33 4>;
+			clocks = <&clkc 15>;
+			clock-names = "axis";
+			xlnx,datawidth = <0x40>;
+		};
+	};
+
+	vcap_tpg {
+		compatible = "xlnx,video";
+		dmas = <&vdma_3 1>;
+		dma-names = "port0";
+
+		ports {
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			port@0 {
+				reg = <0>;
+				direction = "input";
+				vcap_tpg_in: endpoint {
+					remote-endpoint = <&tpg_out>;
+				};
+			};
+		};
+	};
+};

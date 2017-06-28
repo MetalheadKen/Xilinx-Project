@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# 
+# Start of session at: Sat Feb 18 18:08:06 2017
+# Process ID: 11496
+# Current directory: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/webtalk/webtalk.log
+# Journal file: D:/Xilinx_Project/FMC_DUAL_CAMERA_HDMI/project_1/project_1.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

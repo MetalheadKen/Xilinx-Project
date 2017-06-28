@@ -1,0 +1,62 @@
+
+*** Running vivado
+    with args -log led_8bits_rst_ps7_0_50M_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_8bits_rst_ps7_0_50M_0.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source led_8bits_rst_ps7_0_50M_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 292.891 ; gain = 82.371
+INFO: [Synth 8-638] synthesizing module 'led_8bits_rst_ps7_0_50M_0' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ip/led_8bits_rst_ps7_0_50M_0/synth/led_8bits_rst_ps7_0_50M_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [E:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (1#1) [E:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'led_8bits_rst_ps7_0_50M_0' (7#1) [d:/Xilinx_Project/LED_8bits/LED_8bits.srcs/sources_1/bd/led_8bits/ip/led_8bits_rst_ps7_0_50M_0/synth/led_8bits_rst_ps7_0_50M_0.vhd:71]
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 331.398 ; gain = 120.879
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 331.398 ; gain = 120.879
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 649.762 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 649.762 ; gain = 439.242
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 649.762 ; gain = 439.242
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     5|
+|2     |LUT2  |     9|
+|3     |LUT3  |     1|
+|4     |LUT4  |     6|
+|5     |LUT5  |     3|
+|6     |LUT6  |     1|
+|7     |SRL16 |     1|
+|8     |FDR   |     8|
+|9     |FDRE  |    28|
+|10    |FDSE  |     4|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 649.762 ; gain = 439.242
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 649.762 ; gain = 433.996

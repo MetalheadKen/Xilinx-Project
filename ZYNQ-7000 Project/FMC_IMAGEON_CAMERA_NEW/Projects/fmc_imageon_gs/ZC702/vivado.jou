@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Jan 19 19:27:00 2017
+# Process ID: 3748
+# Current directory: D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1392 D:\FMC_IMAGEON_CAMERA\Projects\fmc_imageon_gs\ZC702\fmc_imageon_gs.xpr
+# Log file: D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/vivado.log
+# Journal file: D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.xpr
+open_bd_design {D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+ipx::open_ipxact_file {D:\FMC_IMAGEON_CAMERA\IP\onsemi_vita_cam_L\component.xml}
+set_property display_name {ON Semiconductor VITA Camera Receiver Left} [ipx::current_core]
+set_property description {ON Semiconductor VITA Camera Receiver Left} [ipx::current_core]
+set_property name onsemi_vita_cam_L [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/FMC_IMAGEON_CAMERA/IP
+open_bd_design {D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+startgroup
+create_bd_cell -type ip -vlnv avnet:onsemi_vita:onsemi_vita_cam_L:3.2 onsemi_vita_cam_L_0
+endgroup
+set_property location {2.5 709 -238} [get_bd_cells onsemi_vita_cam_L_0]
+set_property location {3 1017 -217} [get_bd_cells onsemi_vita_cam_L_0]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M08_AXI]
+undo
+startgroup
+set_property -dict [list CONFIG.NUM_MI {9}] [get_bd_cells processing_system7_0_axi_periph]
+endgroup
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M08_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins processing_system7_0_axi_periph/M08_AXI] [get_bd_intf_pins onsemi_vita_cam_L_0/S00_AXI]
+delete_bd_objs [get_bd_intf_nets IO_CAM_IN_2]
+connect_bd_intf_net [get_bd_intf_ports IO_VITA_CAM_L] [get_bd_intf_pins onsemi_vita_cam_L_0/IO_CAM_IN]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK3]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK3] [get_bd_pins onsemi_vita_cam_L_0/clk200]
+delete_bd_objs [get_bd_nets rst_processing_system7_0_148_5M1_peripheral_reset]
+connect_bd_net [get_bd_pins rst_processing_system7_0_148_5M1/peripheral_reset] [get_bd_pins onsemi_vita_cam_L_0/reset]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/oe] [get_bd_pins xlconstant_1/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/trigger1] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/clk] [get_bd_pins onsemi_vita_cam_L_0/oe]
+undo
+connect_bd_net [get_bd_ports fmc_imageon_vclk_l] [get_bd_pins onsemi_vita_cam_L_0/clk]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/s00_axi_aresetn] [get_bd_pins rst_processing_system7_0_76M/peripheral_aresetn]
+delete_bd_objs [get_bd_intf_nets onsemi_vita_cam_1_VID_IO_OUT]
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_L_0/VID_IO_OUT] [get_bd_intf_pins v_vid_in_axi4s_2/vid_io_in]
+delete_bd_objs [get_bd_cells onsemi_vita_cam_1]
+set_property name onsemi_vita_cam_L [get_bd_cells onsemi_vita_cam_L_0]
+regenerate_bd_layout
+validate_bd_design
+assign_bd_address
+validate_bd_design
+make_wrapper -files [get_files D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name ON_Semiconductor_VITA_Camera_Receiver_Left_v3_2_project -directory D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.tmp/ON_Semiconductor_VITA_Camera_Receiver_Left_v3_2_project d:/FMC_IMAGEON_CAMERA/IP/onsemi_vita_cam_L/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property supported_families {kintex7 Production artix7 Production zynq Production} [ipx::current_core]
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {d:/fmc_imageon_camera/ip/onsemi_vita_cam_l d:/FMC_IMAGEON_CAMERA/IP} [current_project]
+update_ip_catalog
+validate_bd_design -force
+validate_bd_design -force
+validate_bd_design -force
+ipx::edit_ip_in_project -upgrade true -name ON_Semiconductor_VITA_Camera_Receiver_Left_v3_2_project -directory D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.tmp/ON_Semiconductor_VITA_Camera_Receiver_Left_v3_2_project d:/FMC_IMAGEON_CAMERA/IP/onsemi_vita_cam_L/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/fmc_imageon_camera/ip/onsemi_vita_cam_l
+validate_bd_design -force
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+validate_bd_design -force
+ipx::edit_ip_in_project -upgrade true -name ON_Semiconductor_VITA_Camera_Receiver_Left_v3_2_project -directory D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.tmp/ON_Semiconductor_VITA_Camera_Receiver_Left_v3_2_project d:/FMC_IMAGEON_CAMERA/IP/onsemi_vita_cam_L/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/fmc_imageon_camera/ip/onsemi_vita_cam_l
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv avnet:onsemi_vita:onsemi_vita_cam_L:3.2 onsemi_vita_cam_L_0
+endgroup
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M08_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins processing_system7_0_axi_periph/M08_AXI] [get_bd_intf_pins onsemi_vita_cam_L_0/S00_AXI]
+delete_bd_objs [get_bd_intf_nets IO_VITA_CAM_L_1]
+connect_bd_intf_net [get_bd_intf_ports IO_VITA_CAM_L] [get_bd_intf_pins onsemi_vita_cam_L_0/IO_CAM_IN]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/clk200] [get_bd_pins processing_system7_0/FCLK_CLK3]
+connect_bd_net [get_bd_ports fmc_imageon_vclk_l] [get_bd_pins onsemi_vita_cam_L_0/clk]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/reset] [get_bd_pins rst_processing_system7_0_148_5M1/peripheral_reset]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/oe] [get_bd_pins xlconstant_1/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/trigger1] [get_bd_pins rst_processing_system7_0_148_5M1/bus_struct_reset]
+undo
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/trigger1] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/s00_axi_aclk] [get_bd_pins onsemi_vita_cam_L/s00_axi_aclk]
+connect_bd_net [get_bd_pins onsemi_vita_cam_L_0/s00_axi_aresetn] [get_bd_pins onsemi_vita_cam_L/s00_axi_aresetn]
+delete_bd_objs [get_bd_intf_nets onsemi_vita_cam_L_0_VID_IO_OUT] [get_bd_cells onsemi_vita_cam_L]
+connect_bd_intf_net [get_bd_intf_pins onsemi_vita_cam_L_0/VID_IO_OUT] [get_bd_intf_pins v_vid_in_axi4s_2/vid_io_in]
+validate_bd_design
+assign_bd_address
+validate_bd_design
+report_ip_status -name ip_status 
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property source_mgmt_mode All [current_project]
+make_wrapper -files [get_files D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+make_wrapper -files [get_files D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+make_wrapper -files [get_files D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd] -top
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+open_project D:/Xilinx_Project/FMC_IMAGEON_2013_3_IP_Tutorials_20140307_zc702_solutions2/FMC_IMAGEON/2013_3/zc702_vita_passthrough_dual/tutorial.xpr
+update_compile_order -fileset sim_1
+current_project fmc_imageon_gs
+report_ip_status -name ip_status 
+current_project tutorial
+open_bd_design {D:/Xilinx_Project/FMC_IMAGEON_2013_3_IP_Tutorials_20140307_zc702_solutions2/FMC_IMAGEON/2013_3/zc702_vita_passthrough_dual/tutorial.srcs/sources_1/bd/tutorial/tutorial.bd}
+regenerate_bd_layout
+set_property location {3 982 684} [get_bd_cells fmc1_imageon_vita_color]
+current_project fmc_imageon_gs
+current_project tutorial
+regenerate_bd_layout
+current_project fmc_imageon_gs
+open_bd_design {D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+current_project tutorial
+current_project fmc_imageon_gs
+current_project tutorial
+current_project fmc_imageon_gs
+current_project tutorial
+current_project fmc_imageon_gs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+launch_sdk -workspace D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk -hwspec D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.sdk/fmc_imageon_gs_wrapper.hdf
+open_bd_design {D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}
+open_bd_design {D:/FMC_IMAGEON_CAMERA/Projects/fmc_imageon_gs/ZC702/fmc_imageon_gs.srcs/sources_1/bd/fmc_imageon_gs/fmc_imageon_gs.bd}

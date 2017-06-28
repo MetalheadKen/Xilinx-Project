@@ -1,0 +1,68 @@
+--- subsystems/linux/hw-description/ps7_init.c	2015-12-14 20:06:05.945675000 +0530
++++ components/bootloader/zynq_fsbl/ps7_init.c	2015-12-14 20:14:49.572189000 +0530
+@@ -575,9 +575,9 @@
+     // .. ..     ==> MASK : 0x03C00000U    VAL : 0x02000000U
+     // .. .. 
+     EMIT_MASKWRITE(0XF800600C, 0x03FFFFFFU ,0x02001001U),
+-    // .. .. reg_ddrc_w_min_non_critical_x32 = 0x1
+-    // .. .. ==> 0XF8006010[10:0] = 0x00000001U
+-    // .. ..     ==> MASK : 0x000007FFU    VAL : 0x00000001U
++    // .. .. reg_ddrc_w_min_non_critical_x32 = 0x8
++    // .. .. ==> 0XF8006010[10:0] = 0x00000008U
++    // .. ..     ==> MASK : 0x000007FFU    VAL : 0x00000008U
+     // .. .. reg_ddrc_w_xact_run_length = 0x8
+     // .. .. ==> 0XF8006010[14:11] = 0x00000008U
+     // .. ..     ==> MASK : 0x00007800U    VAL : 0x00004000U
+@@ -585,7 +585,7 @@
+     // .. .. ==> 0XF8006010[25:15] = 0x00000002U
+     // .. ..     ==> MASK : 0x03FF8000U    VAL : 0x00010000U
+     // .. .. 
+-    EMIT_MASKWRITE(0XF8006010, 0x03FFFFFFU ,0x00014001U),
++    EMIT_MASKWRITE(0XF8006010, 0x03FFFFFFU ,0x00014008U),
+     // .. .. reg_ddrc_t_rc = 0x1b
+     // .. .. ==> 0XF8006014[5:0] = 0x0000001BU
+     // .. ..     ==> MASK : 0x0000003FU    VAL : 0x0000001BU
+@@ -4844,9 +4844,9 @@
+     // .. ..     ==> MASK : 0x03C00000U    VAL : 0x02000000U
+     // .. .. 
+     EMIT_MASKWRITE(0XF800600C, 0x03FFFFFFU ,0x02001001U),
+-    // .. .. reg_ddrc_w_min_non_critical_x32 = 0x1
+-    // .. .. ==> 0XF8006010[10:0] = 0x00000001U
+-    // .. ..     ==> MASK : 0x000007FFU    VAL : 0x00000001U
++    // .. .. reg_ddrc_w_min_non_critical_x32 = 0x8
++    // .. .. ==> 0XF8006010[10:0] = 0x00000008U
++    // .. ..     ==> MASK : 0x000007FFU    VAL : 0x00000008U
+     // .. .. reg_ddrc_w_xact_run_length = 0x8
+     // .. .. ==> 0XF8006010[14:11] = 0x00000008U
+     // .. ..     ==> MASK : 0x00007800U    VAL : 0x00004000U
+@@ -4854,7 +4854,7 @@
+     // .. .. ==> 0XF8006010[25:15] = 0x00000002U
+     // .. ..     ==> MASK : 0x03FF8000U    VAL : 0x00010000U
+     // .. .. 
+-    EMIT_MASKWRITE(0XF8006010, 0x03FFFFFFU ,0x00014001U),
++    EMIT_MASKWRITE(0XF8006010, 0x03FFFFFFU ,0x00014008U),
+     // .. .. reg_ddrc_t_rc = 0x1b
+     // .. .. ==> 0XF8006014[5:0] = 0x0000001BU
+     // .. ..     ==> MASK : 0x0000003FU    VAL : 0x0000001BU
+@@ -9257,9 +9257,9 @@
+     // .. ..     ==> MASK : 0x03C00000U    VAL : 0x02000000U
+     // .. .. 
+     EMIT_MASKWRITE(0XF800600C, 0x03FFFFFFU ,0x02001001U),
+-    // .. .. reg_ddrc_w_min_non_critical_x32 = 0x1
+-    // .. .. ==> 0XF8006010[10:0] = 0x00000001U
+-    // .. ..     ==> MASK : 0x000007FFU    VAL : 0x00000001U
++    // .. .. reg_ddrc_w_min_non_critical_x32 = 0x8
++    // .. .. ==> 0XF8006010[10:0] = 0x00000008U
++    // .. ..     ==> MASK : 0x000007FFU    VAL : 0x00000008U
+     // .. .. reg_ddrc_w_xact_run_length = 0x8
+     // .. .. ==> 0XF8006010[14:11] = 0x00000008U
+     // .. ..     ==> MASK : 0x00007800U    VAL : 0x00004000U
+@@ -9267,7 +9267,7 @@
+     // .. .. ==> 0XF8006010[25:15] = 0x00000002U
+     // .. ..     ==> MASK : 0x03FF8000U    VAL : 0x00010000U
+     // .. .. 
+-    EMIT_MASKWRITE(0XF8006010, 0x03FFFFFFU ,0x00014001U),
++    EMIT_MASKWRITE(0XF8006010, 0x03FFFFFFU ,0x00014008U),
+     // .. .. reg_ddrc_t_rc = 0x1b
+     // .. .. ==> 0XF8006014[5:0] = 0x0000001BU
+     // .. ..     ==> MASK : 0x0000003FU    VAL : 0x0000001BU

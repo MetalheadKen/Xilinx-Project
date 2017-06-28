@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 246566 by xbuild on Wed Mar 20 18:45:37 MDT 2013
+# Start of session at: Thu Mar 21 10:34:32 2013
+# Process ID: 28125
+# Log file: /group/mvico/users/elzinga/designs/vita/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+ipx::package_project -root_dir {/group/mvico/users/elzinga/designs/vita/project_1}
+set_property library {user} [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::archive_core {/group/mvico/users/elzinga/designs/vita/project_1/xilinx.com_user_fmc_imageon_vita_receiver_1.0.zip} [ipx::current_core]
+close_project
+open_project /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.filter
+update_ip_catalog -rebuild
+open_bd_design {/group/mvico/users/elzinga/designs/camera_reference_design_2013_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fmc_imageon_vita_receiver:1.0 fmc_imageon_vita_receiver_1
+endgroup
+delete_bd_objs [get_bd_cells /fmc_imageon_vita_receiver_1]

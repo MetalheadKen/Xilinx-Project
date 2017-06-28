@@ -1,0 +1,7 @@
+09:04:38 **** Clean-only build of configuration Debug for project hdmi_display_app ****
+make clean 
+rm -rf  ./src/fmc_imageon_hdmi_display.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o  ./src/fmc_imageon_hdmi_display.d ./src/helloworld.d ./src/platform.d ./src/video_frame_buffer.d ./src/video_generator.d ./src/video_resolution.d  hdmi_display_app.elf.size  hdmi_display_app.elf
+' '
+
+09:04:38 Build Finished (took 345ms)
+

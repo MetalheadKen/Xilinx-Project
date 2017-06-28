@@ -1,0 +1,8 @@
+Control Set Information: 
+Number of unique control sets: 1
+Minimum Number of register sites lost to control set restrictions: 3
+--------------------------------------------------------------------------------------------------
+| Clock Signal    | Enable Signal   | Set/Reset Signal     | Slice Load Count   | Bel Load Count |
+--------------------------------------------------------------------------------------------------
+| clk_IBUF_BUFG   |                 |                      | 7                  | 19
+--------------------------------------------------------------------------------------------------

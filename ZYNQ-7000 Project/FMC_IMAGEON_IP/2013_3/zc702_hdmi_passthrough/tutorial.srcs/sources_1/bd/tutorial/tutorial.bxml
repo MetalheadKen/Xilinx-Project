@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="27">
+  <CompositeFile CompositeFileTopName="tutorial" CanBeSetAsTop="true" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="RESET"/>
+    <Generation Name="IMPLEMENTATION" State="RESET"/>
+    <Generation Name="SIMULATION" State="RESET"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip\tutorial_processing_system7_0_0\tutorial_processing_system7_0_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139750" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_axi_iic_0_0\tutorial_axi_iic_0_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139751" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_processing_system7_0_axi_periph_0\tutorial_processing_system7_0_axi_periph_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1394137953" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_proc_sys_reset_0\tutorial_proc_sys_reset_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139752" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_xbar_1\tutorial_xbar_1.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139753" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_fmc_imageon_hdmi_in_0_1\tutorial_fmc_imageon_hdmi_in_0_1.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139754" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_gnd_6\tutorial_gnd_6.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139754" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_v_vid_in_axi4s_0_1\tutorial_v_vid_in_axi4s_0_1.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139754" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_vcc_7\tutorial_vcc_7.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139754" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_fmc_imageon_hdmi_out_0_2\tutorial_fmc_imageon_hdmi_out_0_2.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139755" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_gnd_8\tutorial_gnd_8.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139755" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_v_axi4s_vid_out_0_2\tutorial_v_axi4s_vid_out_0_2.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139755" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_v_tc_0_2\tutorial_v_tc_0_2.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139772" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_vcc_9\tutorial_vcc_9.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139773" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\tutorial_auto_pc_5\tutorial_auto_pc_5.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1394139773" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="tutorial_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

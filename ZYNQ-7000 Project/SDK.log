@@ -1,0 +1,15 @@
+17:32:37 INFO  : Registering command handlers for SDK TCF services
+17:32:37 INFO  : Launching XSCT server: xsct.bat -interactive D:\Xilinx_Project\temp_xsdb_launch_script.tcl
+17:32:39 INFO  : XSCT server has started successfully.
+17:32:39 INFO  : Successfully done setting XSCT server connection channel  
+17:32:40 INFO  : Successfully done setting SDK workspace  
+17:37:08 INFO  : Registering command handlers for SDK TCF services
+17:37:08 INFO  : Launching XSCT server: xsct.bat -interactive D:\Xilinx_Project\temp_xsdb_launch_script.tcl
+17:37:10 INFO  : XSCT server has started successfully.
+17:37:10 INFO  : Successfully done setting XSCT server connection channel  
+17:37:10 INFO  : Successfully done setting SDK workspace  
+17:41:23 INFO  : Registering command handlers for SDK TCF services
+17:41:23 INFO  : Launching XSCT server: xsct.bat -interactive D:\Xilinx_Project\temp_xsdb_launch_script.tcl
+17:41:25 INFO  : XSCT server has started successfully.
+17:41:26 INFO  : Successfully done setting XSCT server connection channel  
+17:41:26 INFO  : Successfully done setting SDK workspace  

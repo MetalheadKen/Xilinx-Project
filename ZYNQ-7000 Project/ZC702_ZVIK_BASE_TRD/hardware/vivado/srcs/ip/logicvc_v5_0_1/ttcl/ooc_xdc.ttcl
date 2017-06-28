@@ -1,0 +1,229 @@
+<: ;#Component and file information :>
+<: set ComponentName [getComponentNameString] :>
+<: setOutputDirectory  "./" :>
+<: setFileName [ttcl_add $ComponentName "_ooc"] :>
+<: setFileExtension ".xdc" :>
+<: setFileProcessingOrder normal :>
+<: setFileUsedIn { out_of_context synthesis implementation } :>
+<: set disp_int [getIntValue "C_DISPLAY_INTERFACE"] :>
+<: set external [getIntValue "C_USE_E_INPUT"] :> 
+<: set bufgmux [getIntValue "C_USE_E_VCLK_BUFGMUX"] :> 
+<: set pix_width  [getIntValue "C_PIXEL_DATA_WIDTH"] :> 
+<: set use_vclk2  [getIntValue "C_USE_VCLK2"] :> 
+################################################################################
+
+# This XDC is used only for OOC mode of synthesis, implementation
+# User should update the correct clock period before proceeding further
+# This constraints file contains default clock frequencies to be used during 
+# out-of-context flows such as OOC Synthesis and Hierarchical Designs. 
+# For best results the frequencies should be modified# to match the target 
+# frequencies. 
+# This constraints file is not used in normal top-down synthesis (the default flow of Vivado)
+################################################################################
+#create_clock -name clock_name -period 10 [get_ports clock_name] 
+################################################################################
+
+create_clock -name "s_axi_aclk" -period 20.0 [ get_ports S_AXI_ACLK ]
+set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports S_AXI_ACLK]
+
+create_clock -name "m_axi_aclk" -period 20.0 [ get_ports M_AXI_ACLK ]
+set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports M_AXI_ACLK]
+
+set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks m_axi_aclk]
+set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks s_axi_aclk]
+
+##### If Display interface type is Parallel
+<: if { ($disp_int == 0) } {                          :>
+create_clock -name "vclk" -period 10.0 [ get_ports vclk ]
+set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports vclk]
+
+  <: if { ($use_vclk2 == 1) && ($pix_width == 12) } {                     :>
+    create_clock  -name "vclk2" -period 5.0 [get_ports e_vclk]
+    set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports vclk2]
+
+    set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks vclk2]
+    set_false_path -from [get_clocks vclk2] -to [get_clocks s_axi_aclk]
+
+    set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks vclk2]
+    set_false_path -from [get_clocks vclk2] -to [get_clocks m_axi_aclk]
+   <: }                                                                   :>
+
+<: }                                                                      :>
+
+##### If Display interface type is DIV
+<: if { ($disp_int == 5) } {                                              :>
+create_clock  -name "vclk" -period 8.334 [get_ports vclk]
+set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports vclk]
+
+  <: if { ($use_vclk2 == 1) && ($pix_width == 12) } {                     :>
+    create_clock  -name "vclk2" -period 4.1667 [get_ports e_vclk]
+    set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports vclk2]
+
+    set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks vclk2]
+    set_false_path -from [get_clocks vclk2] -to [get_clocks s_axi_aclk]
+
+    set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks vclk2]
+    set_false_path -from [get_clocks vclk2] -to [get_clocks m_axi_aclk]
+   <: }                                                                   :>
+
+<: }                                                                      :>
+
+##### If Display interface type is ITU656
+<: if { ($disp_int == 1) } {                                              :>
+
+create_clock -name "vclk" -period 74.0 [ get_ports vclk ]
+set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports vclk]
+
+#create_clock  -name "itu_clk_in" -period 37.0 [get_ports itu_clk_in]
+#set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports itu_clk_in]
+create_generated_clock -name "itu_clk_in" -add -source [get_ports vclk] -multiply_by 2 -master_clock [get_clocks vclk] [get_ports itu_clk_in]
+
+set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks itu_clk_in]
+set_false_path -from [get_clocks itu_clk_in] -to [get_clocks s_axi_aclk]
+
+set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks itu_clk_in]
+set_false_path -from [get_clocks itu_clk_in] -to [get_clocks m_axi_aclk]
+
+set_false_path -from [get_clocks vclk] -to [get_clocks itu_clk_in]
+set_false_path -from [get_clocks itu_clk_in] -to [get_clocks vclk]
+
+  <: if { ($use_vclk2 == 1) && ($pix_width == 12) } {                     :>
+    create_clock  -name "vclk2" -period 37.0 [get_ports e_vclk]
+    set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports vclk2]
+
+    set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks vclk2]
+    set_false_path -from [get_clocks vclk2] -to [get_clocks s_axi_aclk]
+
+    set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks vclk2]
+    set_false_path -from [get_clocks vclk2] -to [get_clocks m_axi_aclk]
+   <: }                                                                  :>
+
+<: }                                                                     :>
+
+
+#### If Display interface type is LVDS 4-bit, Camera Link 4-bit or LVDS 3-bit
+<: if { ($disp_int == 2) || ($disp_int == 3) || ($disp_int == 4) } {     :>
+create_clock  -name "lvds_clk" -period 1.667 [get_ports lvds_clk]
+set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports lvds_clk]
+
+create_clock -name "vclk" -period 11.667 [ get_ports vclk ]
+set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports vclk]
+
+set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks lvds_clk]
+set_false_path -from [get_clocks lvds_clk] -to [get_clocks s_axi_aclk]
+
+set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks lvds_clk]
+set_false_path -from [get_clocks lvds_clk] -to [get_clocks m_axi_aclk]
+
+  <: if { ($use_vclk2 == 1) && ($pix_width == 12) } {                     :>
+    create_clock  -name "vclk2" -period 5.833 [get_ports e_vclk]
+    set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports vclk2]
+
+    set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks vclk2]
+    set_false_path -from [get_clocks vclk2] -to [get_clocks s_axi_aclk]
+
+    set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks vclk2]
+    set_false_path -from [get_clocks vclk2] -to [get_clocks m_axi_aclk]
+   <: }                                                                  :>
+   
+<: }                                                                     :>
+
+#### If Display interface type is AXIS
+<: if { ($disp_int == 6) } {     :>
+   create_clock  -name "m_axis_aclk" -period 10.0 [get_ports m_axis_aclk]
+   set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports m_axis_aclk]
+
+   create_clock -name "vclk" -period 10.0 [ get_ports vclk ]
+   set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports vclk]
+
+   set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks m_axis_aclk]
+   set_false_path -from [get_clocks m_axis_aclk] -to [get_clocks s_axi_aclk]
+
+   set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks m_axis_aclk]
+   set_false_path -from [get_clocks m_axis_aclk] -to [get_clocks m_axi_aclk]
+
+   set_false_path -from [get_clocks vclk] -to [get_clocks m_axis_aclk]
+   set_false_path -from [get_clocks m_axis_aclk] -to [get_clocks vclk]
+
+   
+<: }                                                                     :>
+
+##### Use external vclk
+<: if { ($external == 1) && ($bufgmux == 1) } {                          :>
+
+  <: if { ($disp_int == 0) || ($disp_int == 6) } {                       :>
+     create_clock  -name "e_vclk" -period 10.0 [get_ports e_vclk]
+     set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports e_vclk]
+  <: }                                                                   :>
+
+  <: if { ($disp_int == 5) } {                                           :>
+     create_clock  -name "e_vclk" -period 8.334 [get_ports e_vclk]
+     set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports e_vclk]
+  <: }                                                                   :>
+
+  <: if { ($disp_int == 1) } {                                           :>
+     create_clock -name "e_vclk" -period 74.0 [ get_ports e_vclk ]
+     set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports e_vclk]
+  <: }                                                                   :>
+
+  <: if { (($disp_int == 2) || ($disp_int == 3) || ($disp_int == 4)) } {  :>
+     create_clock -name "e_vclk" -period 11.667 [ get_ports e_vclk ]
+     set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports e_vclk]
+  <: }                                                                   :>  
+  
+
+
+   set_clock_groups -logically_exclusive -group [get_clocks -include_generated_clocks {vclk}] \ 
+                                          -group [get_clocks -include_generated_clocks {e_vclk}]
+
+##   set_clock_groups -physically_exclusive -group [get_clocks -include_generated_clocks {CLKFBOUT}] \ 
+                                          -group [get_clocks -include_generated_clocks {CLKFBOUT_1}]
+
+##   set_clock_groups -physically_exclusive -group [get_clocks -include_generated_clocks {CLKOUT0}] \
+                                          -group [get_clocks -include_generated_clocks {CLKOUT0_1}]
+
+##   set_clock_groups -physically_exclusive -group [get_clocks -include_generated_clocks {CLKOUT1}] \
+                                          -group [get_clocks -include_generated_clocks {CLKOUT1_1}]
+
+##   set_clock_groups -logically_exclusive -group [get_clocks -include_generated_clocks {CLKFBOUT CLKOUT0 CLKOUT1}] \
+                                         -group [get_clocks -include_generated_clocks {CLKFBOUT_1 CLKOUT0_1 CLKOUT1_1}]
+
+
+  
+   set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks e_vclk]
+   set_false_path -from [get_clocks e_vclk] -to [get_clocks s_axi_aclk]
+
+   set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks e_vclk]
+   set_false_path -from [get_clocks e_vclk] -to [get_clocks m_axi_aclk]
+
+<: }                                                                     :>
+
+##### Use external AXIS clk
+<: if { ($external == 2) } {                          :>
+
+   create_clock  -name "s_axis_aclk" -period 10.0 [get_ports s_axis_aclk]
+   set_property HD.CLK_SRC BUFGCTRL_X0Y1 [get_ports s_axis_aclk]
+  
+   set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks s_axis_aclk]
+   set_false_path -from [get_clocks s_axis_aclk] -to [get_clocks s_axi_aclk]
+
+   set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks s_axis_aclk]
+   set_false_path -from [get_clocks s_axis_aclk] -to [get_clocks m_axi_aclk]
+
+   set_false_path -from [get_clocks vclk] -to [get_clocks s_axis_aclk]
+   set_false_path -from [get_clocks s_axis_aclk] -to [get_clocks vclk]
+
+<: }                                                                     :>
+
+
+set_false_path -from [get_clocks s_axi_aclk] -to [get_clocks vclk]
+set_false_path -from [get_clocks vclk] -to [get_clocks s_axi_aclk]
+
+set_false_path -from [get_clocks vclk] -to [get_clocks m_axi_aclk]
+set_false_path -from [get_clocks m_axi_aclk] -to [get_clocks vclk]
+
+set_property IOB TRUE [get_ports hsync_o]
+set_property IOB TRUE [get_ports vsync_o]
+set_property IOB TRUE [get_ports d_pix_o]
+set_property IOB TRUE [get_ports blank_o]
+################################################################################

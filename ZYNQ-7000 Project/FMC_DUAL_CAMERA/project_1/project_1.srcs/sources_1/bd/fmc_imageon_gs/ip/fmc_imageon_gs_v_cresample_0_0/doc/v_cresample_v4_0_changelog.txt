@@ -1,0 +1,120 @@
+2015.4:
+ * Version 4.0 (Rev. 7)
+ * No changes
+
+2015.3:
+ * Version 4.0 (Rev. 7)
+ * Added support for Zynq and Kintex UltraScale+ devices
+ * IP revision number added to HDL module, library, and include file names, to support designs with both locked and upgraded IP instances
+ * Revision change in one or more subcores
+
+2015.2.1:
+ * Version 4.0 (Rev. 6)
+ * No changes
+
+2015.2:
+ * Version 4.0 (Rev. 6)
+ * No changes
+
+2015.1:
+ * Version 4.0 (Rev. 6)
+ * Support for Kintex UltraScale devices at Production status
+ * Enabled out-of-context clock frequency setting by adding FREQ_HZ parameter to clock interfaces aclk_intf and s_axi_aclk_intf
+ * C models are no longer provided for 32-bit operating systems as Vivado has deprecated 32-bit OS support
+
+2014.4.1:
+ * Version 4.0 (Rev. 5)
+ * No changes
+
+2014.4:
+ * Version 4.0 (Rev. 5)
+ * XA Artix-7 (Automotive) Production support
+ * Encrypted source files are concatenated together to reduce the number of files and to reduce simulator compile time
+
+2014.3:
+ * Version 4.0 (Rev. 4)
+ * No changes
+
+2014.2:
+ * Version 4.0 (Rev. 4)
+ * No changes
+
+2014.1:
+ * Version 4.0 (Rev. 4)
+ * Virtex UltraScale Pre-Production support
+ * Defense-grade Artix-7Q, Kintex-7Q, Virtex-7Q and Zynq-7000Q Production support
+ * Bypass and test pattern modes are now working reliably
+ * C models for Windows are compiled using Microsoft Visual Studio 2012
+ * Constraints syntax has been simplified, no functional changes
+ * Internal device family name change, no functional changes
+ * Netlists created by write_verilog and write_vhdl are IEEE P1735 encrypted, with keys for supported simulators so that netlist simulation can still be done
+ * Enable third party synthesis tools to read encrypted netlists (but not source HDL)
+ * Improved GUI speed and responsiveness, no functional changes
+
+2013.4:
+ * Version 4.0 (Rev. 3)
+ * Kintex UltraScale Pre-Production support
+
+2013.3:
+ * Version 4.0 (Rev. 2)
+ * Reduced warnings in synthesis and simulation
+ * Added support for out of context flow
+ * Updated constraints to match IP hierarchy
+ * Added support for Cadence IES and Synopsys VCS simulators
+ * Removed C model dependency on stlport (STL Portability) library; C model now uses STL built into the compiler
+ * Windows C model DLLs are statically linked to the Windows C run-time (CRT) library, to remove the runtime dependency on MSVCRT90.dll, which can cause problems when using the C model in a Windows compiler other than Visual Studio 2008
+
+2013.2:
+ * Version 4.0 (Rev. 1)
+ * Added support for C simulation model
+
+2013.1:
+ * Version 4.0
+ * Native Vivado Release
+ * There have been no functional or interface changes to this IP.  The version number has changed to support unique versioning in Vivado starting with 2013.1.
+
+(c) Copyright 2011 - 2015 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

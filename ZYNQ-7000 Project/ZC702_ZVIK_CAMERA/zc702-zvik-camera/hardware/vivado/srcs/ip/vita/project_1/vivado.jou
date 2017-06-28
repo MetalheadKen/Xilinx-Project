@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 247555 by xbuild on Mon Mar 25 19:01:16 MDT 2013
+# Start of session at: Tue Mar 26 11:24:26 2013
+# Process ID: 31064
+# Log file: /group/mvico/users/elzinga/designs/vita/project_1/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/project_1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+source -notrace /group/mvico/users/elzinga/designs/vita/project_1/project_1.filter
+ipx::open_core -upgrade true {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_param ips.gui.advanced true
+ipx::open_ipxact_file {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property name {ctrl} [ipx::get_bus_interface S_AXI [ipx::current_core]]
+set_property display_name {CTRL} [ipx::get_bus_interface ctrl [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property slave_memory_map_ref {} [ipx::get_bus_interface ctrl [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property name {s_axi_aresetn_intf} [ipx::get_bus_interface S_AXI_signal_reset [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property name {reset_intf} [ipx::get_bus_interface signal_reset [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property name {s_axi_aclk_intf} [ipx::get_bus_interface S_AXI_signal_clock [ipx::current_core]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property value {ctrl} [ipx::get_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interface s_axi_aclk_intf [ipx::current_core]]]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::current_core {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+ipx::remove_bus_interface {signal_clock} [ipx::current_core]
+set_property value {ACTIVE_HIGH} [ipx::get_bus_parameter POLARITY [ipx::get_bus_interface reset_intf [ipx::current_core]]]
+ipx::check_integrity [ipx::current_core]
+ipx::archive_core {/group/mvico/users/elzinga/designs/vita/project_1/xilinx.com_user_fmc_imageon_vita_receiver_1.0.zip} [ipx::current_core]
+ipx::current_core {/group/mvico/users/elzinga/workspaces/IP3_elzinga_v_cfa_v7_0/DEV/hw/v_cfa/v_cfa_v7_0/component.xml}
+ipx::unload_core {component xilinx.com:ip:v_cfa:7.0}
+ipx::unload_core {component xilinx.com:user:fmc_imageon_vita_receiver:1.0}

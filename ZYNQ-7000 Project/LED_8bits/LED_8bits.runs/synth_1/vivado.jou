@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Oct 20 18:43:30 2016
+# Process ID: 7668
+# Current directory: D:/Xilinx_Project/LED_8bits/LED_8bits.runs/synth_1
+# Command line: vivado.exe -log led_8bits_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_8bits_wrapper.tcl
+# Log file: D:/Xilinx_Project/LED_8bits/LED_8bits.runs/synth_1/led_8bits_wrapper.vds
+# Journal file: D:/Xilinx_Project/LED_8bits/LED_8bits.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source led_8bits_wrapper.tcl -notrace

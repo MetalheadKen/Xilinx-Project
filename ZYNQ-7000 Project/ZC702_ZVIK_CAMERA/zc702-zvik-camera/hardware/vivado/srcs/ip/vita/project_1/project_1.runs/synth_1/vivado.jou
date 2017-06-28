@@ -1,0 +1,9 @@
+#-----------------------------------------------------------
+# Vivado v2013.2 (64-bit)
+# Build 268987 by xbuild on Tue Jun  4 19:14:10 MDT 2013
+# Start of session at: Mon Jul 22 16:01:38 2013
+# Process ID: 7680
+# Log file: C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.runs/synth_1/fmc_imageon_vita_receiver.rds
+# Journal file: C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fmc_imageon_vita_receiver.tcl

@@ -1,0 +1,171 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2013.1 (lin64) Build 242259 Sun Mar  3 16:45:49 MST 2013
+| Date             : Mon Mar  4 16:35:21 2013
+| Host             : xcoapps53 running 64-bit Red Hat Enterprise Linux Client release 5.6 (Tikanga)
+| Command Line     : report_power -file zc702_hdmi_out_power_routed.rpt -pb zc702_hdmi_out_power_summary_routed.pb
+| Design Name      : zc702_hdmi_out
+| Design State     : ROUTED
+| Device           : xc7z020clg484-1
+| Grade            : Commercial
+| Process          : Typical
+| Characterization : Advance
+--------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Initial Settings
+2.3 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+4. Warnings
+
+1. Summary
+----------
+
++--------------------------+-------+
+| Total On-Chip Power (W)  | 0.120 |
+| Dynamic (W)              | 0.000 |
+| Device Static (W)        | 0.120 |
+| Effective TJA (C/W)      | 4.8   |
+| Max Ambient (C)          | 84.4  |
+| Junction Temperature (C) | 25.6  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------+-----------+----------+-----------+-----------------+
+| On-Chip      | Power (W) | Used     | Available | Utilization (%) |
++--------------+-----------+----------+-----------+-----------------+
+| Clocks       |     0.000 |        1 |       --- |             --- |
+| Slice Logic  |     0.000 |       21 |       --- |             --- |
+|   Others     |     0.000 |        2 |       --- |             --- |
+|   Register   |     0.000 |       19 |    106400 |             0.0 |
+| Signals      |     0.000 |       61 |       --- |             --- |
+| I/O          |     0.000 |       45 |       200 |            22.5 |
+| Static Power |     0.120 |          |           |                 |
+| Total        |     0.120 |          |           |                 |
++--------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.007 |       0.000 |      0.007 |
+| Vccaux    |       1.800 |     0.019 |       0.000 |      0.019 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       2.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.016 |       0.000 |      0.016 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is completely routed                            |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | Medium     | Device models are not Production                       | Device models may change and in turn slightly affect accuracy                                                      |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------+
+| Ambient Temp (C)      | 25.0             |
+| ThetaJA (C/W)         | 4.8              |
+| Airflow (LFM)         | 250              |
+| Heat Sink             | Medium Profile   |
+| ThetaSA (C/W)         | 4.6              |
+| Board Selection       | Medium (10"x10") |
+| # of Board Layers     | 12 to 15         |
+| Board Temperature (C) | 25.6             |
++-----------------------+------------------+
+
+
+2.2 Initial Settings
+--------------------
+
++-------------------------------------+-------+
+| Register Toggle Rate (%)            |  12.5 |
+| IO Toggle Rate (%)                  |  12.5 |
+| Output Load (pF)                    |   5.0 |
+| IO Enable Probabilty                |   1.0 |
+| BRAM Write Probability              |   0.5 |
+| BRAM Enable Probability             |   0.5 |
+| DSP Toggle Rate (%)                 |  12.5 |
+| Set Signal Probability              |  0.01 |
+| Reset Signal Probability            |  0.01 |
+| Enable Signal Probability           |  0.99 |
+| Unconstrained Clock Frequency (MHz) |   0.0 |
++-------------------------------------+-------+
+
+
+2.3 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------+-----------+
+| Name           | Power (W) |
++----------------+-----------+
+| zc702_hdmi_out |     0.000 |
++----------------+-----------+
+
+
+4. Warnings
+-----------
+
+The clock clk is unconstrained.
+

@@ -1,0 +1,48 @@
+08:16:09.706 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_dual/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+12:00:28.694 INFO  - Saving repository preferences. 
+12:00:28.694 INFO  - Reading in cores from local repositories: 
+		 C:\FMC_IMAGEON\2013_3\avnet_fmc_imageon_cores 
+12:00:28.709 INFO  - Updating libgen.options on all BSP projects. 
+12:00:28.709 INFO  - Cleaning BSP projects in the workspace. 
+12:01:21.888 INFO  - Settings changed on project dual_vita_passthrough_bsp. Triggering a rebuild... 
+12:01:22.528 INFO  - Refreshed build settings on project dual_vita_passthrough_app 
+12:40:53.596 INFO  - Settings changed on project dual_vita_passthrough_bsp. Triggering a rebuild... 
+12:40:54.267 INFO  - Refreshed build settings on project dual_vita_passthrough_app 
+12:45:04.718 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_dual/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+12:47:38.883 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:47:38.992 INFO  - PS initialization will be done as it is not done before. 
+12:47:38.992 INFO  - Running PS initialization.... 
+12:47:39.179 INFO  - ps7_init is completed. 
+12:47:39.289 INFO  - ps7_post_config is completed. 
+12:47:39.398 INFO  - PS Initialization is complete. 
+13:05:44.718 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:07:18.960 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:09:13.936 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:09:25.840 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:10:44.138 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+13:10:44.138 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:02:50.909 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_dual/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+16:02:51.985 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_dual/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+16:02:52.313 INFO  - Copied contents of C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_dual/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml into \hw_platform_0\system.xml. 
+16:02:52.328 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_dual\tutorial.sdk\SDK\SDK_Export\hw\tutorial_wrapper.bit into \hw_platform_0\tutorial_wrapper.bit. 
+16:02:52.328 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_dual\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+16:02:52.328 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_dual\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+16:02:52.328 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_dual\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+16:02:52.328 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_dual\tutorial.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+16:02:52.328 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_dual\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+16:02:52.453 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:02:53.639 INFO  - Restoring local repository preferences: 
+		 C:\FMC_IMAGEON\2013_3\avnet_fmc_imageon_cores 
+16:02:54.450 INFO  - Updating hardware inferred compiler options for dual_vita_passthrough_app. 
+16:02:54.450 INFO  - Clearing existing target manager status. 
+16:02:56.651 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+16:09:52.364 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_dual/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+16:24:57.540 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:57:30.599 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+16:57:30.599 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

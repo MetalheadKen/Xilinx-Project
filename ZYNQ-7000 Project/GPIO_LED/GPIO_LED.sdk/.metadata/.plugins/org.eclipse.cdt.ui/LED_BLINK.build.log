@@ -1,0 +1,13 @@
+16:52:28 **** Auto Build of configuration Debug for project LED_BLINK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LED_BLINK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:2:19: fatal error: xgpio.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+
+16:52:28 Build Finished (took 274ms)
+

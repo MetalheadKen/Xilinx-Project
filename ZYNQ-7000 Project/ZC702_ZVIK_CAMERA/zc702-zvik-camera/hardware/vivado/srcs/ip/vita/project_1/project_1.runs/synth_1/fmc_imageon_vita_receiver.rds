@@ -1,0 +1,254 @@
+#-----------------------------------------------------------
+# Vivado v2013.2 (64-bit)
+# Build 268987 by xbuild on Tue Jun  4 19:14:10 MDT 2013
+# Start of session at: Mon Jul 22 16:01:38 2013
+# Process ID: 7680
+# Log file: C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.runs/synth_1/fmc_imageon_vita_receiver.rds
+# Journal file: C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: Implementation
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-78] Attempting to get a license: Synthesis
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/Vivado/2013.2/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.2/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.2/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+INFO: [Common 17-362] Using Tcl App repository from 'C:/Xilinx/Vivado/2013.2/data/XilinxTclStore'.
+INFO: [Common 17-364] Updating Tcl app persistent manifest 'C:/Users/Mario/AppData/Roaming/Xilinx/Vivado/tclapp/manifest.tcl'
+source fmc_imageon_vita_receiver.tcl
+# set_param gui.test TreeTableDev
+# create_project -in_memory -part xc7z020clg484-1
+# set_property board xilinx.com:zynq:zc702:c [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property ip_repo_paths /group/mvico/users/elzinga/designs/vita/project_1 [current_fileset]
+# read_ip {{C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/pulse_regen_k7/pulse_regen_k7.xci}}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user repository 'C:/group/mvico/users/elzinga/designs/vita/project_1'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado repository 'C:/Xilinx/Vivado/2013.2/data/ip'.
+# set_property used_in_implementation false [get_files -all {{c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/pulse_regen_k7/pulse_regen_k7/pulse_regen_k7_clocks.xdc}}]
+# set_property used_in_implementation false [get_files -all {{c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/pulse_regen_k7/pulse_regen_k7/pulse_regen_k7.xdc}}]
+# set_property used_in_implementation false [get_files -all {{c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/pulse_regen_k7/pulse_regen_k7/pulse_regen_k7_ooc.xdc}}]
+# set_property is_locked true [get_files {{C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/pulse_regen_k7/pulse_regen_k7.xci}}]
+# read_ip {{C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_64i_16o_k7/afifo_64i_16o_k7.xci}}
+# set_property used_in_implementation false [get_files -all {{c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_64i_16o_k7/afifo_64i_16o_k7/afifo_64i_16o_k7_clocks.xdc}}]
+# set_property used_in_implementation false [get_files -all {{c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_64i_16o_k7/afifo_64i_16o_k7/afifo_64i_16o_k7.xdc}}]
+# set_property used_in_implementation false [get_files -all {{c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_64i_16o_k7/afifo_64i_16o_k7/afifo_64i_16o_k7_ooc.xdc}}]
+# set_property is_locked true [get_files {{C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_64i_16o_k7/afifo_64i_16o_k7.xci}}]
+# read_ip {{C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_32_k7/afifo_32_k7.xci}}
+# set_property used_in_implementation false [get_files -all {{c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_32_k7/afifo_32_k7/afifo_32_k7_clocks.xdc}}]
+# set_property used_in_implementation false [get_files -all {{c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_32_k7/afifo_32_k7/afifo_32_k7.xdc}}]
+# set_property used_in_implementation false [get_files -all {{c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_32_k7/afifo_32_k7/afifo_32_k7_ooc.xdc}}]
+# set_property is_locked true [get_files {{C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/afifo_32_k7/afifo_32_k7.xci}}]
+# read_verilog {
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/serdes_1_to_5_diff_data.v}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/phsaligner.v}
+# }
+# read_vhdl {
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/pck_crc8_d8.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/pck_crc10_d10.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_sync.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_mux.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_core.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/spi_seq.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/spi_lowlevel.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_idelayctrl.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_compare.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_clocks.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_comp.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/videosyncgen.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/syncchanneldecoder.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/spi_top.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/remapper.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/pulse_regen.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_interface_s6.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_interface.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_check.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/correct_column_fpn_prnu_dsp48e.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/afifo_64i_16o.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/afifo_32.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/fmc_imageon_vita_receiver.vhd}
+# }
+# read_vhdl -library fmc_imageon_vita_receiver_v1_13_a {
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/fmc_imageon_vita_core.vhd}
+#   {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd}
+# }
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir {C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.data/wt} [current_project]
+# set_property parent.project_dir {C:/zvik_camera_ipi/avnet_ cores/vita/project_1} [current_project]
+# synth_design -top fmc_imageon_vita_receiver -part xc7z020clg484-1
+Command: synth_design -top fmc_imageon_vita_receiver -part xc7z020clg484-1
+
+Starting synthesis...
+
+WARNING: [IP_Flow 19-2162] IP 'pulse_regen_k7' is locked. Locked reason: User override
+WARNING: [IP_Flow 19-2162] IP 'afifo_64i_16o_k7' is locked. Locked reason: User override
+WARNING: [IP_Flow 19-2162] IP 'afifo_32_k7' is locked. Locked reason: User override
+INFO: [Common 17-347] Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+Xilinx IP preload is disabled
+WARNING: [Synth 8-2507] parameter declaration becomes local in phsaligner with formal parameter declaration list [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/phsaligner.v:128]
+WARNING: [Synth 8-2507] parameter declaration becomes local in phsaligner with formal parameter declaration list [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/phsaligner.v:129]
+WARNING: [Synth 8-2507] parameter declaration becomes local in phsaligner with formal parameter declaration list [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/phsaligner.v:130]
+WARNING: [Synth 8-2507] parameter declaration becomes local in phsaligner with formal parameter declaration list [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/phsaligner.v:131]
+WARNING: [Synth 8-2507] parameter declaration becomes local in phsaligner with formal parameter declaration list [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/phsaligner.v:132]
+WARNING: [Synth 8-2507] parameter declaration becomes local in phsaligner with formal parameter declaration list [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/phsaligner.v:133]
+WARNING: [Synth 8-2507] parameter declaration becomes local in phsaligner with formal parameter declaration list [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/phsaligner.v:134]
+WARNING: [Synth 8-2507] parameter declaration becomes local in phsaligner with formal parameter declaration list [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/phsaligner.v:164]
+starting Rtl Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 201.465 ; gain = 112.922
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/syncchanneldecoder.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/syncchanneldecoder.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/syncchanneldecoder.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/syncchanneldecoder.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/remapper.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/remapper.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/syncchanneldecoder.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/syncchanneldecoder.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/remapper.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/remapper.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_interface_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_interface_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/syncchanneldecoder.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/syncchanneldecoder.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/remapper.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/remapper.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_interface_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_interface_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_interface.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_interface.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_control.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser_s6.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/iserdes_datadeser.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/crc_calc.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+WARNING: [Synth 8-1824] circular dependency found for file C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/triggergenerator.vhd while ordering
+INFO: [Common 17-14] Message 'Synth 8-1824' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+WARNING: [Synth 8-1090] 'fifo18e2' is not compiled in library work [c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/pulse_regen_k7/fifo_generator_v10_0/builtin/builtin_prim.vhd:380]
+WARNING: [Synth 8-1090] 'fifo36e2' is not compiled in library work [c:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/ip/pulse_regen_k7/fifo_generator_v10_0/builtin/builtin_prim.vhd:441]
+ERROR: [Synth 8-4169] error in use clause: package 'proc_common_pkg' not found in library 'proc_common_v4_0' [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:266]
+INFO: [Synth 8-2810] unit user_logic ignored due to previous errors [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:297]
+ERROR: [Synth 8-1940] entity user_logic is not yet compiled [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:389]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:396]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:397]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:398]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:399]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:400]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:401]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:402]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:403]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:404]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:405]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:406]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:407]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:408]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:409]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:410]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/zvik_camera_ipi/avnet_ cores/vita/project_1/project_1.srcs/sources_1/imports/vita/user_logic.vhd:411]
+finished Rtl Elaboration : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 237.586 ; gain = 149.043
+Rtl Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    invoked from within
+"if {$rt::useElabCache == false} {
+      rt::run_rtlelab -module $rt::top
+    }"
+    ("uplevel" body line 165)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+3 Infos, 113 Warnings, 0 Critical Warnings and 18 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+
+    while executing
+"source -notrace {./.Xil/Vivado-7680-ABBEEF/realtime\fmc_imageon_vita_receiver.tcl}"
+    invoked from within
+"synth_design -top fmc_imageon_vita_receiver -part xc7z020clg484-1"
+    (file "fmc_imageon_vita_receiver.tcl" line 72)
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 22 16:02:50 2013...

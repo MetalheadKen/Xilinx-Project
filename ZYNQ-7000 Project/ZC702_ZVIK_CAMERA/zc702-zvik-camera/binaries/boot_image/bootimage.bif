@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]/zc702-zvik-camera/binaries/boot_image/fsbl.elf
+	/zc702-zvik-camera/binaries/boot_image/system.bit
+	/zc702-zvik-camera/binaries/boot_image/u-boot.elf
+}

@@ -1,0 +1,477 @@
+20:08:44 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:08:49 INFO  : XSDB server has started successfully.
+20:08:50 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+20:23:55 INFO  : Saving repository preferences.
+20:23:55 INFO  : Reading in cores from local repositories: 
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+20:23:55 INFO  : Cleaning BSP projects in the workspace.
+20:27:24 INFO  : Saving repository preferences.
+20:27:24 INFO  : Reading in cores from local repositories: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+20:27:25 INFO  : Cleaning BSP projects in the workspace.
+20:39:37 INFO  : Refreshed build settings on project dual_camera_hdmi
+22:54:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+22:55:01 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+22:55:48 INFO  : ps7_init is completed.
+22:55:48 INFO  : ps7_post_config is completed.
+22:55:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:03:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:03:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+23:03:55 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+23:04:08 INFO  : ps7_init is completed.
+23:04:08 INFO  : ps7_post_config is completed.
+23:04:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:45:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+23:45:26 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+23:45:35 INFO  : ps7_init is completed.
+23:45:35 INFO  : ps7_post_config is completed.
+23:45:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:13:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:14:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+00:14:06 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+00:14:16 INFO  : ps7_init is completed.
+00:14:16 INFO  : ps7_post_config is completed.
+00:14:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:17:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:17:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:17:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+00:17:47 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+00:17:58 INFO  : ps7_init is completed.
+00:17:59 INFO  : ps7_post_config is completed.
+00:17:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:19:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:19:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+00:19:42 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+00:19:49 INFO  : ps7_init is completed.
+00:19:49 INFO  : ps7_post_config is completed.
+00:19:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:09:58 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:10:02 INFO  : XSDB server has started successfully.
+11:10:04 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+11:10:04 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+11:10:05 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+11:14:03 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:14:04 INFO  : XSDB server has started successfully.
+11:14:05 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+11:14:05 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+11:14:05 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+11:32:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:32:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+11:32:32 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+11:32:45 INFO  : ps7_init is completed.
+11:32:45 INFO  : ps7_post_config is completed.
+11:32:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:33:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:33:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:33:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+11:33:54 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+11:34:06 INFO  : ps7_init is completed.
+11:34:06 INFO  : ps7_post_config is completed.
+11:34:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:36:21 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:30:09 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:30:13 INFO  : XSDB server has started successfully.
+13:30:14 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+13:30:14 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+13:30:15 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+13:42:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:42:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+13:42:28 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+13:43:37 INFO  : ps7_init is completed.
+13:43:37 INFO  : ps7_post_config is completed.
+13:43:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:44:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:46:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:46:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+13:46:34 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+13:46:43 INFO  : ps7_init is completed.
+13:46:43 INFO  : ps7_post_config is completed.
+13:46:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:06:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1487584961738,  Project:1487418331120
+18:06:35 INFO  : Project fmc_imageon_gs_wrapper_hw_platform_0's source hardware specification located at D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:06:39 INFO  : Copied contents of D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf into \fmc_imageon_gs_wrapper_hw_platform_0\system.hdf.
+18:07:09 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:07:39 INFO  : 
+18:07:40 INFO  : Updating hardware inferred compiler options for dual_camera_hdmi.
+18:07:40 INFO  : Clearing existing target manager status.
+18:07:40 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:07:41 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+18:08:29 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:08:52 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:08:56 INFO  : XSDB server has started successfully.
+18:08:58 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+18:08:58 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+18:08:59 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+19:05:12 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:05:17 INFO  : XSDB server has started successfully.
+19:05:23 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+19:05:27 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+19:05:30 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+19:05:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1487588270442,  Project:1487584961738
+19:05:30 INFO  : The hardware specification for project 'fmc_imageon_gs_wrapper_hw_platform_0' is different from D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+19:05:31 INFO  : Copied contents of D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf into \fmc_imageon_gs_wrapper_hw_platform_0\system.hdf.
+19:05:36 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:05:55 INFO  : 
+19:05:56 INFO  : Updating hardware inferred compiler options for dual_camera_hdmi.
+19:05:56 INFO  : Clearing existing target manager status.
+19:06:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:06:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:06:53 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:08:07 INFO  : ps7_init is completed.
+19:08:07 INFO  : ps7_post_config is completed.
+19:08:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:09:04 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+19:10:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:10:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:10:09 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:10:19 INFO  : ps7_init is completed.
+19:10:19 INFO  : ps7_post_config is completed.
+19:10:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:13:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:13:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:13:29 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:15:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:15:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:15:12 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:16:01 INFO  : ps7_init is completed.
+19:16:01 INFO  : ps7_post_config is completed.
+19:16:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:24:23 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:24:28 INFO  : XSDB server has started successfully.
+19:24:30 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+19:24:30 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+19:24:31 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+19:25:09 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:25:10 INFO  : XSDB server has started successfully.
+19:25:10 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+19:25:10 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+19:25:11 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+19:31:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:31:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:31:44 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:34:07 INFO  : ps7_init is completed.
+19:34:07 INFO  : ps7_post_config is completed.
+19:34:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:34:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:34:56 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:35:22 INFO  : ps7_init is completed.
+19:35:23 INFO  : ps7_post_config is completed.
+19:35:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:36:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:36:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:36:15 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:36:24 INFO  : ps7_init is completed.
+19:36:24 INFO  : ps7_post_config is completed.
+19:36:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:38:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:39:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:39:04 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:39:11 INFO  : ps7_init is completed.
+19:39:11 INFO  : ps7_post_config is completed.
+19:39:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:49:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:49:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:49:30 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:50:22 INFO  : ps7_init is completed.
+19:50:22 INFO  : ps7_post_config is completed.
+19:50:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:52:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:52:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:52:06 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:52:15 INFO  : ps7_init is completed.
+19:52:16 INFO  : ps7_post_config is completed.
+19:52:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:54:42 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:54:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:54:53 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:55:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:55:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:55:09 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:55:58 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:56:05 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:56:06 INFO  : XSDB server has started successfully.
+19:56:06 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+19:56:06 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+19:56:07 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+19:56:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:56:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:56:57 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:57:10 INFO  : ps7_init is completed.
+19:57:10 INFO  : ps7_post_config is completed.
+19:57:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:57:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:58:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:58:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:58:05 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+19:58:15 INFO  : ps7_init is completed.
+19:58:15 INFO  : ps7_post_config is completed.
+19:58:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:00:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:00:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:00:35 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:00:47 INFO  : ps7_init is completed.
+20:00:47 INFO  : ps7_post_config is completed.
+20:00:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:02:25 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:06:36 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:06:37 INFO  : XSDB server has started successfully.
+20:06:37 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+20:06:37 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+20:06:38 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+20:13:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:13:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:13:11 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:13:26 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+20:13:30 INFO  : ps7_init is completed.
+20:13:30 INFO  : ps7_post_config is completed.
+20:13:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:17:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:17:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:17:15 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:17:31 INFO  : ps7_init is completed.
+20:17:31 INFO  : ps7_post_config is completed.
+20:17:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:09:49 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:09:52 INFO  : XSDB server has started successfully.
+19:09:55 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+19:09:55 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+19:09:56 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+19:47:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:47:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+19:47:20 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:05:10 INFO  : ps7_init is completed.
+20:05:10 INFO  : ps7_post_config is completed.
+20:05:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:06:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:07:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:07:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:07:38 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:07:46 INFO  : ps7_init is completed.
+20:07:46 INFO  : ps7_post_config is completed.
+20:07:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:11:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:11:30 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unable to Stop Processor. System could be in unknown state.
+                     Please reset the system
+Unknown Error Occured
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(TM.java:773)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(CPURunSession.java:27)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(TM.java:821)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:596)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+20:11:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:11:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:11:47 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:12:25 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:12:26 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:14:51 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:14:52 INFO  : XSDB server has started successfully.
+20:14:52 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+20:14:53 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+20:14:53 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+20:15:26 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+20:20:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:20:30 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:20:56 INFO  : ps7_init is completed.
+20:20:56 INFO  : ps7_post_config is completed.
+20:20:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:23:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:23:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:23:38 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:23:46 INFO  : ps7_init is completed.
+20:23:46 INFO  : ps7_post_config is completed.
+20:23:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:25:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:25:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:26:00 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:26:22 INFO  : ps7_init is completed.
+20:26:22 INFO  : ps7_post_config is completed.
+20:26:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:29:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:29:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:30:00 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:30:07 INFO  : ps7_init is completed.
+20:30:07 INFO  : ps7_post_config is completed.
+20:30:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:30:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:30:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:30:42 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+20:30:47 INFO  : ps7_init is completed.
+20:30:47 INFO  : ps7_post_config is completed.
+20:30:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:32:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:32:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+20:32:15 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+21:39:34 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:40:32 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:40:37 INFO  : XSDB server has started successfully.
+21:40:38 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+21:40:39 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+21:40:39 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+21:41:26 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:41:27 INFO  : XSDB server has started successfully.
+21:41:27 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+21:41:27 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+21:41:28 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+21:41:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1487684110671,  Project:1487588270442
+21:41:30 INFO  : The hardware specification for project 'fmc_imageon_gs_wrapper_hw_platform_0' is different from D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+21:41:30 INFO  : Copied contents of D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf into \fmc_imageon_gs_wrapper_hw_platform_0\system.hdf.
+21:42:09 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:42:24 INFO  : 
+21:42:25 INFO  : Updating hardware inferred compiler options for dual_camera_hdmi.
+21:42:25 INFO  : Clearing existing target manager status.
+21:42:25 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+21:49:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:49:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+21:49:32 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+21:49:52 INFO  : ps7_init is completed.
+21:49:52 INFO  : ps7_post_config is completed.
+21:49:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:52:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:52:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+21:52:11 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+21:54:34 INFO  : ps7_init is completed.
+21:54:34 INFO  : ps7_post_config is completed.
+21:54:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:57:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:57:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+21:57:11 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+21:57:27 INFO  : ps7_init is completed.
+21:57:27 INFO  : ps7_post_config is completed.
+21:57:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:38:54 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+13:31:04 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1487689088564,  Project:1487684110671
+13:31:04 INFO  : Project fmc_imageon_gs_wrapper_hw_platform_0's source hardware specification located at D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:31:10 INFO  : Copied contents of D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf into \fmc_imageon_gs_wrapper_hw_platform_0\system.hdf.
+13:31:43 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:31:58 INFO  : 
+13:31:59 INFO  : Updating hardware inferred compiler options for dual_camera_hdmi.
+13:31:59 INFO  : Clearing existing target manager status.
+13:31:59 INFO  : Closing and re-opening the MSS file of ther project dual_camera_hdmi_bsp
+13:33:36 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:34:05 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:34:09 INFO  : XSDB server has started successfully.
+13:34:11 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+13:34:11 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper.hdf.
+13:34:12 INFO  : Checking for hwspec changes in the project fmc_imageon_gs_wrapper_hw_platform_0.
+13:37:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:37:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+13:37:29 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+13:38:14 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+13:38:20 INFO  : ps7_init is completed.
+13:38:20 INFO  : ps7_post_config is completed.
+13:38:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:24:13 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:02:02 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:02:04 INFO  : XSDB server has started successfully.
+15:02:05 INFO  : Restoring local repository preferences: 
+		 D:\FMC_DUAL_CAMERA_HDMI\avnet_fmc_imageon_cores\sw_services
+		 D:\FMC_DUAL_CAMERA_HDMI\software\sw_repository
+15:02:05 INFO  : Processing command line option -hwspec D:/FMC_DUAL_CAMERA_HDMI/DUAL_CAMERA/DUAL_CAMERA.sdk/fmc_imageon_gs_wrapper.hdf.
+15:07:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1487917928419,  Project:1478185966000
+15:07:50 INFO  : Project fmc_imageon_gs_wrapper_hw_platform_1's source hardware specification located at D:/FMC_DUAL_CAMERA_HDMI/DUAL_CAMERA/DUAL_CAMERA.sdk/fmc_imageon_gs_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+15:07:52 INFO  : Copied contents of D:/FMC_DUAL_CAMERA_HDMI/DUAL_CAMERA/DUAL_CAMERA.sdk/fmc_imageon_gs_wrapper.hdf into \fmc_imageon_gs_wrapper_hw_platform_1\system.hdf.
+15:07:59 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:08:01 INFO  : Clearing existing target manager status.
+15:08:18 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:08:18 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+15:29:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+15:37:22 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+15:37:47 INFO  : ps7_init is completed.
+15:37:47 INFO  : ps7_post_config is completed.
+15:37:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:42:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:42:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+15:42:33 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+15:42:42 INFO  : ps7_init is completed.
+15:42:42 INFO  : ps7_post_config is completed.
+15:42:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:43:09 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:43:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:43:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+15:43:24 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+15:43:38 INFO  : ps7_init is completed.
+15:43:38 INFO  : ps7_post_config is completed.
+15:43:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:44:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+15:44:43 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+15:45:01 INFO  : ps7_init is completed.
+15:45:01 INFO  : ps7_post_config is completed.
+15:45:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:45:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:46:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:46:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A02F82A" && level==0} -index 1' command is executed.
+15:46:05 INFO  : FPGA configured successfully with bitstream "D:/FMC_DUAL_CAMERA_HDMI/zc702/zc702.sdk/fmc_imageon_gs_wrapper_hw_platform_0/fmc_imageon_gs_wrapper.bit"
+15:46:40 INFO  : ps7_init is completed.
+15:46:40 INFO  : ps7_post_config is completed.
+15:46:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:30:51 INFO  : Saving repository preferences.
+17:31:18 INFO  : No changes in MSS file content so not generating sources.
+17:42:05 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

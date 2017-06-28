@@ -1,0 +1,67 @@
+15:09:27.055 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc1/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+15:10:03.571 INFO  - Saving repository preferences. 
+15:10:03.571 INFO  - Reading in cores from local repositories: 
+		 C:\FMC_IMAGEON\2013_3\avnet_fmc_imageon_cores 
+15:10:03.571 INFO  - Updating libgen.options on all BSP projects. 
+15:10:03.571 INFO  - Cleaning BSP projects in the workspace. 
+15:27:52.636 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+15:28:00.489 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc1/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+15:28:24.830 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc1/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+15:28:43.098 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:28:43.207 INFO  - PS initialization will be done as it is not done before. 
+15:28:43.207 INFO  - Running PS initialization.... 
+15:28:43.394 INFO  - ps7_init is completed. 
+15:28:43.503 INFO  - ps7_post_config is completed. 
+15:28:43.613 INFO  - PS Initialization is complete. 
+15:29:29.758 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+15:29:36.014 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:29:38.012 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+
+    AP transaction timeout: ACK = 0x01, expected=0x02)
+    Error Address = 0x00100000, Size = 0x00000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+15:29:38.807 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:29:54.806 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc1/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+15:52:29.877 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc1/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+15:52:56.553 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:52:56.663 INFO  - PS initialization will be done as it is not done before. 
+15:52:56.663 INFO  - Running PS initialization.... 
+15:52:56.865 INFO  - ps7_init is completed. 
+15:52:56.975 INFO  - ps7_post_config is completed. 
+15:52:56.975 INFO  - PS Initialization is complete. 
+15:53:48.190 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+15:53:48.190 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:11:20.682 INFO  - Processing command line option -hwspec C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc1/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+15:11:21.821 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc1/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+15:11:21.977 INFO  - Copied contents of C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc1/tutorial.sdk/SDK/SDK_Export/hw/tutorial.xml into \hw_platform_0\system.xml. 
+15:11:21.977 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc1\tutorial.sdk\SDK\SDK_Export\hw\tutorial_wrapper.bit into \hw_platform_0\tutorial_wrapper.bit. 
+15:11:21.992 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc1\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+15:11:21.992 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc1\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+15:11:21.992 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc1\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+15:11:21.992 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc1\tutorial.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+15:11:21.992 INFO  - Copied contents of C:\FMC_IMAGEON\2013_3\zc702_vita_passthrough_fmc1\tutorial.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+15:11:22.102 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:11:23.662 INFO  - Restoring local repository preferences: 
+		 C:\FMC_IMAGEON\2013_3\avnet_fmc_imageon_cores 
+15:11:24.660 INFO  - Updating hardware inferred compiler options for vita_passthrough_app. 
+15:11:24.660 INFO  - Clearing existing target manager status. 
+15:16:23.157 INFO  - FPGA configured successfully with bitstream "C:/FMC_IMAGEON/2013_3/zc702_vita_passthrough_fmc1/tutorial.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+15:16:59.599 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:16:59.708 INFO  - PS initialization will be done as it is not done before. 
+15:16:59.708 INFO  - Running PS initialization.... 
+15:16:59.895 INFO  - ps7_init is completed. 
+15:17:00.004 INFO  - ps7_post_config is completed. 
+15:17:00.113 INFO  - PS Initialization is complete. 
+15:17:48.303 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+15:17:48.319 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/vita/serdes_1_to_5_diff_data.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../serdes_1_to_5_diff_data.v"/>
+        <Attr Name="ImportTime" Val="1339652310"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/phsaligner.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../phsaligner.v"/>
+        <Attr Name="ImportTime" Val="1339652310"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/pck_crc8_d8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pck_crc8_d8.vhd"/>
+        <Attr Name="ImportTime" Val="1317399382"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/pck_crc10_d10.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pck_crc10_d10.vhd"/>
+        <Attr Name="ImportTime" Val="1317399382"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_sync.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_sync.vhd"/>
+        <Attr Name="ImportTime" Val="1307567610"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_mux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_mux.vhd"/>
+        <Attr Name="ImportTime" Val="1294781064"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_core.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_core.vhd"/>
+        <Attr Name="ImportTime" Val="1329946836"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_control.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_control.vhd"/>
+        <Attr Name="ImportTime" Val="1307567610"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/pulse_regen_k7/pulse_regen_k7.xci">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/afifo_64i_16o_k7/afifo_64i_16o_k7.xci">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/afifo_32_k7/afifo_32_k7.xci">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/spi_seq.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spi_seq.vhd"/>
+        <Attr Name="ImportTime" Val="1316211546"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/spi_lowlevel.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spi_lowlevel.vhd"/>
+        <Attr Name="ImportTime" Val="1316211474"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_idelayctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_idelayctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1302562978"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_datadeser_s6.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_datadeser_s6.vhd"/>
+        <Attr Name="ImportTime" Val="1339652310"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_datadeser.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_datadeser.vhd"/>
+        <Attr Name="ImportTime" Val="1317682906"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_compare.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_compare.vhd"/>
+        <Attr Name="ImportTime" Val="1307567610"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_clocks.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_clocks.vhd"/>
+        <Attr Name="ImportTime" Val="1329946788"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/crc_comp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../crc_comp.vhd"/>
+        <Attr Name="ImportTime" Val="1317658508"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/crc_calc.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../crc_calc.vhd"/>
+        <Attr Name="ImportTime" Val="1317418902"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/videosyncgen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../videosyncgen.vhd"/>
+        <Attr Name="ImportTime" Val="1326412728"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/triggergenerator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../triggergenerator.vhd"/>
+        <Attr Name="ImportTime" Val="1328552456"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/syncchanneldecoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../syncchanneldecoder.vhd"/>
+        <Attr Name="ImportTime" Val="1300297506"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/spi_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spi_top.vhd"/>
+        <Attr Name="ImportTime" Val="1316211612"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/remapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../remapper.vhd"/>
+        <Attr Name="ImportTime" Val="1317831534"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/pulse_regen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pulse_regen.vhd"/>
+        <Attr Name="ImportTime" Val="1338584990"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_interface_s6.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_interface_s6.vhd"/>
+        <Attr Name="ImportTime" Val="1339652310"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/iserdes_interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../iserdes_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1324535524"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/crc_check.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../crc_check.vhd"/>
+        <Attr Name="ImportTime" Val="1317829452"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/correct_column_fpn_prnu_dsp48e.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../correct_column_fpn_prnu_dsp48e.vhd"/>
+        <Attr Name="ImportTime" Val="1343776286"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/afifo_64i_16o.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../afifo_64i_16o.vhd"/>
+        <Attr Name="ImportTime" Val="1330014634"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/afifo_32.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../afifo_32.vhd"/>
+        <Attr Name="ImportTime" Val="1330014580"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/fmc_imageon_vita_core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="fmc_imageon_vita_receiver_v1_13_a"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fmc_imageon_vita_core.vhd"/>
+        <Attr Name="ImportTime" Val="1343807128"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/user_logic.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="fmc_imageon_vita_receiver_v1_13_a"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../user_logic.vhd"/>
+        <Attr Name="ImportTime" Val="1343807138"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vita/fmc_imageon_vita_receiver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fmc_imageon_vita_receiver.vhd"/>
+        <Attr Name="ImportTime" Val="1343778568"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/component.xml">
+      <FileInfo SFType="IPXACT">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fmc_imageon_vita_receiver"/>
+      <Option Name="TopLib" Val="work"/>
+      <Option Name="TopArchitecture" Val="IMP"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/vita/fmc_imageon_vita_receiver.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="IPRepoPath" Val="/group/mvico/users/elzinga/designs/vita/project_1"/>
+    </Config>
+  </FileSet>
+</DARoots>

@@ -1,0 +1,6 @@
+21:42:07 **** Clean-only build of project fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+
+21:42:07 Build Finished (took 235ms)
+

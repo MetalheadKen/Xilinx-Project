@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2013.1 (64-bit)
+# Build 245391 by xbuild on Thu Mar 14 19:11:09 MDT 2013
+# Start of session at: Fri Mar 15 09:42:24 2013
+# Process ID: 7666
+# Log file: /group/mvico/users/elzinga/designs/vita/vivado.log
+# Journal file: /group/mvico/users/elzinga/designs/vita/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/arch.xml
+Parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+INFO: [Common 17-362] Using Tcl App repository from '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/XilinxTclStore'.
+INFO: [Common 17-364] Updating Tcl app persistent manifest '/home/elzinga/.Xilinx/Vivado/tclapp/manifest.tcl'
+start_gui
+open_project /group/mvico/users/elzinga/designs/vita/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/proj/xbuilds/2013.1_daily_latest/installs/lin64/Vivado/2013.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 2902.898 ; gain = 90.020
+update_compile_order -fileset sources_1
+create_ip -name fifo_generator -version 10.0 -vendor xilinx.com -library ip -module_name pulse_regen_k7
+set_property -dict [list CONFIG.Component_Name {pulse_regen_k7} CONFIG.Fifo_Implementation {Independent_Clocks_Distributed_RAM} CONFIG.Input_Data_Width {1} CONFIG.Input_Depth {16} CONFIG.Valid_Flag {true}] [get_ips pulse_regen_k7]
+generate_target  {synthesis instantiation_template}  [get_files  /group/mvico/users/elzinga/designs/vita/project_1/project_1.srcs/sources_1/ip/pulse_regen_k7/pulse_regen_k7.xci] -force
+Generating IP 'pulse_regen_k7'...
+INFO: [IP_Flow 19-1687] IP 'pulse_regen_k7' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+Delivering 'Vivado VHDL Synthesis' files for IP 'pulse_regen_k7'.
+Generating IP 'pulse_regen_k7'...
+Delivering 'Verilog Instantiation Template' file for IP 'pulse_regen_k7'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+[Fri Mar 15 10:18:24 2013] Launched synth_1...
+Run output will be captured here: /group/mvico/users/elzinga/designs/vita/project_1/project_1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2947.125 ; gain = 0.000
+launch_runs impl_1
+[Fri Mar 15 10:29:00 2013] Launched impl_1...
+Run output will be captured here: /group/mvico/users/elzinga/designs/vita/project_1/project_1.runs/impl_1/runme.log
+set_property part xc7k480tffg1156-1 [current_project]
+WARNING: [IP_Flow 19-1100] IP 'pulse_regen_k7' does not match the current project part 'xc7k480tffg1156-1'. You may continue to use existing outputs but part differences may result in undefined behavior. Please review your project settings if this is unexpected.
+WARNING: [IP_Flow 19-1100] IP 'afifo_64i_16o_k7' does not match the current project part 'xc7k480tffg1156-1'. You may continue to use existing outputs but part differences may result in undefined behavior. Please review your project settings if this is unexpected.
+WARNING: [IP_Flow 19-1100] IP 'afifo_32_k7' does not match the current project part 'xc7k480tffg1156-1'. You may continue to use existing outputs but part differences may result in undefined behavior. Please review your project settings if this is unexpected.
+WARNING: [IP_Flow 19-1100] IP 'fifo_generator_0' does not match the current project part 'xc7k480tffg1156-1'. You may continue to use existing outputs but part differences may result in undefined behavior. Please review your project settings if this is unexpected.
+reset_run synth_1
+launch_runs synth_1
+Generating IP 'pulse_regen_k7'...
+INFO: [IP_Flow 19-1687] IP 'pulse_regen_k7' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+Delivering 'Vivado VHDL Synthesis' files for IP 'pulse_regen_k7'.
+Generating IP 'afifo_64i_16o_k7'...
+INFO: [IP_Flow 19-1687] IP 'afifo_64i_16o_k7' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+Delivering 'Vivado VHDL Synthesis' files for IP 'afifo_64i_16o_k7'.
+Generating IP 'afifo_32_k7'...
+INFO: [IP_Flow 19-1687] IP 'afifo_32_k7' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+Delivering 'Vivado VHDL Synthesis' files for IP 'afifo_32_k7'.
+[Fri Mar 15 10:35:14 2013] Launched synth_1...
+Run output will be captured here: /group/mvico/users/elzinga/designs/vita/project_1/project_1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 2947.250 ; gain = 0.125
+launch_runs impl_1
+[Fri Mar 15 10:43:55 2013] Launched impl_1...
+Run output will be captured here: /group/mvico/users/elzinga/designs/vita/project_1/project_1.runs/impl_1/runme.log
+set_property board xilinx.com:zynq:zc702:c [current_project]
+WARNING: [Project 1-153] The current project part 'xc7k480tffg1156-1' does not match with the 'XILINX.COM:ZYNQ:ZC702:C' board part settings. The project part will be reset to 'XILINX.COM:ZYNQ:ZC702:C' board part.
+INFO: [Project 1-152] Project part set to zynq (xc7z020clg484-1)
+ipx::open_core -upgrade true {/group/mvico/users/elzinga/designs/vita/project_1/component.xml}
+set_property description {fmc_imageon_vita_receiver_v1_14} [ipx::current_core]
+set_property display_name {fmc_imageon_vita_receiver_v1_14} [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-414] HDL Parameter 'C_FAMILY': Parameter name is reserved.
+WARNING: [IP_Flow 19-3157] Bus Interface 'signal_reset': Bus parameter POLARITY is ACTIVE_LOW but port 'reset' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2188] The Readme file is missing.
+INFO: [IP_Flow 19-2186] The Data Sheet file is missing.
+INFO: [IP_Flow 19-2189] The User Guide file is missing.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::archive_core {/group/mvico/users/elzinga/designs/vita/project_1/xilinx.com_user_fmc_imageon_vita_receiver_1.0.zip} [ipx::current_core]
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 15 10:48:22 2013...
